@@ -58,7 +58,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          <div class="row">
+          
+<style>
+.comments {
+    margin-top: 50px;
+}
+</style>
+
+<div class="row">
      <div class="span8">
          <article class="thing">
          <div class='page-header'>
@@ -84,6 +91,26 @@ dave@~$ ssh -i ~/.ec2/id_rsa-your-name-keypair root@xx.xxx.xxx.xxx
 <p>I found the solution <a href="http://developer.amazonwebservices.com/connect/thread.jspa;jsessionid=81CAD1F68BF6F5C626FC1AC429AF2C19?messageID=104781&amp;#104781">here</a>.  At first glance it looks like a problem with EC2 but what's actually happening is that your ssh client knows that that IP address usually points to a different server and is warning you that someone might be messing with you. You know they're not however so you can fix it by simply clearing or editing the file that keeps a record of your past sessions.  On mac and I think most linux machines the file is:  ~/.ssh/known_hosts</p>         </article>
      </div>
 </div>
+<hr>
+<div class="row comments">
+  <div class="span8">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'thingsilearned'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
           </section>
       </div>
       </div> <!--! end of #container -->
