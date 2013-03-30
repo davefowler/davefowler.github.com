@@ -63,6 +63,9 @@
 .comments {
     margin-top: 50px;
 }
+#commenthr {
+    margin-top: 50px;
+}
 </style>
 
 <div class="row">
@@ -91,7 +94,7 @@ dave@~$ ssh -i ~/.ec2/id_rsa-your-name-keypair root@xx.xxx.xxx.xxx
 <p>I found the solution <a href="http://developer.amazonwebservices.com/connect/thread.jspa;jsessionid=81CAD1F68BF6F5C626FC1AC429AF2C19?messageID=104781&amp;#104781">here</a>.  At first glance it looks like a problem with EC2 but what's actually happening is that your ssh client knows that that IP address usually points to a different server and is warning you that someone might be messing with you. You know they're not however so you can fix it by simply clearing or editing the file that keeps a record of your past sessions.  On mac and I think most linux machines the file is:  ~/.ssh/known_hosts</p>         </article>
      </div>
 </div>
-<hr>
+<hr id="commenthr">
 <div class="row comments">
   <div class="span8">
     <div id="disqus_thread"></div>
