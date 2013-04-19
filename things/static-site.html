@@ -4,7 +4,7 @@
     <meta charset="">
   <meta http-equiv="X-UA-Compatible" content="">
 
-  <title>Comparing Github and BitBucket</title>
+  <title>Statically Generated</title>
   <meta name="description" content="">
   <meta name="author" content="Dave Fowler">
 
@@ -22,7 +22,7 @@
   
     
   </head>
-<body id="index">
+<body id="static-site">
     <div class="container">
             <div id="main" role="main">
           <header class="banner clearfix">
@@ -72,62 +72,18 @@
      <div class="span8">
          <article class="thing">
          <div class='page-header'>
-               <h1>Comparing Github and BitBucket</h1>
+               <h1>Statically Generated</h1>
          </div>
-         <p>There are a lot of advantages to using a distributed revision control system as opposed to centralized.  There are also some down sides, mostly in that it can be a bit more confusing to manage.  A centralized web interface however seems to solve that problem quite nicely.</p>
-<p>Currently there are two major competitors in that space, <a href="http://github.com">Github</a> and <a href="http://bitbucket.org/">Bitbucket</a>, that manage Git and Mercurial repositories respectively.  I've used Github for a while and recently have really started using Bitbucket and I thought I'd share some thoughts and comparisons of the two.  There are a lot of blogs that <a href="http://importantshock.wordpress.com/2008/08/07/git-vs-mercurial/">compare Git and Mercurial</a>, but this is not one of those blogs.  I personally have a preference for mercurial, but for admittedly stupid reasons like it was written in python and the syntax more closely resembles SVN which I've become used to.  To me, a major differentiator in choosing one over the other is the interface or 'hub' that manages it.</p>
-<p>Below is my item by item lineup showing the differences between GitHub and Bitbucket</p>
-<p>GitHub
-BitBucket</p>
-<p>pull requests</p>
-<p>yes</p>
-<p>yes</p>
-<p>forking</p>
-<p>yes</p>
-<p>yes</p>
-<p>command instructions</p>
-<p>yes</p>
-<p>yes</p>
-<p>distributed revision control</p>
-<p>yes</p>
-<p>yes</p>
-<p>network graph</p>
-<p>yes</p>
-<p>no</p>
-<p>inline editing</p>
-<p>yes</p>
-<p>no</p>
-<p>developer profiles</p>
-<p>yes</p>
-<p>yes</p>
-<p>wiki</p>
-<p>yes</p>
-<p>yes</p>
-<p>issues</p>
-<p>yes</p>
-<p>yes</p>
-<p>rss feeds</p>
-<p>yes</p>
-<p>yes</p>
-<p>source browser</p>
-<p>yes</p>
-<p>yes</p>
-<p>monthly price</p>
-<p>cheap</p>
-<p>cheaper</p>
-<p>free private projects</p>
-<p>0</p>
-<p>1</p>
-<h1>of users</h1>
-<p>lots</p>
-<p>not lots</p>
-<p>happy hours</p>
-<p>in SF</p>
-<p>no</p>
-<p>There really aren't a lot of differences.  Personally, I actively use both.  Learning both is easy as the syntax difference between the two revision control systems is minimal and both hub interfaces are very similar.</p>
-<p>I use git for open projects like <a href="http://github.com/godavemon/TwitTornado">TwitTornado</a> where privacy is not an issue and where I'd like to get more developers involved. Its really got a fantastic social network of hackers.</p>
-<p>I use bitbucket for my private repositories as it allows 1 free private repository (per user) and has cheaper monthly rates.</p>
-<p>I hope this helps others make a decision between the two and try both of them out.  Let me know in the comments if I've left any parameters out of the table above and I'll add them in.</p>         </article>
+         <p>I've long wanted to move my blog from wordpress, and have been really into static site generators lately, and after trying several of them out and not having a lot of luck with the wordpress export tools provided by each I finally waited long enough that most of my blog content is so irrelevant that it doesn't matter anyway!</p>
+<h2>Explain...</h2>
+<p>For those who don't know, a static site generator is a bit of a different type of blogging system that programatically generates a copy of every page that the site will ever need to render ahead of time.  The advantage is spead and some simplicity.</p>
+<p>For example, when visitng a typical blog, such as wordpress, the server must make a few queries to a database to collect the information about the author, blog content, and whatever else is needed in order to return the HTML necessary.  Its bascially rendering the page for every visit to the website.</p>
+<p>For content that doesn't change based on who's viewing it that process doesn't actually make a lot of sense.  If there are a lot of people viewing the exact same content, the same queries are run, and the same content is mashed into the same HTML that's returned over and over again with each view.  A static site generator simply up front renders all possible pages and saves the html result.  Then when viewers come in, the flat HTML file is simply served up as a result.  Its much faster and much less server intensive!</p>
+<h2>Hyde</h2>
+<p>There are a number of static site generators out there.  This <a href="https://news.ycombinator.com/item?id=4857473" title="Popular static site generators.">Hacker News Poll</a> lists many of them and gives you a good indication of how popular they are.  I ended up choosing <a href="https://github.com/hyde/hyde">Hyde</a> as its what I used to create the <a href="http://chartio.com" title="Data Interface">Chartio</a> content pages as it was the most popular python generator last year when I did that work.  It unfortunately has very little documentation, and hasn't been improved in over two years so I have a tough time recomending it to anyone right now.</p>
+<p>Its still really great, and if you want to clone this site and morph it to your own will, you can <a href="https://github.com/davefowler/thingsilearned">get the source</a> any time.  If interested also be sure to take a look at this list of other <a href="https://github.com/hyde/hyde/wiki/Hyde-Powered" title="Sites powered by Hyde">Hyde powered sites</a>.</p>
+<h2>Exporting from Wordpress</h2>
+<p>The most popular Ruby static site generator is called Jekyll, and there's a nice <a href="https://github.com/thomasf/exitwp">python based Wordpress Exporter</a> for it.  I made <a href="https://github.com/davefowler/exitwp">my own fork</a> to port things to the Hyde format, and to maintain the URL structure of my previous posts.  This blog still gets a few hundred hits a day and I didn't feel like starting from scratch.  Unfortunately neither Livefyre or Disqus imported the wordpress.com comments properly and I had to drop all comments completely.</p>         </article>
      </div>
 </div>
 <hr id="commenthr">

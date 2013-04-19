@@ -4,7 +4,7 @@
     <meta charset="">
   <meta http-equiv="X-UA-Compatible" content="">
 
-  <title>Comparing Github and BitBucket</title>
+  <title>Directory String Replace</title>
   <meta name="description" content="">
   <meta name="author" content="Dave Fowler">
 
@@ -22,7 +22,7 @@
   
     
   </head>
-<body id="index">
+<body id="directory-replace">
     <div class="container">
             <div id="main" role="main">
           <header class="banner clearfix">
@@ -72,62 +72,23 @@
      <div class="span8">
          <article class="thing">
          <div class='page-header'>
-               <h1>Comparing Github and BitBucket</h1>
+               <h1>Directory String Replace</h1>
          </div>
-         <p>There are a lot of advantages to using a distributed revision control system as opposed to centralized.  There are also some down sides, mostly in that it can be a bit more confusing to manage.  A centralized web interface however seems to solve that problem quite nicely.</p>
-<p>Currently there are two major competitors in that space, <a href="http://github.com">Github</a> and <a href="http://bitbucket.org/">Bitbucket</a>, that manage Git and Mercurial repositories respectively.  I've used Github for a while and recently have really started using Bitbucket and I thought I'd share some thoughts and comparisons of the two.  There are a lot of blogs that <a href="http://importantshock.wordpress.com/2008/08/07/git-vs-mercurial/">compare Git and Mercurial</a>, but this is not one of those blogs.  I personally have a preference for mercurial, but for admittedly stupid reasons like it was written in python and the syntax more closely resembles SVN which I've become used to.  To me, a major differentiator in choosing one over the other is the interface or 'hub' that manages it.</p>
-<p>Below is my item by item lineup showing the differences between GitHub and Bitbucket</p>
-<p>GitHub
-BitBucket</p>
-<p>pull requests</p>
-<p>yes</p>
-<p>yes</p>
-<p>forking</p>
-<p>yes</p>
-<p>yes</p>
-<p>command instructions</p>
-<p>yes</p>
-<p>yes</p>
-<p>distributed revision control</p>
-<p>yes</p>
-<p>yes</p>
-<p>network graph</p>
-<p>yes</p>
-<p>no</p>
-<p>inline editing</p>
-<p>yes</p>
-<p>no</p>
-<p>developer profiles</p>
-<p>yes</p>
-<p>yes</p>
-<p>wiki</p>
-<p>yes</p>
-<p>yes</p>
-<p>issues</p>
-<p>yes</p>
-<p>yes</p>
-<p>rss feeds</p>
-<p>yes</p>
-<p>yes</p>
-<p>source browser</p>
-<p>yes</p>
-<p>yes</p>
-<p>monthly price</p>
-<p>cheap</p>
-<p>cheaper</p>
-<p>free private projects</p>
-<p>0</p>
-<p>1</p>
-<h1>of users</h1>
-<p>lots</p>
-<p>not lots</p>
-<p>happy hours</p>
-<p>in SF</p>
-<p>no</p>
-<p>There really aren't a lot of differences.  Personally, I actively use both.  Learning both is easy as the syntax difference between the two revision control systems is minimal and both hub interfaces are very similar.</p>
-<p>I use git for open projects like <a href="http://github.com/godavemon/TwitTornado">TwitTornado</a> where privacy is not an issue and where I'd like to get more developers involved. Its really got a fantastic social network of hackers.</p>
-<p>I use bitbucket for my private repositories as it allows 1 free private repository (per user) and has cheaper monthly rates.</p>
-<p>I hope this helps others make a decision between the two and try both of them out.  Let me know in the comments if I've left any parameters out of the table above and I'll add them in.</p>         </article>
+         <p>Yesterday I discovered that many of the old posts on the <a href="http://chartio.com/blog/">Chartio Blog</a> used odd unicode versions of quotes that were being rendered terribly.  So I needed to do a find-replace for an entire directory.</p>
+<p>After over an hour of reading <a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?sed" title="SED man pages">man pages</a> and online examples I discovered that I really hate the SED command.  I asked around about other's experiences and it everyone that I talked to who had tried it has their own horror stories to go along with it.</p>
+<p>Maybe it just needs some better documentation, and if so I wish I could provide it, but I ended up writing/<a href="http://stackoverflow.com/questions/4205854/python-way-to-recursively-find-and-replace-string-in-text-files" title="Replace String in Driectory Script">modifying</a> a simple python script to do string replacing on a directory level.</p>
+<script src="https://gist.github.com/davefowler/5422045.js"></script>
+
+<p>It takes 4 parameters:</p>
+<ul>
+<li><strong>directory</strong> - the root directory to do the string replace in</li>
+<li><strong>find</strong> - the string that you would like to find</li>
+<li><strong>rep</strong> - the string that you would like to replace the found string with</li>
+<li><strong>filePattern</strong> - a pattern to match the files you would like searched (eg. '*.html' or '*.py')</li>
+</ul>
+<p>The following example will replace all instances of the word <em>"old"</em> with <em>"new"</em> in files ending in <em>".html"</em> located in the <em>~/some/directory/</em> directory</p>
+<pre><code>findReplace('~/some/directory/', "old", "new", '*.html')
+</code></pre>         </article>
      </div>
 </div>
 <hr id="commenthr">

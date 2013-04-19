@@ -42,7 +42,7 @@
                               <span class="divider">/</span>        </li>        <li>
             <a title="Things I Learned"
                 class="button white"
-                href="/things">
+                href="/things/">
                 Things
             </a>
                               <span class="divider">/</span>        </li>        <li>
@@ -115,18 +115,36 @@ cp/usr/local/share/moin/server/*.cgi $INSTANCE
 <p>Next edit your apache httpd.conf file ( /etc/apache2/httpd.conf ) and add the following to the end.  More help on this step can be found <a href="https://help.ubuntu.com/community/HelpOnInstalling/ApacheWithModWSGI">here</a>.</p>
 <pre><code>LoadModule wsgi_module modules/mod_wsgi.so  # Loads mod_wsgi
 
+
+
+
 &lt;VirtualHost *&gt;
 ServerAdmin &lt;strong&gt;youremail@example.com&lt;/strong&gt;
 
+
+
+
 ServerName &lt;strong&gt;wiki.example.com&lt;/strong&gt;
+
+
+
 
 Alias /moin_static183/ "/usr/local/share/moin/htdocs/"
 #ScriptAlias /developers "&lt;strong&gt;/path/to/wikis/your_wiki_name&lt;/strong&gt;/moin.cgi"
 
+
+
+
 WSGIScriptAlias    / &lt;strong&gt;/path/to/wikis/your_wiki_name&lt;/strong&gt;/moin.wsgi
 WSGIDaemonProcess developerwiki user=www-data group=www-data home=/root process=5 threads=10 maximum-requests=1000 umask=0007
 
+
+
+
 WSGIProcessGroup developerwiki
+
+
+
 
 &lt;/VirtualHost&gt;
 </code></pre>
