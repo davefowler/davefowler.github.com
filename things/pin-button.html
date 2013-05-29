@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="">
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <title>Javascript Controlled Pin Button for Images and Videos</title>
+  <meta name="description" content="">
+  <meta name="author" content="Dave Fowler">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
+  <style>
+    .header h3 { color: #ccc; }
+    .hero-unit { background-image:url('/media/images/hero.jpg'); }
+  </style>
+  
+    
+  </head>
+<body id="pin-button">
+    <div class="container">
+            <div id="main" role="main">
+          <header class="banner clearfix">
+          <div class='header'>
+                <div class="row">
+                  <div class="span5">
+                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
+                  <div class="span3">
+                                                            <nav >
+    <ul class='breadcrumb'>
+                <li>
+            <a title="Home Page"
+                class="button white"
+                href="/">
+                Home
+            </a>
+                              <span class="divider">/</span>        </li>        <li>
+            <a title="Things I Learned"
+                class="button white"
+                href="/things/">
+                Things
+            </a>
+                              <span class="divider">/</span>        </li>        <li>
+            <a title="About"
+                class="button white"
+                href="/about">
+                About
+            </a>
+                                      </li>    </ul>
+</nav>
+                                        </ul>
+                  </div>
+                </div>
+              </div>          </header>
+          <section class="content">
+          
+<style>
+.comments {
+    margin-top: 50px;
+}
+#commenthr {
+    margin-top: 50px;
+}
+</style>
+
+<div class="row">
+     <div class="span8">
+         <article class="thing">
+         <div class='page-header'>
+               <h1>Javascript Controlled Pin Button for Images and Videos</h1>
+         </div>
+         <p>My sister is making a great new site called <a href="http://almostathirdgrader.com" title="Almost A Third Grader">Almost A Third Grader</a> where during the summer she posts 3 videos a week for students between 2nd and 3rd grade to keep their skills fresh.</p>
+<p>She wants to share them on pinterest and make it easy for others to do the same by adding an embedded button to pin the videos.  Pinterest has a great <a href="http://business.pinterest.com/widget-builder/#do_pin_it_button">tool for manually creating the widgets</a> but it was a bit unclear on how to do it programatically, and how to do it for video.</p>
+<h2>Pin Button for Images</h2>
+<p>For each Pin you need to get the pin's url, image, and description.  In the following code snippet I've broken out each of those into seperate variables for ease of use.</p>
+<script src="https://gist.github.com/davefowler/5668507.js"></script>
+
+<h2>Youtube Pins</h2>
+<p><a href="http://www.almostathirdgrader.com/odd-and-even.html"><img src="/media/images/pin.png"/></a></p>
+<p>If you're pinning YouTube videos things are slightly different.  You need to grab the YouTube video code from the video link and use that to grab the video's thumbnail from the YouTube API.  If the image you pin is from the YouTube API, Pinterest is smart enough to automatically make that pin a video share.  Basically you want to replace line 2 from the above code snippet with these lines.</p>
+<script src="https://gist.github.com/davefowler/5668548.js"></script>
+
+<p>Note that this code assumes you're using the new YouTube embed format (with the path /embed/ in it's URL).  Use the commented out example in line 2 instead of 3 if you're using the old embed format.</p>
+<h2>Placing it in the Page</h2>
+<p>Finally you'll need to place the code held in the <em>button</em> variable into the page somewhere.  If you're using jquery you can embed simply using</p>
+<pre><code>$('#placeholder').append(button);
+</code></pre>
+<p>Where <em>#placeholder</em> is the <a href="http://api.jquery.com/selector/">jquery selector</a> for the dom node you'd like to place the button in.</p>         </article>
+     </div>
+</div>
+<hr id="commenthr">
+<div class="row comments">
+  <div class="span8">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'thingsilearned'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+          </section>
+      </div>
+      </div> <!--! end of #container -->
+    
+    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
+  
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2253461-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
