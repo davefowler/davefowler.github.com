@@ -6,17 +6,14 @@
 
   <title>Things I Learned</title>
   <meta name="description" content="Here's a list of some things I've learned.">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -46,1288 +43,412 @@
                 </div>
               </div>          </header>
           <section class="content">
-          <section class="blog_excerpt">
-
-<style>
-.thing {
-    background: #222;
-    border-radius: 4px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 30px;
-    background-position:center;
-}
-
-.thing h3 {
-    background-color: inherit;
-    font-size: 16px;
-    font-color: blue;
-    padding: 10px;
-    line-height: 1.4em;
-}
-
-.thing time {
-    color: #777;
-    position: absolute;
-    bottom: 5px;
-}
-
-.thing.chartio {
-   background: #FAC069;
-}
-
-.thing small {
-   display: block;
-   font-size: .8em;
-   padding: 10px;
-}
-
-</style>
-
-<div class="things row">
-<a href="/things/the-new-man" class="thing psychology span2"
-   style="height: 140px; background-image: url('/media/images/tohaveortobe.jpg');">
-  <h3>The New Man
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-09-01">
-      2013-09-01
-    </time>
-  </small>
-</a>
-<a href="http://venturebeat.com/2013/08/13/put-a-fork-in-big-data-its-done/" class="thing chartio span2"
-   style="height: 140px; background-image: url('/media/images/fork.jpg');">
-  <h3>Put a fork in 'big data' - it's done
-    <small>chartio.com</small>  </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-08-13">
-      2013-08-13
-    </time>
-  </small>
-</a>
-<a href="http://chartio.com/blog/2013/08/informationdashboarddesign" class="thing chartio span2"
-   style="height: 140px; background-image: url('http://chartio.com/hmedia/images/blog/2013/informationdashboarddesign/informationdashboarddesign.jpg');">
-  <h3>Information Dashboard Design (2nd Edition)
-    <small>chartio.com</small>  </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-08-09">
-      2013-08-09
-    </time>
-  </small>
-</a>
-<a href="/things/drawn-to-write" class="thing thought span2"
-   style="height: 140px; background-image: url('/media/images/drawn-to-write.jpg');">
-  <h3>Drawn to Write
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-07-26">
-      2013-07-26
-    </time>
-  </small>
-</a>
-<a href="http://chartio.com/blog/2013/07/the-state-of-sql-education" class="thing chartio span2"
-   style="height: 140px; background-image: url('/media/images/sql-education.png');">
-  <h3>The State of SQL Education
-    <small>chartio.com</small>  </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-07-16">
-      2013-07-16
-    </time>
-  </small>
-</a>
-<a href="/things/sock-bankruptcy" class="thing life span2"
-   style="height: 140px; background-image: url('/media/images/sock-bankruptcy.png');">
-  <h3>Sock Bankruptcy
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-07-07">
-      2013-07-07
-    </time>
-  </small>
-</a>
-<a href="https://chartio.com/education/databases/excel-to-mysql" class="thing chartio span2"
-   style="height: 140px; ">
-  <h3>Importing Excel into MySQL
-    <small>chartio.com</small>  </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-06-02">
-      2013-06-02
-    </time>
-  </small>
-</a>
-<a href="/things/pin-button" class="thing code span2"
-   style="height: 140px; ">
-  <h3>Javascript Controlled Pin Button for Images and Videos
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-05-29">
-      2013-05-29
-    </time>
-  </small>
-</a>
-<a href="/things/cherry-picking-with-mercurial" class="thing code span2"
-   style="height: 140px; ">
-  <h3>Cherry Picking With Mercurial
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-05-23">
-      2013-05-23
-    </time>
-  </small>
-</a>
-<a href="http://chartio.com/education/sql/joins" class="thing chartio span2"
-   style="height: 140px; ">
-  <h3>SQL Joins Explained
-    <small>chartio.com</small>  </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-05-12">
-      2013-05-12
-    </time>
-  </small>
-</a>
-<a href="/things/directory-replace" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Directory String Replace
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-04-19">
-      2013-04-19
-    </time>
-  </small>
-</a>
-<a href="http://chartio.com/blog/2013/04/10-reasons-to-not-build-your-own-dashboard" class="thing chartio span4"
-   style="height: 140px; ">
-  <h3>10 Reasons Not To Build Your Own Dashboards From Scratch
-    <small>chartio.com</small>  </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-04-16">
-      2013-04-16
-    </time>
-  </small>
-</a>
-<a href="/things/you-and-your-startup" class="thing  span2"
-   style="height: 140px; ">
-  <h3>You and Your Startup
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-04-09">
-      2013-04-09
-    </time>
-  </small>
-</a>
-<a href="/things/exitwp" class="thing code span2"
-   style="height: 140px; ">
-  <h3>exitwp: Wordpress Export Script for Hyde
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-03-30">
-      2013-03-30
-    </time>
-  </small>
-</a>
-<a href="/things/static-site" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Statically Generated
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2013-03-29">
-      2013-03-29
-    </time>
-  </small>
-</a>
-<a href="/2012/11/22/javascript-chess-game/" class="thing code span4"
-   style="height: 310px; background-image: url('http://thingsilearned.files.wordpress.com/2012/11/screen-shot-2012-11-22-at-4-15-41-am.png');">
-  <h3>Chess in Javascript
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2012-11-22">
-      2012-11-22
-    </time>
-  </small>
-</a>
-<a href="/2011/06/07/mailgun-as-an-smtp-server-for-django-apps/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>MailGun as an SMTP Server for Django Apps
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2011-06-07">
-      2011-06-07
-    </time>
-  </small>
-</a>
-<a href="/2011/01/05/the-pickledobjectfield-for-object-storage-in-django/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>The PickledObjectField for Object Storage in Django
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2011-01-05">
-      2011-01-05
-    </time>
-  </small>
-</a>
-<a href="/2010/12/01/on-productivity-organization-and-tools/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>On Productivity, Organization and Tools
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2010-12-01">
-      2010-12-01
-    </time>
-  </small>
-</a>
-<a href="/2010/01/27/dynamically-calling-fancybox-from-javascript/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Dynamically Calling Fancybox from Javascript
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2010-01-27">
-      2010-01-27
-    </time>
-  </small>
-</a>
-<a href="/2010/01/11/when-can-i-stop-saving-for-retirement/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>When Can I Stop Saving for Retirement?
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2010-01-11">
-      2010-01-11
-    </time>
-  </small>
-</a>
-<a href="/2010/01/07/github-and-bitbucket/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Comparing Github and BitBucket
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2010-01-07">
-      2010-01-07
-    </time>
-  </small>
-</a>
-<a href="/2009/09/30/initialize-django-tests/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Initialize Django Tests
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-09-30">
-      2009-09-30
-    </time>
-  </small>
-</a>
-<a href="/2009/08/26/forwarding-naked-domains-for-appengine-with-apache/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Forwarding Naked Domains for Appengine with Apache
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-08-26">
-      2009-08-26
-    </time>
-  </small>
-</a>
-<a href="/2009/08/11/socialbrowse-in-the-startribune/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Socialbrowse in the StarTribune
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-08-11">
-      2009-08-11
-    </time>
-  </small>
-</a>
-<a href="/2009/08/10/log-observer-using-pythons-subprocess/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Log Observer using Python's subprocess
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-08-10">
-      2009-08-10
-    </time>
-  </small>
-</a>
-<a href="/2009/08/03/starting-out-with-comet-orbited-part-3-e28093-the-client/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Starting Out With Comet (Orbited) Part 3 - The Client
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-08-03">
-      2009-08-03
-    </time>
-  </small>
-</a>
-<a href="/2009/07/21/appengine-example-quick-thoughts/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Appengine Example: Quick Thoughts
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-07-21">
-      2009-07-21
-    </time>
-  </small>
-</a>
-<a href="/2009/06/25/starting-out-with-comet-orbited-part-2-installation-and-stomp/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Starting Out With Comet (Orbited) Part 2 - Installation and STOMP
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-06-25">
-      2009-06-25
-    </time>
-  </small>
-</a>
-<a href="/2009/06/09/starting-out-with-comet-orbited-part-1/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Starting Out With Comet (Orbited) Part 1
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-06-09">
-      2009-06-09
-    </time>
-  </small>
-</a>
-<a href="/2009/06/08/new-blog-design-by-amanda-scharlemann/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>New Blog Design By Amanda Scharlemann
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-06-08">
-      2009-06-08
-    </time>
-  </small>
-</a>
-<a href="/2009/06/03/find-rss-feed-links-with-jquery/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Find RSS Feed Links With jQuery
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-06-03">
-      2009-06-03
-    </time>
-  </small>
-</a>
-<a href="/2009/06/03/google-ajax-feed-api-example/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Google AJAX Feed API Example with Socialbrowse
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-06-03">
-      2009-06-03
-    </time>
-  </small>
-</a>
-<a href="/2009/06/02/tictactoe-in-jquery/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>TicTacToe in jQuery
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-06-02">
-      2009-06-02
-    </time>
-  </small>
-</a>
-<a href="/2009/05/26/gnu-screen-super-basic-tutorial/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>GNU Screen Basic Tutorial
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-05-26">
-      2009-05-26
-    </time>
-  </small>
-</a>
-<a href="/2009/05/21/deploying-moinmoin-on-ubuntu-using-apache-mod_wsgi/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Deploying MoinMoin on Ubuntu using Apache mod_wsgi
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-05-21">
-      2009-05-21
-    </time>
-  </small>
-</a>
-<a href="/2009/05/11/using-arguments-in-a-shell-script/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Using Arguments in a Shell Script
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-05-11">
-      2009-05-11
-    </time>
-  </small>
-</a>
-<a href="/2009/05/10/drop-database-command-for-django-manager/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>'drop' Database Command for Django Manager
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-05-10">
-      2009-05-10
-    </time>
-  </small>
-</a>
-<a href="/2009/05/08/testing-ajax-requests-in-django/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Testing AJAX Requests in Django
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-05-08">
-      2009-05-08
-    </time>
-  </small>
-</a>
-<a href="/2009/05/06/some-notes-and-requests-on-django-signals/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Some Notes and Requests on Django Signals
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-05-06">
-      2009-05-06
-    </time>
-  </small>
-</a>
-<a href="/2009/05/03/road-bikes-are-waaaay-better-than-target-bikes/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Road Bikes are Waaaay Better than Target Bikes
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-05-03">
-      2009-05-03
-    </time>
-  </small>
-</a>
-<a href="/2009/05/03/simple-mysqldb-example/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Simple MySQLdb Example
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-05-03">
-      2009-05-03
-    </time>
-  </small>
-</a>
-<a href="/2009/04/14/socialbrowse-on-the-news/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Socialbrowse On The News
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-04-14">
-      2009-04-14
-    </time>
-  </small>
-</a>
-<a href="/2009/04/13/easy_install-uninstalling/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Uninstalling the easy_install(ed)
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-04-13">
-      2009-04-13
-    </time>
-  </small>
-</a>
-<a href="/2009/04/12/wanted-generous-blog-designer/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Wanted: Generous Blog Designer
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-04-12">
-      2009-04-12
-    </time>
-  </small>
-</a>
-<a href="/2009/04/06/paper-or-plastic/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Paper or Plastic?
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-04-06">
-      2009-04-06
-    </time>
-  </small>
-</a>
-<a href="/2009/03/25/ec2-elastic-ips-ssh-error/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>EC2 Elastic IPs SSH Error
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-03-25">
-      2009-03-25
-    </time>
-  </small>
-</a>
-<a href="/2009/03/18/how-to-port-many-django-utilities-backwards/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>How to Port Many Django Utilities Backwards
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-03-18">
-      2009-03-18
-    </time>
-  </small>
-</a>
-<a href="/2009/03/13/adding-custom-commands-to-managepy-and-django-adminpy/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Adding Custom Commands to manage.py and django-admin.py
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-03-13">
-      2009-03-13
-    </time>
-  </small>
-</a>
-<a href="/2009/03/10/wundrbar-makes-a-wundrful-iphone-app/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Wundrbar makes a Wundrful iPhone App
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-03-10">
-      2009-03-10
-    </time>
-  </small>
-</a>
-<a href="/2009/03/09/wordpress-domain-change/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Wordpress Domain Change
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-03-09">
-      2009-03-09
-    </time>
-  </small>
-</a>
-<a href="/2009/03/03/tripeedo-flight-search-thats-actually-a-search/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Tripeedo - Flight Search That's Actually a Search
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-03-03">
-      2009-03-03
-    </time>
-  </small>
-</a>
-<a href="/2009/02/18/traffic-trends-negativity-more-traffic/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Traffic Trends: Negativity = More Traffic?
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-02-18">
-      2009-02-18
-    </time>
-  </small>
-</a>
-<a href="/2009/02/08/setup-safari-web-inspector/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Setup Safari Web Inspector
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-02-08">
-      2009-02-08
-    </time>
-  </small>
-</a>
-<a href="/2009/01/26/satchmo-on-ubuntu/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Satchmo on Ubuntu
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-26">
-      2009-01-26
-    </time>
-  </small>
-</a>
-<a href="/2009/01/22/installing-svn-on-ubuntu/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Installing SVN on Ubuntu
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-22">
-      2009-01-22
-    </time>
-  </small>
-</a>
-<a href="/2009/01/19/javascript-relative-and-absolute-urls/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Javascript Relative and Absolute URLs
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-19">
-      2009-01-19
-    </time>
-  </small>
-</a>
-<a href="/2009/01/17/executed-in-sequence-of-page-load/" class="thing  span2"
-   style="height: 140px; ">
-  <h3> Executed In Sequence of Page Load
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-17">
-      2009-01-17
-    </time>
-  </small>
-</a>
-<a href="/2009/01/06/django-email-admins-using-different-outgoing-email-address/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Django Email Admins Using Different Outgoing Email Address
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-06">
-      2009-01-06
-    </time>
-  </small>
-</a>
-<a href="/2009/01/06/sshfs-for-developing-on-a-remote-server/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>SSHFS for Developing on a Remote Server 
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-06">
-      2009-01-06
-    </time>
-  </small>
-</a>
-<a href="/2009/01/06/wildcard-subdomains-with-webpagedomainnamescomgodaddycom/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Wildcard Subdomains with WebpageDomainNames.com/Godaddy.com
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-06">
-      2009-01-06
-    </time>
-  </small>
-</a>
-<a href="/2009/01/05/relative-url-parser-snippet/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Relative URL Parser Snippet
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-05">
-      2009-01-05
-    </time>
-  </small>
-</a>
-<a href="/2009/01/05/using-subdomains-in-django/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Using Subdomains in Django
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-05">
-      2009-01-05
-    </time>
-  </small>
-</a>
-<a href="/2009/01/02/installing-csstidy-and-scons-on-os-x-or-linux/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Installing CSSTidy and Scons on OS X or Linux
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-02">
-      2009-01-02
-    </time>
-  </small>
-</a>
-<a href="/2009/01/01/recap-and-new-years-resolutions/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Recap and New Years Resolutions
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2009-01-01">
-      2009-01-01
-    </time>
-  </small>
-</a>
-<a href="/2008/12/31/i-have-a-startup-midwest-vs-bay-area/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>"I have a Startup" Midwest vs. Bay Area
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2008-12-31">
-      2008-12-31
-    </time>
-  </small>
-</a>
-<a href="/2008/12/28/django-adminpy-startproject-unknown-command/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Django-admin.py startproject > Unknown Command
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2008-12-28">
-      2008-12-28
-    </time>
-  </small>
-</a>
-<a href="/2008/12/27/proportional-image-resize-in-javascript/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Proportional Image Resize in JavaScript
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2008-12-27">
-      2008-12-27
-    </time>
-  </small>
-</a>
-<a href="/2008/12/22/host-your-own-git-repository/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Host Your Own Git Repository
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2008-12-22">
-      2008-12-22
-    </time>
-  </small>
-</a>
-<a href="/2008/12/21/how-to-win-friends-and-influence-people/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>How To Win Friends and Influence People
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2008-12-21">
-      2008-12-21
-    </time>
-  </small>
-</a>
-<a href="/2008/12/18/mans-search-for-meaning-of-love/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Man's Search For Meaning
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2008-12-18">
-      2008-12-18
-    </time>
-  </small>
-</a>
-<a href="/2008/12/16/get-around-corporate-firewalls-make-your-own-proxy/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Get Around Corporate Firewalls: Make Your Own Proxy
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2008-12-16">
-      2008-12-16
-    </time>
-  </small>
-</a>
-<a href="/2008/12/16/learning-again/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Learning Again!
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2008-12-16">
-      2008-12-16
-    </time>
-  </small>
-</a>
-<a href="/2007/11/16/christmas-tunes/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Christmas Tunes
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-11-16">
-      2007-11-16
-    </time>
-  </small>
-</a>
-<a href="/2007/10/05/organized-printfs-with-variadic-macros/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Organized Printf's with Variadic Macros
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-10-05">
-      2007-10-05
-    </time>
-  </small>
-</a>
-<a href="/2007/09/30/electric-fence-on-os-x/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Electric Fence on OS X
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-09-30">
-      2007-09-30
-    </time>
-  </small>
-</a>
-<a href="/2007/08/14/zope3plone-to-django/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Zope3/Plone to Django
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-08-14">
-      2007-08-14
-    </time>
-  </small>
-</a>
-<a href="/2007/07/26/computers-and-lemonade/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Computers and Lemonade
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-07-26">
-      2007-07-26
-    </time>
-  </small>
-</a>
-<a href="/2007/07/18/unconventional-motivation-techniques/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Unconventional Motivation Techniques
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-07-18">
-      2007-07-18
-    </time>
-  </small>
-</a>
-<a href="/2007/07/15/1-through-n-steps-for-beginning-a-novel/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>1-through-N Steps for Beginning a Novel
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-07-15">
-      2007-07-15
-    </time>
-  </small>
-</a>
-<a href="/2007/07/12/an-energy-drink-recipe-green-tea-pepsi/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>An energy drink recipe: Green Tea Pepsi
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-07-12">
-      2007-07-12
-    </time>
-  </small>
-</a>
-<a href="/2007/07/09/the-dangers-of-a-startup/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>The Dangers of a Startup
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-07-09">
-      2007-07-09
-    </time>
-  </small>
-</a>
-<a href="/2007/07/06/organized-database-designing/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Organized Database Designing
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-07-06">
-      2007-07-06
-    </time>
-  </small>
-</a>
-<a href="/2007/07/05/plone-sprint-at-google/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Plone Sprint at Google
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-07-05">
-      2007-07-05
-    </time>
-  </small>
-</a>
-<a href="/2007/07/01/prevent-devices-from-waking-winxp-out-of-standby-mode/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Prevent Devices from Waking WinXP out of Standby Mode
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-07-01">
-      2007-07-01
-    </time>
-  </small>
-</a>
-<a href="/2007/06/29/thingsilearned-user-case/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>ThingsILearned User Case
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-29">
-      2007-06-29
-    </time>
-  </small>
-</a>
-<a href="/2007/06/26/the-facebook-addiction/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>The Facebook addiction
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-26">
-      2007-06-26
-    </time>
-  </small>
-</a>
-<a href="/2007/06/25/jaredhockey-air-hockey-robotic-opponent/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Jared.hockey - Air Hockey Robotic Opponent
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-25">
-      2007-06-25
-    </time>
-  </small>
-</a>
-<a href="/2007/06/23/fixing-autocorrect-behavior-in-ms-word/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Fixing Autocorrect Behavior in MS Word
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-23">
-      2007-06-23
-    </time>
-  </small>
-</a>
-<a href="/2007/06/20/jaredsim-the-adventure/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>JaredSIM - The Adventure
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-20">
-      2007-06-20
-    </time>
-  </small>
-</a>
-<a href="/2007/06/19/california/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>California - Lets go!
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-19">
-      2007-06-19
-    </time>
-  </small>
-</a>
-<a href="/2007/06/15/opening-tough-jars-and-bottles-for-tendonitis-sufferers/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Opening Tough Jars and Bottles for Tendonitis Sufferers
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-15">
-      2007-06-15
-    </time>
-  </small>
-</a>
-<a href="/2007/06/11/batch-jpg-image-resizer/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Batch .jpg Image Resizer
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-11">
-      2007-06-11
-    </time>
-  </small>
-</a>
-<a href="/2007/06/10/40/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>On making business cards with Photoshop
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-10">
-      2007-06-10
-    </time>
-  </small>
-</a>
-<a href="/2007/06/10/food-for-thought-thought-about-food/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Food for Thought & Thought about Food
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-10">
-      2007-06-10
-    </time>
-  </small>
-</a>
-<a href="/2007/06/10/xml-syntax-on-emacs/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>XML Syntax on Emacs
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-10">
-      2007-06-10
-    </time>
-  </small>
-</a>
-<a href="/2007/06/07/os-x-terminal-prompt/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>OS X Terminal - Prompt Format
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-07">
-      2007-06-07
-    </time>
-  </small>
-</a>
-<a href="/2007/06/04/blogging/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Plone Blogging 
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-04">
-      2007-06-04
-    </time>
-  </small>
-</a>
-<a href="/2007/06/02/gsoc-plone-comments/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>GSoC - Plone Comments
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-06-02">
-      2007-06-02
-    </time>
-  </small>
-</a>
-<a href="/2007/05/30/200-page-views/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>200 Page Views!
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-30">
-      2007-05-30
-    </time>
-  </small>
-</a>
-<a href="/2007/05/29/cimglib-a-simple-image-class-for-png-files/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>CImgLib - A Simple Image Class for PNG Files.
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-29">
-      2007-05-29
-    </time>
-  </small>
-</a>
-<a href="/2007/05/25/day-1-introduction/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Day 1 - Introduction
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-25">
-      2007-05-25
-    </time>
-  </small>
-</a>
-<a href="/2007/05/24/diversity-differences-this-world-is-full-of-them-sometimes-also-called-savants-there-are-a-few-extraordinary-people-around-us-who-have-amazing-ability-to-remember-things-daniel-is-one-such-e/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Diversity! Differences! Mind!! Man this World in unequal!!
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-24">
-      2007-05-24
-    </time>
-  </small>
-</a>
-<a href="/2007/05/24/first-grade/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>First Grade and Robots
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-24">
-      2007-05-24
-    </time>
-  </small>
-</a>
-<a href="/2007/05/20/starting-toward-probable-failure/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Starting Toward Probable Failure
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-20">
-      2007-05-20
-    </time>
-  </small>
-</a>
-<a href="/2007/05/15/separating-reflections-from-a-single-image-using-local-features/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Separating Reflections From a Single Image Using Local Features
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-15">
-      2007-05-15
-    </time>
-  </small>
-</a>
-<a href="/2007/05/07/emacs-for-macs/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Emacs for Macs
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-07">
-      2007-05-07
-    </time>
-  </small>
-</a>
-<a href="/2007/05/04/combating-internet-addiction/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Combating Internet Addiction
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-05-04">
-      2007-05-04
-    </time>
-  </small>
-</a>
-<a href="/about/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>About
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-04-26 02:02:12">
-      2007-04-26 02:02:12
-    </time>
-  </small>
-</a>
-<a href="/2007/04/26/a-fresh-new-blog/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>A Fresh New Blog
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-04-26">
-      2007-04-26
-    </time>
-  </small>
-</a>
-<a href="/2007/04/26/screw-you-a-python-example/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Screw you! - A Python Example
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-04-26">
-      2007-04-26
-    </time>
-  </small>
-</a>
-<a href="/2007/04/26/xcode-shortcuts/" class="thing  span2"
-   style="height: 140px; ">
-  <h3>Xcode Editor - Kinda Sucks
-      </h3>
-  <br>
-  <small class="subtext">
-    <time datetime="2007-04-26">
-      2007-04-26
-    </time>
-  </small>
-</a>
-
+          <div class="row hero-unit">
+  <div class="span9 offset2">
+    I learn the best when I write about what I'm learning.  Here I share some of my writing, essays, and projects.  Lately I've been focused on <a href="http://chartio.com">Chartio.com</a> and publically post considerably less.
+  </div>
 </div>
+
+<div class="row" id="section-titles">
+  <div class="span2"><h4>Posts</h4></div>
+  <div class="span5 key">
+    <ul>
+      <li class="external"><a href="#">external</a></li>
+      <li class="internal"><a href="#">internal</a></li>
+    </ul>
+  </div>
+  <div class="span5"><h4>Essays</h4></div>
+</div>
+
+<div class="row" id="sections">
+  <div class="span7" id="posts">
+    <ul>
+          <li class="post external">
+        <a href="http://chartio.com/blog/2013/11/a-year-since-launch">1 year since launch = 500,000 charts per week</a>
+      </li>
+          <li class="post external">
+        <a href="http://chartio.com/blog/2013/09/riley-newman-interview">An Interview with Riley Newman, Head of Analytics at Airbnb</a>
+      </li>
+          <li class="post ">
+        <a href="/things/the-new-man">The New Man</a>
+      </li>
+          <li class="post external">
+        <a href="http://venturebeat.com/2013/08/13/put-a-fork-in-big-data-its-done/">Put a fork in 'big data' - it's done</a>
+      </li>
+          <li class="post external">
+        <a href="http://chartio.com/blog/2013/08/informationdashboarddesign">Information Dashboard Design (2nd Edition)</a>
+      </li>
+          <li class="post external">
+        <a href="http://chartio.com/blog/2013/08/csvdata">CSV as a Data Source</a>
+      </li>
+          <li class="post ">
+        <a href="/things/drawn-to-write">Drawn to Write</a>
+      </li>
+          <li class="post external">
+        <a href="http://chartio.com/blog/2013/07/the-state-of-sql-education">The State of SQL Education</a>
+      </li>
+          <li class="post ">
+        <a href="/things/sock-bankruptcy">Sock Bankruptcy</a>
+      </li>
+          <li class="post external">
+        <a href="https://chartio.com/education/databases/excel-to-mysql">Importing Excel into MySQL</a>
+      </li>
+          <li class="post ">
+        <a href="/things/pin-button">Javascript Controlled Pin Button for Images and Videos</a>
+      </li>
+          <li class="post ">
+        <a href="/things/cherry-picking-with-mercurial">Cherry Picking With Mercurial</a>
+      </li>
+          <li class="post external">
+        <a href="http://chartio.com/education/sql/joins">SQL Joins Explained</a>
+      </li>
+          <li class="post ">
+        <a href="/things/directory-replace">Directory String Replace</a>
+      </li>
+          <li class="post external">
+        <a href="http://chartio.com/blog/2013/04/10-reasons-to-not-build-your-own-dashboard">10 Reasons Not To Build Your Own Dashboards From Scratch</a>
+      </li>
+          <li class="post ">
+        <a href="/things/you-and-your-startup">You and Your Startup</a>
+      </li>
+          <li class="post ">
+        <a href="/things/exitwp">exitwp: Wordpress Export Script for Hyde</a>
+      </li>
+          <li class="post ">
+        <a href="/things/static-site">Statically Generated</a>
+      </li>
+          <li class="post ">
+        <a href="/2011/06/07/mailgun-as-an-smtp-server-for-django-apps/">MailGun as an SMTP Server for Django Apps</a>
+      </li>
+          <li class="post ">
+        <a href="/2011/01/05/the-pickledobjectfield-for-object-storage-in-django/">The PickledObjectField for Object Storage in Django</a>
+      </li>
+          <li class="post ">
+        <a href="/2010/12/01/on-productivity-organization-and-tools/">On Productivity, Organization and Tools</a>
+      </li>
+          <li class="post ">
+        <a href="/2010/01/27/dynamically-calling-fancybox-from-javascript/">Dynamically Calling Fancybox from Javascript</a>
+      </li>
+          <li class="post ">
+        <a href="/2010/01/11/when-can-i-stop-saving-for-retirement/">When Can I Stop Saving for Retirement?</a>
+      </li>
+          <li class="post ">
+        <a href="/2010/01/07/github-and-bitbucket/">Comparing Github and BitBucket</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/09/30/initialize-django-tests/">Initialize Django Tests</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/08/26/forwarding-naked-domains-for-appengine-with-apache/">Forwarding Naked Domains for Appengine with Apache</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/08/11/socialbrowse-in-the-startribune/">Socialbrowse in the StarTribune</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/08/10/log-observer-using-pythons-subprocess/">Log Observer using Python's subprocess</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/08/03/starting-out-with-comet-orbited-part-3-e28093-the-client/">Starting Out With Comet (Orbited) Part 3 - The Client</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/07/21/appengine-example-quick-thoughts/">Appengine Example: Quick Thoughts</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/06/25/starting-out-with-comet-orbited-part-2-installation-and-stomp/">Starting Out With Comet (Orbited) Part 2 - Installation and STOMP</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/06/09/starting-out-with-comet-orbited-part-1/">Starting Out With Comet (Orbited) Part 1</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/06/08/new-blog-design-by-amanda-scharlemann/">New Blog Design By Amanda Scharlemann</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/06/03/find-rss-feed-links-with-jquery/">Find RSS Feed Links With jQuery</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/06/03/google-ajax-feed-api-example/">Google AJAX Feed API Example with Socialbrowse</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/06/02/tictactoe-in-jquery/">TicTacToe in jQuery</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/05/26/gnu-screen-super-basic-tutorial/">GNU Screen Basic Tutorial</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/05/21/deploying-moinmoin-on-ubuntu-using-apache-mod_wsgi/">Deploying MoinMoin on Ubuntu using Apache mod_wsgi</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/05/11/using-arguments-in-a-shell-script/">Using Arguments in a Shell Script</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/05/10/drop-database-command-for-django-manager/">'drop' Database Command for Django Manager</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/05/08/testing-ajax-requests-in-django/">Testing AJAX Requests in Django</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/05/06/some-notes-and-requests-on-django-signals/">Some Notes and Requests on Django Signals</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/05/03/road-bikes-are-waaaay-better-than-target-bikes/">Road Bikes are Waaaay Better than Target Bikes</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/05/03/simple-mysqldb-example/">Simple MySQLdb Example</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/04/14/socialbrowse-on-the-news/">Socialbrowse On The News</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/04/13/easy_install-uninstalling/">Uninstalling the easy_install(ed)</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/04/12/wanted-generous-blog-designer/">Wanted: Generous Blog Designer</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/04/06/paper-or-plastic/">Paper or Plastic?</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/03/25/ec2-elastic-ips-ssh-error/">EC2 Elastic IPs SSH Error</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/03/18/how-to-port-many-django-utilities-backwards/">How to Port Many Django Utilities Backwards</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/03/13/adding-custom-commands-to-managepy-and-django-adminpy/">Adding Custom Commands to manage.py and django-admin.py</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/03/10/wundrbar-makes-a-wundrful-iphone-app/">Wundrbar makes a Wundrful iPhone App</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/03/09/wordpress-domain-change/">Wordpress Domain Change</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/03/03/tripeedo-flight-search-thats-actually-a-search/">Tripeedo - Flight Search That's Actually a Search</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/02/18/traffic-trends-negativity-more-traffic/">Traffic Trends: Negativity = More Traffic?</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/02/08/setup-safari-web-inspector/">Setup Safari Web Inspector</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/26/satchmo-on-ubuntu/">Satchmo on Ubuntu</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/22/installing-svn-on-ubuntu/">Installing SVN on Ubuntu</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/19/javascript-relative-and-absolute-urls/">Javascript Relative and Absolute URLs</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/17/executed-in-sequence-of-page-load/"> Executed In Sequence of Page Load</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/06/django-email-admins-using-different-outgoing-email-address/">Django Email Admins Using Different Outgoing Email Address</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/06/sshfs-for-developing-on-a-remote-server/">SSHFS for Developing on a Remote Server </a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/06/wildcard-subdomains-with-webpagedomainnamescomgodaddycom/">Wildcard Subdomains with WebpageDomainNames.com/Godaddy.com</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/05/relative-url-parser-snippet/">Relative URL Parser Snippet</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/05/using-subdomains-in-django/">Using Subdomains in Django</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/02/installing-csstidy-and-scons-on-os-x-or-linux/">Installing CSSTidy and Scons on OS X or Linux</a>
+      </li>
+          <li class="post ">
+        <a href="/2009/01/01/recap-and-new-years-resolutions/">Recap and New Years Resolutions</a>
+      </li>
+          <li class="post ">
+        <a href="/2008/12/31/i-have-a-startup-midwest-vs-bay-area/">"I have a Startup" Midwest vs. Bay Area</a>
+      </li>
+          <li class="post ">
+        <a href="/2008/12/28/django-adminpy-startproject-unknown-command/">Django-admin.py startproject > Unknown Command</a>
+      </li>
+          <li class="post ">
+        <a href="/2008/12/27/proportional-image-resize-in-javascript/">Proportional Image Resize in JavaScript</a>
+      </li>
+          <li class="post ">
+        <a href="/2008/12/22/host-your-own-git-repository/">Host Your Own Git Repository</a>
+      </li>
+          <li class="post ">
+        <a href="/2008/12/21/how-to-win-friends-and-influence-people/">How To Win Friends and Influence People</a>
+      </li>
+          <li class="post ">
+        <a href="/2008/12/18/mans-search-for-meaning-of-love/">Man's Search For Meaning</a>
+      </li>
+          <li class="post ">
+        <a href="/2008/12/16/get-around-corporate-firewalls-make-your-own-proxy/">Get Around Corporate Firewalls: Make Your Own Proxy</a>
+      </li>
+          <li class="post ">
+        <a href="/2008/12/16/learning-again/">Learning Again!</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/11/16/christmas-tunes/">Christmas Tunes</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/10/05/organized-printfs-with-variadic-macros/">Organized Printf's with Variadic Macros</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/09/30/electric-fence-on-os-x/">Electric Fence on OS X</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/08/14/zope3plone-to-django/">Zope3/Plone to Django</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/07/26/computers-and-lemonade/">Computers and Lemonade</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/07/18/unconventional-motivation-techniques/">Unconventional Motivation Techniques</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/07/15/1-through-n-steps-for-beginning-a-novel/">1-through-N Steps for Beginning a Novel</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/07/12/an-energy-drink-recipe-green-tea-pepsi/">An energy drink recipe: Green Tea Pepsi</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/07/09/the-dangers-of-a-startup/">The Dangers of a Startup</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/07/06/organized-database-designing/">Organized Database Designing</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/07/05/plone-sprint-at-google/">Plone Sprint at Google</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/07/01/prevent-devices-from-waking-winxp-out-of-standby-mode/">Prevent Devices from Waking WinXP out of Standby Mode</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/29/thingsilearned-user-case/">ThingsILearned User Case</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/26/the-facebook-addiction/">The Facebook addiction</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/23/fixing-autocorrect-behavior-in-ms-word/">Fixing Autocorrect Behavior in MS Word</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/20/jaredsim-the-adventure/">JaredSIM - The Adventure</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/19/california/">California - Lets go!</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/15/opening-tough-jars-and-bottles-for-tendonitis-sufferers/">Opening Tough Jars and Bottles for Tendonitis Sufferers</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/11/batch-jpg-image-resizer/">Batch .jpg Image Resizer</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/10/40/">On making business cards with Photoshop</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/10/food-for-thought-thought-about-food/">Food for Thought & Thought about Food</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/10/xml-syntax-on-emacs/">XML Syntax on Emacs</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/07/os-x-terminal-prompt/">OS X Terminal - Prompt Format</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/04/blogging/">Plone Blogging </a>
+      </li>
+          <li class="post ">
+        <a href="/2007/06/02/gsoc-plone-comments/">GSoC - Plone Comments</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/30/200-page-views/">200 Page Views!</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/29/cimglib-a-simple-image-class-for-png-files/">CImgLib - A Simple Image Class for PNG Files.</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/25/day-1-introduction/">Day 1 - Introduction</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/24/diversity-differences-this-world-is-full-of-them-sometimes-also-called-savants-there-are-a-few-extraordinary-people-around-us-who-have-amazing-ability-to-remember-things-daniel-is-one-such-e/">Diversity! Differences! Mind!! Man this World in unequal!!</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/24/first-grade/">First Grade and Robots</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/20/starting-toward-probable-failure/">Starting Toward Probable Failure</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/15/separating-reflections-from-a-single-image-using-local-features/">Separating Reflections From a Single Image Using Local Features</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/07/emacs-for-macs/">Emacs for Macs</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/05/04/combating-internet-addiction/">Combating Internet Addiction</a>
+      </li>
+          <li class="post ">
+        <a href="/about/">About</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/04/26/a-fresh-new-blog/">A Fresh New Blog</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/04/26/screw-you-a-python-example/">Screw you! - A Python Example</a>
+      </li>
+          <li class="post ">
+        <a href="/2007/04/26/xcode-shortcuts/">Xcode Editor - Kinda Sucks</a>
+      </li>
+        </ul>
+  </div>
+  <div class="span5">
+
+    <div id="essays">
+      <ul>
+            <li class="post external">
+        <a href="http://www.wired.com/insights/2012/11/lets-talk-your-data-not-big-data/">Lets Talk Your Data, Not Big Data</a>
+      </li>
+            </ul>
+    </div>
+
+    <div><h4>Projects</h4></div>
+
+    <div id="projects">
+      <ul>
+            <li class="post ">
+        <a href="/projects/javascript-chess">Chess in Javascript</a>
+      </li>
+            <li class="post ">
+        <a href="/projects/air-hockey-robot">Jared.hockey - Air Hockey Robotic Opponent</a>
+      </li>
+            </ul>
+    </div>
+</div>
+
+<script src="/media/js/libs/jquery-2.0.2.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.key .external').click(function(e) {
+    e.preventDefault();
+    $('.key .external').toggleClass('opaque');
+    $('.post.external').toggleClass('hide');
+  });
+  $('.key .internal').click(function(e) {
+    e.preventDefault();
+    $('.key .internal').toggleClass('opaque');
+    $('.post').not('.external').toggleClass('hide');
+  });
+});
+</script>
 
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

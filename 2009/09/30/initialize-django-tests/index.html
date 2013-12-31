@@ -6,17 +6,14 @@
 
   <title>Initialize Django Tests</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,80 +47,42 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Initialize Django Tests</h1>
+               <h1>Initialize Django Tests<small>by dave on 2009-09-30</small></h1>
          </div>
          <p>I use a lot of <a href="http://docs.djangoproject.com/en/dev/topics/testing/#writing-doctests">doctests</a> for apps that all need to work on a set of initialized data.  I was hoping that there would be some kind of hook in Django for this but there is not.</p>
 <p>I could switch all of the doctests to unittests and use <a href="http://docs.djangoproject.com/en/dev/topics/testing/#fixture-loading">fixtures</a> but that would be a lot of work and I prefer doctests.  I could also go through and paste some sort of init command at the beginning of each test that would ensure the data was loaded or do the loading but that's just plain bad practice.</p>
 <p>I came up with a method of creating a 'testsetup' app that is always run before the other apps ensuring that whatever that app configures or loads into the database will be run first before any other apps preform their tests.  Here's how you can do it too.</p>
 <p>First create a 'testsetup' app and edit its tests.py file</p>
-<pre><code>./manage.py startapp testsetup
-open testsetup/tests.py
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a>./manage.py startapp testsetup<br /><a name="line-2"></a>open testsetup/tests.py<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
 
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="n">__test__</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;initialize tests&quot;</span><span class="p">:</span> <span class="s">&quot;&quot;&quot;</span><br /><a name="line-2"></a><br /><a name="line-3"></a><span class="s">&gt;&gt;&gt; your init code here</span><br /><a name="line-4"></a><br /><a name="line-5"></a><span class="s">&quot;&quot;&quot;</span> <span class="p">}</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
 
-
-
-
-
-__test__ = {"initialize tests": """
-
-&gt;&gt;&gt; your init code here
-
-""" }
-</code></pre>
 <p>In the test.py file you can load the database, prime the cache, or setup whatever else you need initialized.  Then add the 'testapp' as the first app to your settings.py</p>
-<pre><code>INSTALLED_APPS = (
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span><br /><a name="line-2"></a><br /><a name="line-3"></a><span class="s">&#39;testsetup&#39;</span><span class="p">,</span><br /><a name="line-4"></a><br /><a name="line-5"></a><span class="o">...</span><br /><a name="line-6"></a><br /><a name="line-7"></a><span class="p">)</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
 
-'testsetup',
-
-...
-
-)
-</code></pre>
 <p>Now whenever you run</p>
-<pre><code>./manage.py test
-</code></pre>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a>./manage.py <span class="nb">test</span><br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
+
 <p>It will first run the tests for the 'testssetup' script and everything will be primed.  If that's the only kind of test you run then that's all you'll need.  You're done with this tutorial.</p>
 <p>But if you run app level tests (ie. ./manage.py test someapp anotherapp ) then the above solution is not enough.  To ensure the testsuite is run before these apps we'll make our own TEST_RUNNER.  Create a file called 'testrunner.py' with the following source.</p>
-<pre><code>def run_tests(test_labels, verbosity=1, interactive = True, extra_tests=[]):
-print "Given these test_labels", test_labels
-print "With these extra_test", extra_tests
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="k">def</span> <span class="nf">run_tests</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">interactive</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">extra_tests</span><span class="o">=</span><span class="p">[]):</span><br /><a name="line-2"></a>  <span class="k">print</span> <span class="s">&quot;Given these test_labels&quot;</span><span class="p">,</span> <span class="n">test_labels</span><br /><a name="line-3"></a>  <span class="k">print</span> <span class="s">&quot;With these extra_test&quot;</span><span class="p">,</span> <span class="n">extra_tests</span><br /><a name="line-4"></a><br /><a name="line-5"></a><span class="kn">from</span> <span class="nn">django.test.simple</span> <span class="kn">import</span> <span class="n">run_tests</span> <span class="k">as</span> <span class="n">django_run_tests</span><br /><a name="line-6"></a><span class="k">if</span> <span class="n">test_labels</span><span class="p">:</span><br /><a name="line-7"></a>  <span class="c"># Make sure &#39;testsetup&#39; is run first</span><br /><a name="line-8"></a>  <span class="n">tl</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;testsetup&#39;</span><span class="p">]</span><br /><a name="line-9"></a>  <span class="n">tl</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">test_labels</span><span class="p">))</span><br /><a name="line-10"></a>  <span class="n">test_labels</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">tl</span><span class="p">)</span><br /><a name="line-11"></a>  <span class="k">print</span> <span class="s">&quot;Testing these apps:&quot;</span><span class="p">,</span> <span class="n">test_labels</span><br /><a name="line-12"></a><br /><a name="line-13"></a><span class="n">django_run_tests</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">verbosity</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">extra_tests</span><span class="p">)</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
 
-from django.test.simple import run_tests as django_run_tests
-if test_labels:
-# Make sure 'testsetup' is run first
-tl = ['testsetup']
-tl.extend(list(test_labels))
-test_labels = tuple(tl)
-print "Testing these apps:", test_labels
-
-django_run_tests(test_labels, verbosity, interactive, extra_tests)
-</code></pre>
 <p>and then in your settings.py file set the TEST_RUNNER variable</p>
-<pre><code>TEST_RUNNER = 'testrunner.run_tests'
-</code></pre>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="n">TEST_RUNNER</span> <span class="o">=</span> <span class="s">&#39;testrunner.run_tests&#39;</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
+
 <p>This script simply wraps the django test runner to ensure that the testsetup app is tested before any other apps are.  It basically makes the django test runner think that you're running ./manage.py test testsetup someapp when you actually run ./manage.py test someapp.</p>
 <h3>Proposal</h3>
-<p>A note to the community: I think it'd be great if the Django settings.py included a TEST_INIT variable which allowed you to point to a function that would be executed immediately before the first test was run.  The hook would make the setup process for doctests much easier.</p>         </article>
+<p>A note to the community: I think it'd be great if the Django settings.py included a TEST_INIT variable which allowed you to point to a function that would be executed immediately before the first test was run.  The hook would make the setup process for doctests much easier.</p>                  </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -144,10 +103,7 @@ django_run_tests(test_labels, verbosity, interactive, extra_tests)
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

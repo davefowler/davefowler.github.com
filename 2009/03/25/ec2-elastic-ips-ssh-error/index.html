@@ -6,17 +6,14 @@
 
   <title>EC2 Elastic IPs SSH Error</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,22 +47,12 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>EC2 Elastic IPs SSH Error</h1>
+               <h1>EC2 Elastic IPs SSH Error<small>by dave on 2009-03-25</small></h1>
          </div>
          <p>EC2 has a great feature in allowing you to associate an Elastic IP with different server instances.  This basically means that if you switch servers for whatever reason you can simply tell the old IP (that your domain is pointed to) to now refer to the new server.  This saves the need to change your DNS records and wait a few hours for it to propogate around the web.</p>
 <p>One somewhat annoying thing about the Elastic IP feature is that it also changes the access url and IP for the server.  It will kill your ssh session and you'll have to ssh in again using the new IP address.  Not a huge deal but for a while I was confused by the following error:</p>
@@ -84,12 +71,12 @@ RSA host key for xx.xxx.xxx.xxx has changed and you have requested strict checki
 Host key verification failed.
 dave@~$ ssh -i ~/.ec2/id_rsa-your-name-keypair root@xx.xxx.xxx.xxx
 </code></pre>
-<p>I found the solution <a href="http://developer.amazonwebservices.com/connect/thread.jspa;jsessionid=81CAD1F68BF6F5C626FC1AC429AF2C19?messageID=104781&amp;#104781">here</a>.  At first glance it looks like a problem with EC2 but what's actually happening is that your ssh client knows that that IP address usually points to a different server and is warning you that someone might be messing with you. You know they're not however so you can fix it by simply clearing or editing the file that keeps a record of your past sessions.  On mac and I think most linux machines the file is:  ~/.ssh/known_hosts</p>         </article>
+<p>I found the solution <a href="http://developer.amazonwebservices.com/connect/thread.jspa;jsessionid=81CAD1F68BF6F5C626FC1AC429AF2C19?messageID=104781&amp;#104781">here</a>.  At first glance it looks like a problem with EC2 but what's actually happening is that your ssh client knows that that IP address usually points to a different server and is warning you that someone might be messing with you. You know they're not however so you can fix it by simply clearing or editing the file that keeps a record of your past sessions.  On mac and I think most linux machines the file is:  ~/.ssh/known_hosts</p>                  </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -110,10 +97,7 @@ dave@~$ ssh -i ~/.ec2/id_rsa-your-name-keypair root@xx.xxx.xxx.xxx
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

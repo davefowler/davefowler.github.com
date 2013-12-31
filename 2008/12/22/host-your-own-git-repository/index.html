@@ -6,17 +6,14 @@
 
   <title>Host Your Own Git Repository</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,32 +47,22 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Host Your Own Git Repository</h1>
+               <h1>Host Your Own Git Repository<small>by dave on 2008-12-22</small></h1>
          </div>
          <p>Today I set up a git repository on our dev server.  If you have some cash and don't want to deal with hosting and backing up the repo yourself I recomend you check hosting services such as <a href="http://github.com/">github</a>.  But, if you are like me and have more servers than cache you'll want to set up your own git host.  </p>
 <p>I played with a few different tutorials and found this one by Garry Dolley to be the best.</p>
 <p><a href="http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way">Hosting Git repositories, The Easy (and Secure) Way</a></p>
-<p>Its very straight forward and worked for me right away as instructed.  I have no additions/corrections of my own to make.  It uses a clever and secure hosting software called Gitosis.  From the article "we're using Git to host the configuration file and keys that in turn define how our Git hosting behaves. That's just plain cool. "  It is plain cool.  <a href="http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way">Check it out</a>.  </p>         </article>
+<p>Its very straight forward and worked for me right away as instructed.  I have no additions/corrections of my own to make.  It uses a clever and secure hosting software called Gitosis.  From the article "we're using Git to host the configuration file and keys that in turn define how our Git hosting behaves. That's just plain cool. "  It is plain cool.  <a href="http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way">Check it out</a>.  </p>                  </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -96,10 +83,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

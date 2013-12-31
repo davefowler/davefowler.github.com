@@ -6,17 +6,14 @@
 
   <title>Simple MySQLdb Example</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,84 +47,24 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Simple MySQLdb Example</h1>
+               <h1>Simple MySQLdb Example<small>by dave on 2009-05-03</small></h1>
          </div>
          <p>MySQLdb is a python interface to MySQL.  I wrote the following simple script for some database tests and thought it might be handy to others looking for tutorials or examples.</p>
 <p>It simply connects to MySQL, drops and creates a database called 'testdb', makes a table called 'waves' with columns 'sin', 'cos', 'tan', and 'date' and fills the table with a thousand data points of the trig functions performed on the date in 5 minute intervals leading up to the current date.</p>
 <p>The code and comments I think are fairly straight forward, so I will just paste and link to the <a href="http://dpaste.com/hold/40714/">text version</a>.</p>
-<pre><code>DATABASE_HOST = "localhost"
-DATABASE_USER = "root"
-DATABASE_NAME = "testdb"
-DATABASE_PASSWD = "YOUR PASSWORD HERE"
-DATABASE_PORT = 3306
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="n">DATABASE_HOST</span> <span class="o">=</span> <span class="s">&quot;localhost&quot;</span><br /><a name="line-2"></a><span class="n">DATABASE_USER</span> <span class="o">=</span> <span class="s">&quot;root&quot;</span><br /><a name="line-3"></a><span class="n">DATABASE_NAME</span> <span class="o">=</span> <span class="s">&quot;testdb&quot;</span><br /><a name="line-4"></a><span class="n">DATABASE_PASSWD</span> <span class="o">=</span> <span class="s">&quot;YOUR PASSWORD HERE&quot;</span><br /><a name="line-5"></a><span class="n">DATABASE_PORT</span> <span class="o">=</span> <span class="mi">3306</span><br /><a name="line-6"></a><br /><a name="line-7"></a><span class="kn">import</span> <span class="nn">MySQLdb</span><br /><a name="line-8"></a><br /><a name="line-9"></a><span class="c"># Connect to the Database</span><br /><a name="line-10"></a><span class="n">db</span><span class="o">=</span><span class="n">MySQLdb</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="n">DATABASE_HOST</span><span class="p">,</span><span class="n">user</span><span class="o">=</span><span class="n">DATABASE_USER</span><span class="p">,</span><br /><a name="line-11"></a> <span class="n">passwd</span><span class="o">=</span><span class="n">DATABASE_PASSWD</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">DATABASE_PORT</span><span class="p">))</span><br /><a name="line-12"></a><br /><a name="line-13"></a><span class="c"># Make the database cursor</span><br /><a name="line-14"></a><span class="n">cursor</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span><br /><a name="line-15"></a><br /><a name="line-16"></a><span class="c"># Drop and create the database</span><br /><a name="line-17"></a><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s">&quot;drop database </span><span class="si">%s</span><span class="s">; create database </span><span class="si">%s</span><span class="s">;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">DATABASE_NAME</span><span class="p">,</span> <span class="n">DATABASE_NAME</span><span class="p">))</span><br /><a name="line-18"></a><br /><a name="line-19"></a><span class="c"># Re connect to database using db=DATABASE_NAME</span><br /><a name="line-20"></a><span class="n">db</span><span class="o">=</span><span class="n">MySQLdb</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="n">DATABASE_HOST</span><span class="p">,</span><span class="n">user</span><span class="o">=</span><span class="n">DATABASE_USER</span><span class="p">,</span><br /><a name="line-21"></a> <span class="n">passwd</span><span class="o">=</span><span class="n">DATABASE_PASSWD</span><span class="p">,</span> <span class="n">db</span><span class="o">=</span><span class="n">DATABASE_NAME</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">DATABASE_PORT</span><span class="p">))</span><br /><a name="line-22"></a><span class="n">cursor</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span><br /><a name="line-23"></a><br /><a name="line-24"></a><span class="c"># Create the table for the wave data</span><br /><a name="line-25"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">tan</span><br /><a name="line-26"></a><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s">&quot;&quot;&quot;CREATE TABLE waves (</span><br /><a name="line-27"></a><span class="s">id INT NOT NULL AUTO_INCREMENT,</span><br /><a name="line-28"></a><span class="s">PRIMARY KEY(id),</span><br /><a name="line-29"></a><span class="s">sin FLOAT,</span><br /><a name="line-30"></a><span class="s">cos FLOAT,</span><br /><a name="line-31"></a><span class="s">tan FLOAT,</span><br /><a name="line-32"></a><span class="s">date INT);</span><br /><a name="line-33"></a><span class="s">&quot;&quot;&quot;</span><span class="p">)</span><br /><a name="line-34"></a><br /><a name="line-35"></a><span class="c"># Insert the sine wave data</span><br /><a name="line-36"></a><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><br /><a name="line-37"></a><br /><a name="line-38"></a><span class="k">def</span> <span class="nf">STAMP</span><span class="p">(</span> <span class="n">dt</span> <span class="p">):</span><br /><a name="line-39"></a>  <span class="sd">&quot;&quot;&quot; turns a python datetime object into a unix time stamp (seconds) &quot;&quot;&quot;</span><br /><a name="line-40"></a>  <span class="kn">import</span> <span class="nn">time</span><br /><a name="line-41"></a>  <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">mktime</span><span class="p">(</span> <span class="n">dt</span><span class="o">.</span><span class="n">timetuple</span><span class="p">()</span> <span class="p">))</span><br /><a name="line-42"></a><br /><a name="line-43"></a><span class="n">now</span> <span class="o">=</span> <span class="n">STAMP</span><span class="p">(</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="p">)</span><br /><a name="line-44"></a><span class="n">five_mins</span> <span class="o">=</span> <span class="mi">60</span><span class="o">*</span><span class="mi">5</span><br /><a name="line-45"></a><br /><a name="line-46"></a><span class="n">sql</span> <span class="o">=</span> <span class="s">&quot;INSERT INTO waves (sin, cos, tan, date) VALUES (</span><span class="si">%s</span><span class="s">, </span><span class="si">%s</span><span class="s">, </span><span class="si">%s</span><span class="s">, </span><span class="si">%s</span><span class="s">);&quot;</span><br /><a name="line-47"></a><br /><a name="line-48"></a><span class="c"># Insert the data into the table</span><br /><a name="line-49"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span><br /><a name="line-50"></a>  <span class="n">s</span> <span class="o">=</span> <span class="n">now</span> <span class="o">-</span> <span class="n">i</span><span class="o">*</span><span class="n">five_mins</span><br /><a name="line-51"></a>  <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span> <span class="o">%</span> <span class="p">(</span> <span class="n">sin</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="n">cos</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="n">tan</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="n">s</span> <span class="p">))</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
 
-import MySQLdb
-
-# Connect to the Database
-db=MySQLdb.connect(host=DATABASE_HOST,user=DATABASE_USER,
- passwd=DATABASE_PASSWD, port=int(DATABASE_PORT))
-
-# Make the database cursor
-cursor = db.cursor()
-
-# Drop and create the database
-cursor.execute("drop database %s; create database %s;" % (DATABASE_NAME, DATABASE_NAME))
-
-# Re connect to database using db=DATABASE_NAME
-db=MySQLdb.connect(host=DATABASE_HOST,user=DATABASE_USER,
- passwd=DATABASE_PASSWD, db=DATABASE_NAME, port=int(DATABASE_PORT))
-cursor = db.cursor()
-
-# Create the table for the wave data
-from math import sin, cos, tan
-cursor.execute("""CREATE TABLE waves (
-id INT NOT NULL AUTO_INCREMENT,
-PRIMARY KEY(id),
-sin FLOAT,
-cos FLOAT,
-tan FLOAT,
-date INT);
-""")
-
-# Insert the sine wave data
-from datetime import datetime
-
-def STAMP( dt ):
- """ turns a python datetime object into a unix time stamp (seconds) """
- import time
- return int(time.mktime( dt.timetuple() ))
-
-now = STAMP( datetime.now() )
-five_mins = 60*5
-
-sql = "INSERT INTO waves (sin, cos, tan, date) VALUES (%s, %s, %s, %s);"
-
-# Insert the data into the table
-for i in range(1000):
- s = now - i*five_mins
- cursor.execute(sql % ( sin(s), cos(s), tan(s), s ))
-</code></pre>
-<p>I really need to get some <a href="http://dpaste.com/hold/40714/">syntax highlighting</a>...  More documentation on MySQLdb can be found <a href="http://mysql-python.sourceforge.net/MySQLdb.html">here</a>.  If you have any questions leave them in the comments.</p>         </article>
+<p>I really need to get some <a href="http://dpaste.com/hold/40714/">syntax highlighting</a>...  More documentation on MySQLdb can be found <a href="http://mysql-python.sourceforge.net/MySQLdb.html">here</a>.  If you have any questions leave them in the comments.</p>                  </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -148,10 +85,7 @@ for i in range(1000):
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

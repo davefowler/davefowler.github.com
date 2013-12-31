@@ -6,17 +6,14 @@
 
   <title>Jared.hockey - Air Hockey Robotic Opponent</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,40 +47,19 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Jared.hockey - Air Hockey Robotic Opponent</h1>
+               <h1>Jared.hockey - Air Hockey Robotic Opponent<small>by dave on 2007-06-25</small></h1>
          </div>
-         <p>I just ran into my files from one of the first JaredSIM sub-projects.  It was my senior design project with the goal of making a robot that would beat the real Jared at air hockey.  Naturally I called it Jared.hockey.  A lot of people unfamiliar with the current state of robotics might be unimpressed by the technical requirements of such a feat, but the task of air hockey is a difficult one in that it requires incredibly fast reactions from both the sensor and controls in order to compete with the reaction time of the real Jared.  Three senior design teams had previously attempted the task with no success.</p>
-<p><a href="http://thingsilearned.files.wordpress.com/2007/06/jaredhockey.png"></a></p>
-<p><a href="http://thingsilearned.files.wordpress.com/2007/06/jaredhockey.png"><img alt="Hockey Diagram" src="http://thingsilearned.files.wordpress.com/2007/06/jaredhockey.png" /></a></p>
-<p>What gave us the advantage was we went with the <a href="http://www.cs.cmu.edu/~cmucam2/">CMUcam2</a>, an awesome device that does color tracking and has an onboard controller for up to 5 servos or DAQ outputs.  The controller was a life saver for the guys making the robotic arm, and for me being able to easily use the camera and control the robotics through the same programing interface.  The CMUCam2 advertises color tracking at an exciting 50 frames per-second but in reality you can only get 25fps unless you're using only a quarter of the window size, which proved too small for our needs. However, with some extremely advanced *sarcasm prediction algorithms I designed and called the Dave Transform (DT as FT was already taken) we were able to get some awesome results.  Here's a diagram of the DT prediction algorithm...</p>
-<p><a href="http://thingsilearned.files.wordpress.com/2007/06/davetransform.png"></a></p>
-<p><a href="http://thingsilearned.files.wordpress.com/2007/06/davetransform.png"><img alt="Dave Transform" src="http://thingsilearned.files.wordpress.com/2007/06/davetransform.png" /></a></p>
-<p>You can check out the <a href="https://github.com/davefowler/jared.hockey">jared source here</a>.  It includes a nice python module for the serial interface with the CMUcam2 that might be useful to robotics or AI enthusiasts out there.  For more detail check out the <a href="http://www.box.net/shared/0fez5m82ay">powerpoint</a> and <a href="http://www.box.net/shared/a55cnezdrv">final paper</a>.  Unfortunately the group that took over the project after us decided that despite our impressive results and the excellent prediction, calibration, and testing code, learning python was much more difficult than just starting over with C++!  Our code is now wasted!  Gotta love Senior Design.</p>
-<p>So what were the results?  After 3 months of team work on the project (not a ton of work, it was only 2 credits) Jared.hockey could block almost everything chucked at it with incredible accuracy!  Unfortunately the arm offensive mechanism proved inadequate.  Though it was properly configured and timed to strike the puck at the right moment, it was not strong enough to return it with any force.  For future reference I personally think the two joint arm system (like humans) is better than one joint and a flicking device.  You need one serious solenoid to return a puck at 30 miles an hour.</p>
-<p>Anyway, we got it to block everything but were unable to get it to return any volleys.  All in all, I currently rank it at Jared.hockey v0.4, where v1.0 would mean it was skilled as the real Jared.  Check it out for yourself!</p>
-<iframe width="100%" height="500" src="http://www.youtube.com/embed/YNbE-JMBF88" frameborder="0" allowfullscreen></iframe>
-
-<p>Dave</p>         </article>
+                  <p>This post has been moved to <a href="/projects/air-hockey-robot">/projects/air-hockey-robot</a>.</p>         </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -104,10 +80,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

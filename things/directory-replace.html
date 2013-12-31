@@ -6,17 +6,14 @@
 
   <title>Directory String Replace</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,22 +47,12 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Directory String Replace</h1>
+               <h1>Directory String Replace<small>by dave on 2013-04-19</small></h1>
          </div>
          <p>Yesterday I discovered that many of the old posts on the <a href="http://chartio.com/blog/">Chartio Blog</a> used odd unicode versions of quotes that were being rendered terribly.  So I needed to do a find-replace for an entire directory.</p>
 <p>The tool for doing so is the <em>sed</em> command line utility, and not using it has a <a href="http://harthur.wordpress.com/2013/01/24/771/">history of getting you ridiculed.</a>  After over an hour of reading <a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?sed" title="SED man pages">man pages</a> and online examples I discovered that I really hate sed.  I asked around about other's experiences and it everyone that I talked to who had tried it has their own horror stories to go along with it.</p>
@@ -81,12 +68,12 @@
 </ul>
 <p>The following example will replace all instances of the word <em>"old"</em> with <em>"new"</em> in files ending in <em>".html"</em> located in the <em>~/some/directory/</em> directory</p>
 <pre><code>findReplace('~/some/directory/', "old", "new", '*.html')
-</code></pre>         </article>
+</code></pre>                  </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -107,10 +94,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

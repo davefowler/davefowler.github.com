@@ -6,17 +6,14 @@
 
   <title> Executed In Sequence of Page Load</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,22 +47,12 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1> Executed In Sequence of Page Load</h1>
+               <h1> Executed In Sequence of Page Load<small>by dave on 2009-01-17</small></h1>
          </div>
          <p>I was researching some javascript capabilities earlier and from a <a href="http://en.wikipedia.org/wiki/Comet_(programming)">wikipedia article on Comet</a> learned this</p>
 <p><em>"browsers render HTML pages incrementally, each </em><code>_script_</code><em> tag is executed as it is received.__"</em></p>
@@ -88,12 +75,12 @@
 Edited
 Original
 </code></pre>
-<p>Because the script is executed in the order that the page is loaded, the first two divs get edited, but the last one which didn't exist at the time the script was run, was not edited.  Some clever things can be done with this.  I'll blog more about it later.</p>         </article>
+<p>Because the script is executed in the order that the page is loaded, the first two divs get edited, but the last one which didn't exist at the time the script was run, was not edited.  Some clever things can be done with this.  I'll blog more about it later.</p>                  </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -114,10 +101,7 @@ Original
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

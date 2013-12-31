@@ -6,17 +6,14 @@
 
   <title>Comparing Github and BitBucket</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,22 +47,12 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Comparing Github and BitBucket</h1>
+               <h1>Comparing Github and BitBucket<small>by dave on 2010-01-07</small></h1>
          </div>
          <p>There are a lot of advantages to using a distributed revision control system as opposed to centralized.  There are also some down sides, mostly in that it can be a bit more confusing to manage.  A centralized web interface however seems to solve that problem quite nicely.</p>
 <p>Currently there are two major competitors in that space, <a href="http://github.com">Github</a> and <a href="http://bitbucket.org/">Bitbucket</a>, that manage Git and Mercurial repositories respectively.  I've used Github for a while and recently have really started using Bitbucket and I thought I'd share some thoughts and comparisons of the two.  There are a lot of blogs that <a href="http://importantshock.wordpress.com/2008/08/07/git-vs-mercurial/">compare Git and Mercurial</a>, but this is not one of those blogs.  I personally have a preference for mercurial, but for admittedly stupid reasons like it was written in python and the syntax more closely resembles SVN which I've become used to.  To me, a major differentiator in choosing one over the other is the interface or 'hub' that manages it.</p>
@@ -120,12 +107,12 @@ BitBucket</p>
 <p>There really aren't a lot of differences.  Personally, I actively use both.  Learning both is easy as the syntax difference between the two revision control systems is minimal and both hub interfaces are very similar.</p>
 <p>I use git for open projects like <a href="http://github.com/godavemon/TwitTornado">TwitTornado</a> where privacy is not an issue and where I'd like to get more developers involved. Its really got a fantastic social network of hackers.</p>
 <p>I use bitbucket for my private repositories as it allows 1 free private repository (per user) and has cheaper monthly rates.</p>
-<p>I hope this helps others make a decision between the two and try both of them out.  Let me know in the comments if I've left any parameters out of the table above and I'll add them in.</p>         </article>
+<p>I hope this helps others make a decision between the two and try both of them out.  Let me know in the comments if I've left any parameters out of the table above and I'll add them in.</p>                  </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -146,10 +133,7 @@ BitBucket</p>
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

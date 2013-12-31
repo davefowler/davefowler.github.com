@@ -6,17 +6,14 @@
 
   <title>GNU Screen Basic Tutorial</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +23,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,22 +47,12 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>GNU Screen Basic Tutorial</h1>
+               <h1>GNU Screen Basic Tutorial<small>by dave on 2009-05-26</small></h1>
          </div>
          <p>If you've ever SSHed into a server, ran something, logged off and got frustrated because whatever you were running stopped running because you had to change coffee shops or go to class then you've experienced the need for <a href="http://www.kuro5hin.org/story/2004/3/9/16838/14935">GNU Screen</a>.</p>
 <p>Put simply it allows you to maintain a persistent session, a terminal that does not change or quit just because you logged out.  Installation is easy.  On a debian machine its simply</p>
@@ -107,12 +94,12 @@
 <p>Another thing to note.  Once you detach from a screen, you need to re-attache the next time you run screen.  To do that simply specify the -r parameter.</p>
 <pre><code>$ screen -r
 </code></pre>
-<p><em><strong>Update 6-3-2009:</strong></em> A few fixes were made thanks to Ben Finney's comments</p>         </article>
+<p><em><strong>Update 6-3-2009:</strong></em> A few fixes were made thanks to Ben Finney's comments</p>                  </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -133,10 +120,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);
