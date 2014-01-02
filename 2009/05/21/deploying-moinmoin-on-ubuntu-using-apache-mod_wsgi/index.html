@@ -7,6 +7,7 @@
   <title>Deploying MoinMoin on Ubuntu using Apache mod_wsgi</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Deploying MoinMoin on Ubuntu using Apache mod_wsgi<small>by dave on 2009-05-21</small></h1>
          </div>
-         <p>I just went through a somewhat lengthy setup process to deploy a moinmoin wiki on Ubuntu.  There's a lot of documentation on it which actually makes it take a bit longer than I'm used to for getting something running on Ubuntu.  I thought I'd share my streamlined notes for this common deployment scenario.</p>
+                           <p>I just went through a somewhat lengthy setup process to deploy a moinmoin wiki on Ubuntu.  There's a lot of documentation on it which actually makes it take a bit longer than I'm used to for getting something running on Ubuntu.  I thought I'd share my streamlined notes for this common deployment scenario.</p>
 <p>The first step is configuration.  Greater detail on all of this can be found <a href="https://help.ubuntu.com/community/HelpOnInstalling/WikiInstanceCreation">here</a>.</p>
 <pre><code>wget http://static.moinmo.in/files/moin-1.8.3.tar.gz
 tar -xzvf moin-1.8.3.tar.gz
@@ -95,43 +96,25 @@ cp/usr/local/share/moin/server/*.cgi $INSTANCE
 <p>Next edit your apache httpd.conf file ( /etc/apache2/httpd.conf ) and add the following to the end.  More help on this step can be found <a href="https://help.ubuntu.com/community/HelpOnInstalling/ApacheWithModWSGI">here</a>.</p>
 <pre><code>LoadModule wsgi_module modules/mod_wsgi.so  # Loads mod_wsgi
 
-
-
-
 &lt;VirtualHost *&gt;
 ServerAdmin &lt;strong&gt;youremail@example.com&lt;/strong&gt;
 
-
-
-
 ServerName &lt;strong&gt;wiki.example.com&lt;/strong&gt;
-
-
-
 
 Alias /moin_static183/ "/usr/local/share/moin/htdocs/"
 #ScriptAlias /developers "&lt;strong&gt;/path/to/wikis/your_wiki_name&lt;/strong&gt;/moin.cgi"
 
-
-
-
 WSGIScriptAlias    / &lt;strong&gt;/path/to/wikis/your_wiki_name&lt;/strong&gt;/moin.wsgi
 WSGIDaemonProcess developerwiki user=www-data group=www-data home=/root process=5 threads=10 maximum-requests=1000 umask=0007
 
-
-
-
 WSGIProcessGroup developerwiki
-
-
-
 
 &lt;/VirtualHost&gt;
 </code></pre>
 <p>And finally you need to add your wiki directory to the python path.</p>
 <pre><code>echo "&lt;strong&gt;/path/to/wikis/your_wiki_name/&lt;/strong&gt;" &gt; /usr/lib/python2.5/site-packages/wikis.pth
 </code></pre>
-<p>Restart Apache and you should be set up.</p>                  </article>
+<p>Restart Apache and you should be set up.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

@@ -7,6 +7,7 @@
   <title>Prevent Devices from Waking WinXP out of Standby Mode</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Prevent Devices from Waking WinXP out of Standby Mode<small>by dave on 2007-07-01</small></h1>
          </div>
-         <p>I had the annoying problem of putting my computer on standby mode for the night, only to have it mysteriously come back on due to some device activity that I didn't know about!</p>
+                           <p>I had the annoying problem of putting my computer on standby mode for the night, only to have it mysteriously come back on due to some device activity that I didn't know about!</p>
 <p>Here's how I investigated the issue and found a fix:</p>
 <ol>
 <li>I opened a command window with start &gt; run &gt; cmd</li>
@@ -72,7 +73,7 @@
 </ol>
 <p>Apparently, there's an alternate way of shutting off this "capability," using control panel &gt; system &gt; hardware &gt; device manager &gt; network adapters and then bringing up the properties &gt; power management option of the network controller. There's also a way to enable devices, with the command /deviceenablewake. (Typing in /? Will bring up a help file with the interface syntax that's needed.)</p>
 <p>Just for safety, I disablewaked all the other devices on the list except the keyboard and mouse. One would think there's a single place in the control panel to find all these wake_armed devices (and even better, if it was in the Power Options), but there isn't.</p>
-<p>--Vu</p>                  </article>
+<p>--Vu</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

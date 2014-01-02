@@ -7,6 +7,7 @@
   <title>Using Arguments in a Shell Script</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Using Arguments in a Shell Script<small>by dave on 2009-05-11</small></h1>
          </div>
-         <p>Within 5 seconds of looking at a shell script I'm usually opening a new file in my text editor to re-write the ugliness into something that makes more visual sense.  To me at least python is highly preferable.</p>
+                           <p>Within 5 seconds of looking at a shell script I'm usually opening a new file in my text editor to re-write the ugliness into something that makes more visual sense.  To me at least python is highly preferable.</p>
 <p>Still I use shell scripts all the time to batch a group of commonly used sequential executions, or to abbreviate a commonly used but lengthy commands.</p>
 <p>Today I looked into going one step further into the complexities of shell scripts, probably my last step for a while, and discovered how to handle arguments.</p>
 <p>The inspiring work case was in using Django manager to run tests for the different apps</p>
@@ -83,7 +84,7 @@ fi
 <p>Note that the above example has a limitation of only dealing with the first argument and seems a bit redundant.  The entire script can indeed be shortened to</p>
 <pre><code>./manage.py test --settings test_settings $@
 </code></pre>
-<p>As $@ represents all arguments after $0.</p>                  </article>
+<p>As $@ represents all arguments after $0.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

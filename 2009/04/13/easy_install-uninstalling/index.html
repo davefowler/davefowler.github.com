@@ -7,6 +7,7 @@
   <title>Uninstalling the easy_install(ed)</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Uninstalling the easy_install(ed)<small>by dave on 2009-04-13</small></h1>
          </div>
-         <p>Today I was switching from the Python Cheese Shop's version of the Twisted Web Framework to the trunk version.  I'd previously installed Twisted with the handy</p>
+                           <p>Today I was switching from the Python Cheese Shop's version of the Twisted Web Framework to the trunk version.  I'd previously installed Twisted with the handy</p>
 <pre><code>easy_install PackageName
 </code></pre>
 <p>Worked great!  Unfortunately its not so obvious on how to uninstall...  After some research I <a href="http://peak.telecommunity.com/DevCenter/EasyInstall#uninstalling-packages">found it</a> and am sharing it here so I wont' forget.</p>
@@ -62,7 +63,7 @@
 <pre><code>easy_install -m PackageName
 </code></pre>
 <p>Which will remove the installed dependencies.  Then you can delete the PackageName.egg file that easy_install left behind.  You may have to do some "locate"ing to find where it put the package as its different on every system.</p>
-<p>Another hint is that easy_install creates a file easy-install.pth in your site-packages directory.  That file lists the path to the various eggs you've installed with easy_install.  In some cases you may simply be able to delete the path of your package in that file.</p>                  </article>
+<p>Another hint is that easy_install creates a file easy-install.pth in your site-packages directory.  That file lists the path to the various eggs you've installed with easy_install.  In some cases you may simply be able to delete the path of your package in that file.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

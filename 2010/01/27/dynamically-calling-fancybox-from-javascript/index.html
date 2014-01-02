@@ -7,6 +7,7 @@
   <title>Dynamically Calling Fancybox from Javascript</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,69 +55,12 @@
          <div class='page-header'>
                <h1>Dynamically Calling Fancybox from Javascript<small>by dave on 2010-01-27</small></h1>
          </div>
-         <p><a href="http://fancybox.net">Fancybox</a> is a really nice jQuery library for creating lightboxes.  There are a few simple <a href="http://fancybox.net/example">examples</a> and some <a href="http://fancybox.net/howto">documentation</a> on their site but there seems to be no demonstrated method for loading a fancybox dynamically with javascript.  All of their examples require you to embed a link to the lightbox content somewhere in the page source.</p>
+                           <p><a href="http://fancybox.net">Fancybox</a> is a really nice jQuery library for creating lightboxes.  There are a few simple <a href="http://fancybox.net/example">examples</a> and some <a href="http://fancybox.net/howto">documentation</a> on their site but there seems to be no demonstrated method for loading a fancybox dynamically with javascript.  All of their examples require you to embed a link to the lightbox content somewhere in the page source.</p>
 <p>The following hack, mostly taken from the method described <a href="http://outburst.jloop.com/2009/08/06/call-fancybox-from-flash/">here</a>, allows you to dynamically any web page into a fancybox straight from javascript.</p>
 <p>I've documented the following example which should be fairly straight forward.  Basically it embeds a hidden link, that's controlled by the callFancyBox function.  Make sure you have the right things included and you can simply call</p>
-<pre><code>callFancyBox( &lt;your iframed url &gt; );
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="nx">callFancyBox</span><span class="p">(</span> <span class="o">&lt;</span><span class="nx">your</span> <span class="nx">iframed</span> <span class="nx">url</span> <span class="o">&gt;</span> <span class="p">);</span><br /></pre></div><br /><figcaption>JavaScript</figcaption></figure></div>
 
-
-
-
-
-
-&lt;html&gt;
-&lt;head&gt;
-
-&lt;!--- These are the scripts and styles needed for fancybox to work ---&gt;
-&lt;script type="text/javascript" src="http://qwisk.com/sbmedia/scripts/libraries/jquery-1.3.2-mod.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://qwisk.com/sbmedia/scripts/libraries/jquery.fancybox-1.2.6.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;link href="http://qwisk.com/sbmedia/css/jquery.fancybox-1.2.6.css" rel="stylesheet" type="text/css" media="all" /&gt;
-
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;h3&gt; Fancybox Test&lt;/h3&gt;
-
-A fancybox will load in 3 seconds
-
-&lt;!--- Currently fancybox only works on links in your page.  This div hides a link, who's href we change dynamically ---&gt;
-&lt;div id="hidden_clicker" style="display:none"&gt;
-&lt;a id="hiddenclicker" href="http://asdf.com" &gt;Hidden Clicker&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;script type="text/javascript" &gt;
-
-// Register all links with-flash as fancybox's
-$(document).ready(function() {
- $("a.overlay-flash").fancybox({
- 'padding': 0,
- 'zoomOpacity': true,
- 'zoomSpeedIn': 500,
- 'zoomSpeedOut': 500,
- 'overlayOpacity': 0.75,
- 'frameWidth': 530,
- 'frameHeight': 400,
- 'hideOnContentClick': false
- });
-});
-
-// This function allows you to call the fancy box from javascript
-// origional source: http://outburst.jloop.com/2009/08/06/call-fancybox-from-flash/
-function callBoxFancy(my_href) {
-var j1 = document.getElementById("hiddenclicker");
-j1.href = my_href;
-$('#hiddenclicker').trigger('click');
-}
-
-// Call the Fancy Box 3 seconds after the page loads
-$(document).ready(function() {
- window.setTimeout("callFancyBox('http://google.com');", 3000)
-});
-&lt;/script&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>                  </article>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="nt">&lt;html&gt;</span><br /><a name="line-2"></a><span class="nt">&lt;head&gt;</span><br /><a name="line-3"></a><br /><a name="line-4"></a><span class="c">&lt;!--- These are the scripts and styles needed for fancybox to work ---&gt;</span><br /><a name="line-5"></a><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;http://qwisk.com/sbmedia/scripts/libraries/jquery-1.3.2-mod.js&quot;</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;&lt;/script&gt;</span><br /><a name="line-6"></a><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;http://qwisk.com/sbmedia/scripts/libraries/jquery.fancybox-1.2.6.js&quot;</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;&lt;/script&gt;</span><br /><a name="line-7"></a><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://qwisk.com/sbmedia/css/jquery.fancybox-1.2.6.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media=</span><span class="s">&quot;all&quot;</span> <span class="nt">/&gt;</span><br /><a name="line-8"></a><br /><a name="line-9"></a><span class="nt">&lt;/head&gt;</span><br /><a name="line-10"></a><span class="nt">&lt;body&gt;</span><br /><a name="line-11"></a><br /><a name="line-12"></a><span class="nt">&lt;h3&gt;</span> Fancybox Test<span class="nt">&lt;/h3&gt;</span><br /><a name="line-13"></a><br /><a name="line-14"></a>A fancybox will load in 3 seconds<br /><a name="line-15"></a><br /><a name="line-16"></a><span class="c">&lt;!--- Currently fancybox only works on links in your page.  This div hides a link, who&#39;s href we change dynamically ---&gt;</span><br /><a name="line-17"></a><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;hidden_clicker&quot;</span> <span class="na">style=</span><span class="s">&quot;display:none&quot;</span><span class="nt">&gt;</span><br /><a name="line-18"></a><span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&quot;hiddenclicker&quot;</span> <span class="na">href=</span><span class="s">&quot;http://asdf.com&quot;</span> <span class="nt">&gt;</span>Hidden Clicker<span class="nt">&lt;/a&gt;</span><br /><a name="line-19"></a><span class="nt">&lt;/div&gt;</span><br /><a name="line-20"></a><br /><a name="line-21"></a><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="nt">&gt;</span><br /><a name="line-22"></a><br /><a name="line-23"></a><span class="c1">// Register all links with-flash as fancybox&#39;s</span><br /><a name="line-24"></a><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span><br /><a name="line-25"></a> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;a.overlay-flash&quot;</span><span class="p">).</span><span class="nx">fancybox</span><span class="p">({</span><br /><a name="line-26"></a> <span class="s1">&#39;padding&#39;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span><br /><a name="line-27"></a> <span class="s1">&#39;zoomOpacity&#39;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span><br /><a name="line-28"></a> <span class="s1">&#39;zoomSpeedIn&#39;</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span><br /><a name="line-29"></a> <span class="s1">&#39;zoomSpeedOut&#39;</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span><br /><a name="line-30"></a> <span class="s1">&#39;overlayOpacity&#39;</span><span class="o">:</span> <span class="mf">0.75</span><span class="p">,</span><br /><a name="line-31"></a> <span class="s1">&#39;frameWidth&#39;</span><span class="o">:</span> <span class="mi">530</span><span class="p">,</span><br /><a name="line-32"></a> <span class="s1">&#39;frameHeight&#39;</span><span class="o">:</span> <span class="mi">400</span><span class="p">,</span><br /><a name="line-33"></a> <span class="s1">&#39;hideOnContentClick&#39;</span><span class="o">:</span> <span class="kc">false</span><br /><a name="line-34"></a> <span class="p">});</span><br /><a name="line-35"></a><span class="p">});</span><br /><a name="line-36"></a><br /><a name="line-37"></a><span class="c1">// This function allows you to call the fancy box from javascript</span><br /><a name="line-38"></a><span class="c1">// origional source: http://outburst.jloop.com/2009/08/06/call-fancybox-from-flash/</span><br /><a name="line-39"></a><span class="kd">function</span> <span class="nx">callBoxFancy</span><span class="p">(</span><span class="nx">my_href</span><span class="p">)</span> <span class="p">{</span><br /><a name="line-40"></a><span class="kd">var</span> <span class="nx">j1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;hiddenclicker&quot;</span><span class="p">);</span><br /><a name="line-41"></a><span class="nx">j1</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">my_href</span><span class="p">;</span><br /><a name="line-42"></a><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#hiddenclicker&#39;</span><span class="p">).</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">);</span><br /><a name="line-43"></a><span class="p">}</span><br /><a name="line-44"></a><br /><a name="line-45"></a><span class="c1">// Call the Fancy Box 3 seconds after the page loads</span><br /><a name="line-46"></a><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span><br /><a name="line-47"></a> <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="s2">&quot;callFancyBox(&#39;http://google.com&#39;);&quot;</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span><br /><a name="line-48"></a><span class="p">});</span><br /><a name="line-49"></a><span class="nt">&lt;/script&gt;</span><br /><a name="line-50"></a><br /><a name="line-51"></a><span class="nt">&lt;/body&gt;</span><br /><a name="line-52"></a><span class="nt">&lt;/html&gt;</span><br /></pre></div><br /><figcaption>HTML</figcaption></figure></div>                           </article>
      </div>
 </div>
 <hr id="commenthr">

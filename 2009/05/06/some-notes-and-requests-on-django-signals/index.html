@@ -7,6 +7,7 @@
   <title>Some Notes and Requests on Django Signals</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Some Notes and Requests on Django Signals<small>by dave on 2009-05-06</small></h1>
          </div>
-         <p><img alt="" src="http://www.swanniganandwright.com/3.0/test/phone-wires.jpg" />I've finally gotten around to playing with the <a href="http://docs.djangoproject.com/en/dev/topics/signals/">Django Signals</a>.  I've been pleased so far but I feel its currently missing a few key features.</p>
+                           <p><img alt="" src="http://www.swanniganandwright.com/3.0/test/phone-wires.jpg" />I've finally gotten around to playing with the <a href="http://docs.djangoproject.com/en/dev/topics/signals/">Django Signals</a>.  I've been pleased so far but I feel its currently missing a few key features.</p>
 <p>Some background: Django Signals allows developers to more easily break up their code into separate components which allows much greater freedom and organization.  Often as a web application expands you add more an more functionality to each of the events.  When a new user is created for example the program might need to spin off a few emails, maybe search for whether any of their friends are the site, store an extra statistic, etc...</p>
 <p>When adding or removing these features developers would previously have to paste more code into their create_new_user function.  Now however developers can creaet a Django Signal in creaet_new_user function and then build other functions (sending email, storing stats, etc) as seperate listeners for that signal.</p>
 <p>It makes everything more modular.  Lots of other languages have this.  If you're a hardware developer its similar to interupts, if you're a javascript developer its similar to events.</p>
@@ -86,7 +87,7 @@ def follow(self, dude_to_follow):
 followed_signal.connect(email_follow_notification, async = True)
 </code></pre>
 <p>The email_follow_notification function would then be run in a seperate process, allowing everything else to continue on without waiting.</p>
-<p>Those are my notes for now.  I'm sure I'll have more and maybe some contributions in the form of real code.</p>                  </article>
+<p>Those are my notes for now.  I'm sure I'll have more and maybe some contributions in the form of real code.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

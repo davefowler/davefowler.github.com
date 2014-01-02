@@ -4,9 +4,10 @@
     <meta charset="">
   <meta http-equiv="X-UA-Compatible" content="">
 
-  <title>Fixing Autocorrect Behavior in MS Word</title>
+  <title></title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -52,9 +53,20 @@
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Fixing Autocorrect Behavior in MS Word<small>by dave on 2007-06-23</small></h1>
+               <h1><small>by dave on </small></h1>
          </div>
-         <p>I'd like to discuss using macros to overcome a big limitation with Word's Autocorrect feature: the expansion of single-character autocorrect entries in words with apostrophes before the last character.</p>
+                           <hr />
+<p>comments: true
+date: '2007-06-23'
+slug: fixing-autocorrect-behavior-in-ms-word
+title: Fixing Autocorrect Behavior in MS Word
+wordpress_id: 57
+tags:
+- MS Word
+- Visual Basic-
+depricated: "This post was created by Vu Dang when it was a group blog/site.  I'm now depricating all posts that aren't mine as it has become more of a personal site."
+--</p>
+<p>I'd like to discuss using macros to overcome a big limitation with Word's Autocorrect feature: the expansion of single-character autocorrect entries in words with apostrophes before the last character.</p>
 <p>Suppose the letter "t" is set to expand into the word "the." This will work as it should in most cases, except when typing words like "don't."</p>
 <p>Normally, autocorrect would expand this into "don'the." The same problem happens if entries are defined for any of the letters occurring at the end of words like "he's," "I'm," "we'd," and so on.</p>
 <p>Thankfully, there's a workaround:       the autoexec macro. Here's what a stripped down version of mine looks like:</p>
@@ -72,7 +84,7 @@ With AutoCorrect.Entries
 End With</p>
 <p>End Sub</p>
 <p>Throw this into your vb module, restart word, and now autocorrect should behave correctly.</p>
-<p>--Vu</p>                  </article>
+<p>--Vu</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

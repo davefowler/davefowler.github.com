@@ -7,6 +7,7 @@
   <title> Executed In Sequence of Page Load</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1> Executed In Sequence of Page Load<small>by dave on 2009-01-17</small></h1>
          </div>
-         <p>I was researching some javascript capabilities earlier and from a <a href="http://en.wikipedia.org/wiki/Comet_(programming)">wikipedia article on Comet</a> learned this</p>
+                           <p>I was researching some javascript capabilities earlier and from a <a href="http://en.wikipedia.org/wiki/Comet_(programming)">wikipedia article on Comet</a> learned this</p>
 <p><em>"browsers render HTML pages incrementally, each </em><code>_script_</code><em> tag is executed as it is received.__"</em></p>
 <p>Awesome!  This means not just that you can execute javascript before and as the page is loading, but you choose WHEN/WHERE to run it.  To test it out I made the following example.</p>
 <pre><code>&lt;html&gt;
@@ -75,7 +76,7 @@
 Edited
 Original
 </code></pre>
-<p>Because the script is executed in the order that the page is loaded, the first two divs get edited, but the last one which didn't exist at the time the script was run, was not edited.  Some clever things can be done with this.  I'll blog more about it later.</p>                  </article>
+<p>Because the script is executed in the order that the page is loaded, the first two divs get edited, but the last one which didn't exist at the time the script was run, was not edited.  Some clever things can be done with this.  I'll blog more about it later.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

@@ -7,6 +7,7 @@
   <title>Cherry Picking With Mercurial</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Cherry Picking With Mercurial<small>by dave on 2013-05-23</small></h1>
          </div>
-         <p>Merging a full branch in mercurial is quite easy.</p>
+                           <p>Merging a full branch in mercurial is quite easy.</p>
 <pre><code>hg update &lt;target branch name&gt;
 hg merge &lt;merging branch name&gt;
 </code></pre>
@@ -75,7 +76,7 @@ hg transplant -b &lt;merging branch name&gt; &lt;rev1&gt; &lt;rev2&gt;
 <p>As an example if we'd like to merge revisions 1156, 1157 and 1162 from the <em>customers</em> branch into <em>default</em> we'd use the following</p>
 <pre><code>hg update default
 hg transplant -b customers 1156 1157 1162
-</code></pre>                  </article>
+</code></pre>                           </article>
      </div>
 </div>
 <hr id="commenthr">

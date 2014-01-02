@@ -7,6 +7,7 @@
   <title>MailGun as an SMTP Server for Django Apps</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,42 +55,25 @@
          <div class='page-header'>
                <h1>MailGun as an SMTP Server for Django Apps<small>by dave on 2011-06-07</small></h1>
          </div>
-         <p>Gmail is a frequently used SMTP host for Django apps.  Its free and relatively simple to setup which is ideal for small apps.  There are a few significant downfalls. First, its limited to 500 emails a day with no option to upgrade.  Second, it limits and even re-writes all outgoing emails to the username of the connector.</p>
+                           <p>Gmail is a frequently used SMTP host for Django apps.  Its free and relatively simple to setup which is ideal for small apps.  There are a few significant downfalls. First, its limited to 500 emails a day with no option to upgrade.  Second, it limits and even re-writes all outgoing emails to the username of the connector.</p>
 <p>For example if you're trying to send an email from welcome@yourhost.com or support@yourhost.com you're out of luck because all of those emails will actually get sent at dave@yourhost.com or whatever email account you have configured. I'm sure this saves millions of people from millions of spam but it adds a bit of annoyance to developer's lives.</p>
 <p>The recently launched <a href="http://mailgun.net">MailGun</a>offers a great solution.  Its free for up to 200 emails per day and super cheap and dramatically scalable after that.  It also works as a drop in replacement for whatever service you were using for your django smtp server.  Changing will take you less time than reading this article.</p>
 <h3>The Steps:</h3>
 <ol>
+<li><a href="http://mailgun.net/">Sign up for MailGun</a></li>
+<li>Go to the <a href="https://mailgun.net/cp">control panel</a> and click on the YOURHOST.mailgun.org server created for you.
+<a href="http://thingsilearned.files.wordpress.com/2011/06/screen-shot-2011-06-07-at-1-32-03-am.png"><img alt="" src="http://thingsilearned.files.wordpress.com/2011/06/screen-shot-2011-06-07-at-1-32-03-am.png" /></a></li>
+<li>In the upper right you will find your "SMTP Authentication" credentials for this server.
+<a href="http://thingsilearned.files.wordpress.com/2011/06/screen-shot-2011-06-07-at-1-33-38-am2.png"><img alt="" src="http://thingsilearned.files.wordpress.com/2011/06/screen-shot-2011-06-07-at-1-33-38-am2.png" /></a></li>
 <li>
-<p><a href="http://mailgun.net/">Sign up for MailGun</a></p>
+<p>Open the settings.py in your django app and configure your email with the given credentials.  It should look something like this.
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="nv">EMAIL_USE_TLS</span> <span class="o">=</span> True<br /><a name="line-2"></a><span class="nv">EMAIL_HOST</span> <span class="o">=</span> <span class="s1">&#39;smtp.mailgun.org&#39;</span><br /><a name="line-3"></a><span class="nv">EMAIL_HOST_USER</span> <span class="o">=</span> <span class="s1">&#39;postmaster@YOURHOST.mailgun.org&#39;</span><br /><a name="line-4"></a><span class="nv">EMAIL_HOST_PASSWORD</span> <span class="o">=</span> <span class="s1">&#39;SOMEPASSWORD&#39;</span><br /><a name="line-5"></a><span class="nv">EMAIL_PORT</span> <span class="o">=</span> 587<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div></p>
 </li>
 <li>
-<p>Go to the <a href="https://mailgun.net/cp">control panel</a> and click on the YOURHOST.mailgun.org server created for you.
-<a href="http://thingsilearned.files.wordpress.com/2011/06/screen-shot-2011-06-07-at-1-32-03-am.png"><img alt="" src="http://thingsilearned.files.wordpress.com/2011/06/screen-shot-2011-06-07-at-1-32-03-am.png" /></a></p>
+<p>Test it out!
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a>./manage.py shell<br /><a name="line-2"></a>&gt;&gt;&gt; from django.core.mail import send_mail<br /><a name="line-3"></a>&gt;&gt;&gt; send_mail<span class="o">(</span><span class="s1">&#39;MailGun works great!&#39;</span>, <span class="s1">&#39;It really really does.&#39;</span>, <span class="s1">&#39;tester@YOURHOST.com&#39;</span>, <span class="o">[</span><span class="s1">&#39;YOUREMAIL@gmail.com&#39;</span><span class="o">]</span>, <span class="nv">fail_silently</span><span class="o">=</span>False<span class="o">)</span><br /></pre></div><br /><figcaption>Bash</figcaption></figure></div></p>
 </li>
-<li>
-<p>In the upper right you will find your "SMTP Authentication" credentials for this server.
-<a href="http://thingsilearned.files.wordpress.com/2011/06/screen-shot-2011-06-07-at-1-33-38-am2.png"><img alt="" src="http://thingsilearned.files.wordpress.com/2011/06/screen-shot-2011-06-07-at-1-33-38-am2.png" /></a></p>
-</li>
-<li>
-<p>Open the settings.py in your django app and configure your email with the given credentials.  It should look something like this.</p>
-<p>EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_HOST_USER = 'postmaster@YOURHOST.mailgun.org'
-EMAIL_HOST_PASSWORD = 'SOMEPASSWORD'
-EMAIL_PORT = 587</p>
-</li>
-<li>
-<p>Test it out!./manage.py shell</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from django.core.mail import send_mail
-send_mail('MailGun works great!', 'It really really does.', 'tester@YOURHOST.com', ['YOUREMAIL@gmail.com'], fail_silently=False)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</li>
-</ol>                  </article>
+</ol>                           </article>
      </div>
 </div>
 <hr id="commenthr">

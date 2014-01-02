@@ -7,6 +7,7 @@
   <title>Batch .jpg Image Resizer</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Batch .jpg Image Resizer<small>by dave on 2007-06-11</small></h1>
          </div>
-         <p>Last night I was looking all over for a batch image resizer.  I needed to make a folder full of images smaller and didn't want to open <a href="http://gimp.org/">Gimp</a> for each one.  I downloaded 2 that weren't what I wanted and just as I was about to get really frustrated I realized, hey, I've taken two semesters of image processing.  I'd been wanting to play around with the <a href="http://www.pythonware.com/products/pil/">Python Image Library (PIL)</a> for a while and took this as my example problem.  It turned out to be real easy given their <a href="http://www.pythonware.com/library/pil/handbook/image.htm">thumbnail example</a>.</p>
+                           <p>Last night I was looking all over for a batch image resizer.  I needed to make a folder full of images smaller and didn't want to open <a href="http://gimp.org/">Gimp</a> for each one.  I downloaded 2 that weren't what I wanted and just as I was about to get really frustrated I realized, hey, I've taken two semesters of image processing.  I'd been wanting to play around with the <a href="http://www.pythonware.com/products/pil/">Python Image Library (PIL)</a> for a while and took this as my example problem.  It turned out to be real easy given their <a href="http://www.pythonware.com/library/pil/handbook/image.htm">thumbnail example</a>.</p>
 <p>I modified it to instead input a max width and max height that you wanted the batch of images to be converted to.  It then goes through and shrinks them to within the dimensions.   Here's a copy of their <a href="http://www.box.net/shared/p0hipv3l72">thumnails example</a> and my <a href="http://www.box.net/shared/m8qcxs7mj1">resize source</a>:</p>
 <pre><code>#! /usr/bin/env python
 
@@ -87,7 +88,7 @@ for infile in glob.glob("*.jpg"):
 <p>To run it you'll need <a href="http://python.org">python</a> and <a href="http://www.pythonware.com/products/pil/">PIL</a>.  Sorry, I haven't made an executable version yet.  Place the python file into the directory you want to resize or somewhere in your PATH and in the image folder use</p>
 <p><code>$ python resize.py &lt;max Width&gt; &lt;max Height&gt;</code></p>
 <p>A new directory will be made inside the folder called resized and will contain the resized versions of your image.  It currently only works for images ending in '.jpg'. Let me know if you make it fancier.</p>
-<p>Dave</p>                  </article>
+<p>Dave</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

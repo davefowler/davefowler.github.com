@@ -7,6 +7,7 @@
   <title>'drop' Database Command for Django Manager</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>'drop' Database Command for Django Manager<small>by dave on 2009-05-10</small></h1>
          </div>
-         <p>The Django manager is a really handy tool.  I wrote earlier about making your own custom managers and there is a lot of other great documentation on it.</p>
+                           <p>The Django manager is a really handy tool.  I wrote earlier about making your own custom managers and there is a lot of other great documentation on it.</p>
 <p>Django comes with a bunch of helpful management commands like 'flush', 'syncdb', 'test', etc.</p>
 <p>I've created a generic 'drop' command as I felt it was missing.  I often found myself going into mysql to drop and re-create a database.  This is needed whenever you significantly change your models and need to start over.  The 'drop' command does that automatically using the database information in your settings file.</p>
 <p>The following code is from <a href="http://dpaste.com/hold/42832/">'drop.py'</a></p>
@@ -89,7 +90,7 @@ class Command(NoArgsCommand):
 </code></pre>
 <p>Now, whenever you' need to whipe your database and start fresh you can simply run:</p>
 <pre><code>./manage.py drop
-</code></pre>                  </article>
+</code></pre>                           </article>
      </div>
 </div>
 <hr id="commenthr">

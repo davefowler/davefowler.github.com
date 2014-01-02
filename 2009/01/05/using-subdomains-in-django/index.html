@@ -7,6 +7,7 @@
   <title>Using Subdomains in Django</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Using Subdomains in Django<small>by dave on 2009-01-05</small></h1>
          </div>
-         <p>Django's url dispatcher doesn't handle subdomains.  If you want/need to use subdomains you've got to use session middleware.  If you haven't written any middleware yet don't freak out, is easy.</p>
+                           <p>Django's url dispatcher doesn't handle subdomains.  If you want/need to use subdomains you've got to use session middleware.  If you haven't written any middleware yet don't freak out, is easy.</p>
 <p>There's some <a href="http://docs.djangoproject.com/en/dev/topics/http/middleware/?from=olddocs">easy documentation</a> for extra information but for our needs all you need to do is make a Class with a function called process_request.  This function gets called on any request before it is processed by the url dispatcher.  It needs to return either nothing (None) or an HttpResponse object.  Here's the code used to get the subdomain.</p>
 <pre><code>class SubdomainMiddleware:
     def process_request(self, request):
@@ -77,7 +78,7 @@
 <p>This locally alters the DNS for test.com so you can use it as your localhost testing url.  Unfortunately the hosts file has no *.test.com functionality to handle redirecting all subdomains so this method only works if you have a known, finite set of subdomains.  If that's not the case you're going to have to use a development server or set up a proxy. </p>
 <p><strong>Update:</strong> I also forgot to mention that if you want your login sessions to work across all subdomains you can change the SESSION_COOKIE_DOMAIN variable as follows:</p>
 <pre><code>SESSION_COOKIE_DOMAIN = '.mysite.com'
-</code></pre>                  </article>
+</code></pre>                           </article>
      </div>
 </div>
 <hr id="commenthr">

@@ -7,6 +7,7 @@
   <title>Initialize Django Tests</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Initialize Django Tests<small>by dave on 2009-09-30</small></h1>
          </div>
-         <p>I use a lot of <a href="http://docs.djangoproject.com/en/dev/topics/testing/#writing-doctests">doctests</a> for apps that all need to work on a set of initialized data.  I was hoping that there would be some kind of hook in Django for this but there is not.</p>
+                           <p>I use a lot of <a href="http://docs.djangoproject.com/en/dev/topics/testing/#writing-doctests">doctests</a> for apps that all need to work on a set of initialized data.  I was hoping that there would be some kind of hook in Django for this but there is not.</p>
 <p>I could switch all of the doctests to unittests and use <a href="http://docs.djangoproject.com/en/dev/topics/testing/#fixture-loading">fixtures</a> but that would be a lot of work and I prefer doctests.  I could also go through and paste some sort of init command at the beginning of each test that would ensure the data was loaded or do the loading but that's just plain bad practice.</p>
 <p>I came up with a method of creating a 'testsetup' app that is always run before the other apps ensuring that whatever that app configures or loads into the database will be run first before any other apps preform their tests.  Here's how you can do it too.</p>
 <p>First create a 'testsetup' app and edit its tests.py file</p>
@@ -77,7 +78,7 @@
 
 <p>This script simply wraps the django test runner to ensure that the testsetup app is tested before any other apps are.  It basically makes the django test runner think that you're running ./manage.py test testsetup someapp when you actually run ./manage.py test someapp.</p>
 <h3>Proposal</h3>
-<p>A note to the community: I think it'd be great if the Django settings.py included a TEST_INIT variable which allowed you to point to a function that would be executed immediately before the first test was run.  The hook would make the setup process for doctests much easier.</p>                  </article>
+<p>A note to the community: I think it'd be great if the Django settings.py included a TEST_INIT variable which allowed you to point to a function that would be executed immediately before the first test was run.  The hook would make the setup process for doctests much easier.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

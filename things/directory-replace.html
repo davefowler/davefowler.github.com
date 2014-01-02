@@ -7,6 +7,7 @@
   <title>Directory String Replace</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1>Directory String Replace<small>by dave on 2013-04-19</small></h1>
          </div>
-         <p>Yesterday I discovered that many of the old posts on the <a href="http://chartio.com/blog/">Chartio Blog</a> used odd unicode versions of quotes that were being rendered terribly.  So I needed to do a find-replace for an entire directory.</p>
+                           <p>Yesterday I discovered that many of the old posts on the <a href="http://chartio.com/blog/">Chartio Blog</a> used odd unicode versions of quotes that were being rendered terribly.  So I needed to do a find-replace for an entire directory.</p>
 <p>The tool for doing so is the <em>sed</em> command line utility, and not using it has a <a href="http://harthur.wordpress.com/2013/01/24/771/">history of getting you ridiculed.</a>  After over an hour of reading <a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?sed" title="SED man pages">man pages</a> and online examples I discovered that I really hate sed.  I asked around about other's experiences and it everyone that I talked to who had tried it has their own horror stories to go along with it.</p>
 <p>Its probably a great tool, and I'm probably just too dumb to make it work for me and my odd unicode quote replacement job, but I ended up just writing/<a href="http://stackoverflow.com/questions/4205854/python-way-to-recursively-find-and-replace-string-in-text-files" title="Replace String in Driectory Script">modifying</a> a simple python script to do string replacing on a directory level.  Its not a command line tool, or replacement for SED.  Just a script that I found useful and am sharing for others that may as well.</p>
 <script src="https://gist.github.com/davefowler/5422045.js"></script>
@@ -68,7 +69,7 @@
 </ul>
 <p>The following example will replace all instances of the word <em>"old"</em> with <em>"new"</em> in files ending in <em>".html"</em> located in the <em>~/some/directory/</em> directory</p>
 <pre><code>findReplace('~/some/directory/', "old", "new", '*.html')
-</code></pre>                  </article>
+</code></pre>                           </article>
      </div>
 </div>
 <hr id="commenthr">

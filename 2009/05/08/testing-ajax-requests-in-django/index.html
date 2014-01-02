@@ -7,6 +7,7 @@
   <title>Testing AJAX Requests in Django</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,22 +55,15 @@
          <div class='page-header'>
                <h1>Testing AJAX Requests in Django<small>by dave on 2009-05-08</small></h1>
          </div>
-         <p>Django has a really handy function on the request object that will determine if the request was an AJAX request (an XMLHttpRequest).</p>
-<pre><code>request.is_ajax()
-</code></pre>
+                           <p>Django has a really handy function on the request object that will determine if the request was an AJAX request (an XMLHttpRequest).</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="n">request</span><span class="o">.</span><span class="n">is_ajax</span><span class="p">()</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
+
 <p>It simply checks whether the HTTP_X_REQUESTED_WITH header is equal to 'XMLHttpRequest', a standard that's supported by most javascript libraries.  You can read more about it and see the list of supporting frameworks <a href="http://docs.djangoproject.com/en/dev/ref/request-response/#django.http.HttpRequest.is_ajax">here</a>.</p>
 <p>It'd be great if the Django client had a simple client.ajax request in addition to its client.post and client.get requests, but alas it doesn't.  The tests can still be done however by changing the HTTP_X_REQUESTED_WITH header when sending  your test requests.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from django.test.client import Client
-client = Client()</p>
-<p>client.post("http://example.com", {"foo": "bar"}, **{'HTTP_X_REQUESTED_WITH': 'XMLHttpRequest'})</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">django.test.client</span> <span class="kn">import</span> <span class="n">Client</span><br /><a name="line-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">()</span><br /><a name="line-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">&quot;http://example.com&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s">&quot;foo&quot;</span><span class="p">:</span> <span class="s">&quot;bar&quot;</span><span class="p">},</span> <span class="o">**</span><span class="p">{</span><span class="s">&#39;HTTP_X_REQUESTED_WITH&#39;</span><span class="p">:</span> <span class="s">&#39;XMLHttpRequest&#39;</span><span class="p">})</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
+
 <p>From there its fairly straight forward to create your own .ajax wrapper if you'd like.</p>
-<p>Now you have no excuse for not having complete tests for all of your XMLHttpRequests :).</p>                  </article>
+<p>Now you have no excuse for not having complete tests for all of your XMLHttpRequests :).</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">

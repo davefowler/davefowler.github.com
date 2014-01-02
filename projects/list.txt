@@ -7,6 +7,7 @@
   <title></title>
   <meta name="description" content="">
   <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -54,7 +55,7 @@
          <div class='page-header'>
                <h1><small>by dave on </small></h1>
          </div>
-         <p>Other Projects to Write about:</p>
+                           <p>Other Projects to Write about:</p>
 <ul>
 <li>Wild Jared</li>
 <li>ThingsILeanred</li>
@@ -67,7 +68,7 @@
 <li>melcurial?</li>
 <li>tinkcap</li>
 <li>As close as I Dare</li>
-</ul>                  </article>
+</ul>                           </article>
      </div>
 </div>
 <hr id="commenthr">
