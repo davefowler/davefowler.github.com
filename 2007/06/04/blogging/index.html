@@ -6,17 +6,15 @@
 
   <title>Plone Blogging </title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Plone Blogging </h1>
+               <h1>Plone Blogging <small>by dave on 2007-06-04</small></h1>
          </div>
-         <p>Evolution is a journey which everything goes through. Yep everything. In fact I sometimes feel it would be much better to be in the shoes of a software framework instead of being a human when it comes to adventure and changing to adapt with the surrounding environment. I would like to just talk a little about one such small evolutionary process in the life of an Open Source Content Management System (CMS) - Plone. There are various contending add-on products for implementing blogging in Plone, and I hope Dave can assimilate the best of all the technologies during his GoogleSOC in order to implement commenting infrastructure for Plone.</p>
+                           <p>Evolution is a journey which everything goes through. Yep everything. In fact I sometimes feel it would be much better to be in the shoes of a software framework instead of being a human when it comes to adventure and changing to adapt with the surrounding environment. I would like to just talk a little about one such small evolutionary process in the life of an Open Source Content Management System (CMS) - Plone. There are various contending add-on products for implementing blogging in Plone, and I hope Dave can assimilate the best of all the technologies during his GoogleSOC in order to implement commenting infrastructure for Plone.</p>
 <p>Some of the stable implemented add-ons for plone are Quills, EasyBlog, and qPloneBlog. EasyBlog provides the basic framework in order to make blogging possible, with plethora of security and visibility configurations for the user or group of users. It also provides some of the other basic utilities of blogging, such as archiving, trackback etc. but that is about as far as it can go. Some of the other add-ons - Quills and qPloneBlog go further and provide pinging support, Blogger API support, track back pings etc. However, some of the features stand apart in both Quills and qPloneBlog. While qPloneBlog provides RSS support to disseminate information, Quills provides blog aggregation support, which can be used for blog searches more easily and efficiently. Summarizing the features:</p>
 <p><em>Quills:</em>
 Features:</p>
@@ -190,12 +178,12 @@ Features :</p>
 </li>
 </ul>
 <p>Hopefully Dave can pull of integration off all such generic blogging utilities into one neat infrastructure to provide plone users another reason to rejoice. Right Dave?</p>
-<p>Priyesh</p>         </article>
+<p>Priyesh</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -216,10 +204,7 @@ Features :</p>
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

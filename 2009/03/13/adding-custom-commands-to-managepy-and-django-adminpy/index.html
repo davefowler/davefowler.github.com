@@ -6,17 +6,15 @@
 
   <title>Adding Custom Commands to manage.py and django-admin.py</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Adding Custom Commands to manage.py and django-admin.py</h1>
+               <h1>Adding Custom Commands to manage.py and django-admin.py<small>by dave on 2009-03-13</small></h1>
          </div>
-         <p>In Django it is very straight forward to add extra commands to the manage.py and django-admin.py scripts.  The Django Documentation describes the <a href="http://docs.djangoproject.com/en/dev/howto/custom-management-commands/">process</a> but gives no examples.  I like examples so I'm writing this for others.</p>
+                           <p>In Django it is very straight forward to add extra commands to the manage.py and django-admin.py scripts.  The Django Documentation describes the <a href="http://docs.djangoproject.com/en/dev/howto/custom-management-commands/">process</a> but gives no examples.  I like examples so I'm writing this for others.</p>
 <p>In the past I'd add these  to make stand alone scripts that used the Django libraries.</p>
 <pre><code>from django.conf import settings
 from django.core.management import setup_environ
@@ -92,12 +80,12 @@ class Command(NoArgsCommand):
     def handle_noargs(self, **options):
         &lt; your code here &gt;
 </code></pre>
-<p>That's it!  You can also do some more complicated functionality with command options.  Take a look at commands listed in <em>/django/core/management/commands</em> for examples there.</p>         </article>
+<p>That's it!  You can also do some more complicated functionality with command options.  Take a look at commands listed in <em>/django/core/management/commands</em> for examples there.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -118,10 +106,7 @@ class Command(NoArgsCommand):
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

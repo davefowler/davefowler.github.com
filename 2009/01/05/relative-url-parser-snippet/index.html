@@ -6,17 +6,15 @@
 
   <title>Relative URL Parser Snippet</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,78 +48,24 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Relative URL Parser Snippet</h1>
+               <h1>Relative URL Parser Snippet<small>by dave on 2009-01-05</small></h1>
          </div>
-         <p>Python 3.0 seems to come with fancy new features to urllib including <a href="http://docs.python.org/dev/3.0/library/urllib.parse.html">urllib.parse</a> which is an excellent utility for parsing the different components of URLs.  I however don't use python 3.0 yet and needed a clean way to make full URLs given a base URL and relative URLs.</p>
+                           <p>Python 3.0 seems to come with fancy new features to urllib including <a href="http://docs.python.org/dev/3.0/library/urllib.parse.html">urllib.parse</a> which is an excellent utility for parsing the different components of URLs.  I however don't use python 3.0 yet and needed a clean way to make full URLs given a base URL and relative URLs.</p>
 <p>This is helpful if you're scraping a webpage and need the full paths of any links.  Its not clean but here's the snippet:</p>
-<pre><code>import re
-safestarters_re = re.compile('^(http|ftp|#)')
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="kn">import</span> <span class="nn">re</span><br /><a name="line-2"></a><span class="n">safestarters_re</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">&#39;^(http|ftp|#)&#39;</span><span class="p">)</span><br /><a name="line-3"></a><br /><a name="line-4"></a><span class="k">class</span> <span class="nc">URLParser</span><span class="p">:</span><br /><a name="line-5"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span><br /><a name="line-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">url</span><br /><a name="line-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">base</span> <span class="o">=</span> <span class="bp">None</span><br /><a name="line-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">dirs</span> <span class="o">=</span> <span class="bp">None</span><br /><a name="line-9"></a>    <span class="k">def</span> <span class="nf">get_base</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><br /><a name="line-10"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">base</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span><br /><a name="line-11"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">base</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">&#39;(.*/).*$&#39;</span><span class="p">,</span> <span class="s">&#39;\g&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">)</span><br /><a name="line-12"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">base</span><br /><a name="line-13"></a>    <span class="k">def</span> <span class="nf">url_wo_get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><br /><a name="line-14"></a>        <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">&#39;\?.*$&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">)</span><br /><a name="line-15"></a>    <span class="k">def</span> <span class="nf">get_dirs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><br /><a name="line-16"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dirs</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span><br /><a name="line-17"></a>            <span class="n">dirs_re</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">&#39;(.+?/)&#39;</span><span class="p">)</span><br /><a name="line-18"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">dirs</span> <span class="o">=</span> <span class="n">dirs_re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_base</span><span class="p">())[</span><span class="mi">2</span><span class="p">:]</span><br /><a name="line-19"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">dirs</span><br /><a name="line-20"></a>    <span class="k">def</span> <span class="nf">relURL</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rel_url</span><span class="p">):</span><br /><a name="line-21"></a>        <span class="sd">&quot;&quot;&quot; returns the joined url given a relative url  &quot;&quot;&quot;</span><br /><a name="line-22"></a>        <span class="k">if</span> <span class="n">safestarters_re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span> <span class="n">rel_url</span> <span class="p">):</span><br /><a name="line-23"></a>            <span class="k">return</span> <span class="n">rel_url</span><br /><a name="line-24"></a>        <span class="n">dirs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_dirs</span><span class="p">()</span><br /><a name="line-25"></a>        <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><br /><a name="line-26"></a>        <span class="n">rel_base</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_base</span><span class="p">()</span><br /><a name="line-27"></a>        <span class="k">if</span> <span class="n">rel_url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">&#39;.&#39;</span><span class="p">):</span><br /><a name="line-28"></a>            <span class="n">rel_url</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">subn</span><span class="p">(</span><span class="s">&#39;\.\.\/&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">,</span> <span class="n">rel_url</span><span class="p">)</span><br /><a name="line-29"></a>        <span class="k">elif</span> <span class="n">rel_url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">):</span><br /><a name="line-30"></a>            <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dirs</span><span class="p">)</span><br /><a name="line-31"></a>            <span class="n">rel_url</span> <span class="o">=</span> <span class="n">rel_url</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><br /><a name="line-32"></a>        <span class="k">elif</span> <span class="n">rel_url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">&#39;?&#39;</span><span class="p">):</span><br /><a name="line-33"></a>            <span class="n">rel_base</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">url_wo_get</span><span class="p">()</span><br /><a name="line-34"></a>        <span class="k">if</span> <span class="n">dirs</span> <span class="ow">and</span> <span class="n">n</span><span class="p">:</span><br /><a name="line-35"></a>            <span class="n">repl</span> <span class="o">=</span> <span class="s">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirs</span><span class="p">[</span><span class="o">-</span><span class="n">n</span><span class="p">:])</span><br /><a name="line-36"></a>            <span class="n">rel_base</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_base</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span> <span class="n">repl</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><br /><a name="line-37"></a>        <span class="k">return</span> <span class="n">rel_base</span> <span class="o">+</span> <span class="n">rel_url</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
 
-class URLParser:
-    def __init__(self, url):
-        self.url = url
-        self.base = None
-        self.dirs = None
-    def get_base(self):
-        if self.base is None:
-            self.base = re.sub('(.*/).*$', '\g', self.url)
-        return self.base
-    def url_wo_get(self):
-        return re.sub('\?.*$', '', self.url)
-    def get_dirs(self):
-        if self.dirs is None:
-            dirs_re = re.compile('(.+?/)')
-            self.dirs = dirs_re.findall(self.get_base())[2:]
-        return self.dirs
-    def relURL(self, rel_url):
-        """ returns the joined url given a relative url  """
-        if safestarters_re.findall( rel_url ):
-            return rel_url
-        dirs = self.get_dirs()
-        n = 0
-        rel_base = self.get_base()
-        if rel_url.startswith('.'):
-            rel_url, n = re.subn('\.\.\/', '', rel_url)
-        elif rel_url.startswith('/'):
-            n = len(dirs)
-            rel_url = rel_url[1:]
-        elif rel_url.startswith('?'):
-            rel_base = self.url_wo_get()
-        if dirs and n:
-            repl = ''.join(dirs[-n:])
-            rel_base = self.get_base().replace( repl, '')
-        return rel_base + rel_url
-</code></pre>
 <p>And here's how you can use it.  Hope it helps, feel free to use.</p>
-<pre><code>&gt;&gt;&gt; url = 'http://example.com/some/base/url?with=get'
-&gt;&gt;&gt; parser = URLParser( url )
-&gt;&gt;&gt; parser.get_base()
-'http://example.com/some/base/'
-&gt;&gt;&gt; parser.relURL( '../relative/path?more=get' )
-'http://example.com/some/relative/path?more=get'
-&gt;&gt;&gt; parser.relURL( '/another/relative/path' )
-'http://example.com/another/relative/path'
-</code></pre>         </article>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&#39;http://example.com/some/base/url?with=get&#39;</span><br /><a name="line-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">URLParser</span><span class="p">(</span> <span class="n">url</span> <span class="p">)</span><br /><a name="line-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">parser</span><span class="o">.</span><span class="n">get_base</span><span class="p">()</span><br /><a name="line-4"></a><span class="s">&#39;http://example.com/some/base/&#39;</span><br /><a name="line-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">parser</span><span class="o">.</span><span class="n">relURL</span><span class="p">(</span> <span class="s">&#39;../relative/path?more=get&#39;</span> <span class="p">)</span><br /><a name="line-6"></a><span class="s">&#39;http://example.com/some/relative/path?more=get&#39;</span><br /><a name="line-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">parser</span><span class="o">.</span><span class="n">relURL</span><span class="p">(</span> <span class="s">&#39;/another/relative/path&#39;</span> <span class="p">)</span><br /><a name="line-8"></a><span class="s">&#39;http://example.com/another/relative/path&#39;</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -142,10 +86,7 @@ class URLParser:
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

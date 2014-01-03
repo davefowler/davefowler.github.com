@@ -1,66 +1,149 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="">
+  <meta http-equiv="X-UA-Compatible" content="">
 
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
-body {
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/media/css/til.css">
+  
+    
+  </head>
+<body id="game">
+    <div class="container">
+            <div id="main" role="main">
+          <header class="banner clearfix">
+          <div class='header'>
+                <div class="row">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
+                                                            <nav >
+    <ul class='breadcrumb'>
+                <li>
+            <a title="Things I Learned"
+                class="button white"
+                href="/">
+                Things
+            </a>
+                              <span class="divider">/</span>        </li>        <li>
+            <a title="About"
+                class="button white"
+                href="/about">
+                About
+            </a>
+                                      </li>    </ul>
+</nav>
+                                        </ul>
+                  </div>
+                </div>
+              </div>          </header>
+          <section class="content">
+          <div class="row">
+     <div class="span10">
+         <article class="thing">
+          
+         <div class='page-header'>
+               <h1><small>by dave on </small></h1>
+         </div>
+                           <p>body {
   margin-top: 40px;
-}
-
-#stats {
-  margin: 20px;
+}</p>
+<h1>stats {</h1>
+<p>margin: 20px;
   width: 300px;
   float: left;
-}
-
-#stats ul li {
-   list-style: none;
+}</p>
+<h1>stats ul li {</h1>
+<p>list-style: none;
    padding: 10px;
-}
-
-#stats ul ul {
-   padding: 0px;
+}</p>
+<h1>stats ul ul {</h1>
+<p>padding: 0px;
    margin-top: 10px;
-}
-
-#stats ul ul li {
-    padding: 0px;
-}
-
-#stats ul li .option-title {
-   font-weight: bold;
-}
-
-
-
-#board {
-   width:400px;
+}</p>
+<h1>stats ul ul li {</h1>
+<pre><code>padding: 0px;
+</code></pre>
+<p>}</p>
+<h1>stats ul li .option-title {</h1>
+<p>font-weight: bold;
+}</p>
+<h1>board {</h1>
+<p>width:400px;
    float: left;
-}
-
-
-.dark {
+}</p>
+<p>.dark {
    background-color: #999;
-}
-
-.light {
+}</p>
+<p>.light {
    background-color: #eee;
-}
-
-#board table {
-    font-size: 36px;
-    width: 400px;
-    height: 400px;
-    align: center;
-    text-align: center;
-	margin: 0px;
-    border: 0px;
-    border-spacing: 0px;
-}
-
-#board table tr td {
-    height: 12.5%;
-	width: 12.5%;
-}
-
-td.hover {
+}</p>
+<h1>board table {</h1>
+<pre><code>font-size: 36px;
+width: 400px;
+height: 400px;
+align: center;
+text-align: center;
+margin: 0px;
+border: 0px;
+border-spacing: 0px;
+</code></pre>
+<p>}</p>
+<h1>board table tr td {</h1>
+<pre><code>height: 12.5%;
+width: 12.5%;
+</code></pre>
+<p>}</p>
+<p>td.hover {
    background-color: lightblue;
-}
+}</p>                           </article>
+     </div>
+</div>
+<hr id="commenthr">
+<div class="row comments">
+  <div class="span10">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'thingsilearned'; // required: replace example with your forum shortname
 
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+          </section>
+      </div>
+      </div> <!--! end of #container -->
+          <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2253461-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

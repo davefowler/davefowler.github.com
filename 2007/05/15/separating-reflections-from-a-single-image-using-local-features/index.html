@@ -6,17 +6,15 @@
 
   <title>Separating Reflections From a Single Image Using Local Features</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Separating Reflections From a Single Image Using Local Features</h1>
+               <h1>Separating Reflections From a Single Image Using Local Features<small>by dave on 2007-05-15</small></h1>
          </div>
-         <p>I said a while ago that I'd get around to slowly posting a few of the things I've been working on.  A week ago I presented my final project for Image Processing along with my partner Jonathan Waltz.  It was to implement <a href="http://ieeexplore.ieee.org/iel5/9183/29133/01315047.pdf">Separating reflections from a single image using local features</a>, a paper by A. Levin, A. Zomet and Y. Weiss.  For the presentation details check out <a href="http://www.box.net/shared/g2br4of33t">our slides here</a>.</p>
+                           <p>I said a while ago that I'd get around to slowly posting a few of the things I've been working on.  A week ago I presented my final project for Image Processing along with my partner Jonathan Waltz.  It was to implement <a href="http://ieeexplore.ieee.org/iel5/9183/29133/01315047.pdf">Separating reflections from a single image using local features</a>, a paper by A. Levin, A. Zomet and Y. Weiss.  For the presentation details check out <a href="http://www.box.net/shared/g2br4of33t">our slides here</a>.</p>
 <p>The goal of the paper is to take a single image with reflections and separate it into two images without reflections.  The advantage?  When you take a picture from your car, tour bus or through the window at your office you can now remove the extra crap you get from the window reflections!  Sounds easy enough but its actually an incredibly difficult and computationally expensive task.  The problem can be represented by the equation</p>
 <p>I = I1 + I2<a href="http://thingsilearned.files.wordpress.com/2007/05/ii1i2.png"><img alt="Seperation Problem Description" src="http://thingsilearned.files.wordpress.com/2007/05/ii1i2.png" /></a></p>
 <p>where I is the original image and I1 and I2 are the desired separated images.  The image of the overlapping box and circle depict the equation.  Practically speaking there are an infinite number of different I1's and I2's that sum up to the original image!  Though its visually easy for us to pick apart the two images, a box and a circle, a computer has a much tougher time.</p>
@@ -79,12 +67,12 @@ $ ./Sample danandmegan.png
 $ open sobel.png</code></p>
 <p>I'll write more on it later.</p>
 <p>Anyway, I built that simple API and then a bunch of tools for building and matching with the natural image database.  The matches are then compared to the surrounding probable patches using a technique called loopy belief propagation.  That's the part I sucked at and still don't get.  I was pretty upset about the fact that I had gotten so far, written so much code and wasn't able to finish.  This is the first project that, though I worked pretty hard at it and did some awesome stuff I still wasn't able to complete by the deadline.  I gave myself far too little time, dramatically underestimated the project which was more like 3 paper implementations than one, and had several time consuming hold ups.  Eighteen years of school and I'm only now learning my lesson :).  I still got a decent grade and may come back to finish it sometime in the unprobable future where I have loads of free time.</p>
-<p>Dave</p>         </article>
+<p>Dave</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -105,10 +93,7 @@ $ open sobel.png</code></p>
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

@@ -6,17 +6,15 @@
 
   <title>Django Email Admins Using Different Outgoing Email Address</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Django Email Admins Using Different Outgoing Email Address</h1>
+               <h1>Django Email Admins Using Different Outgoing Email Address<small>by dave on 2009-01-06</small></h1>
          </div>
-         <p><a href="http://socialbrowse.com">Socialbrowse</a> is deployed on <a href="http://aws.amazon.com/ec2/">EC2</a> using the <a href="http://djangoproject.com">Django</a> framework.  Unfortunately, as we learned the hard way, EC2 has some serious issues with both reverseDNS and email blocklists and is a horrible place to send emails from.  For this reason we use <a href="http://www.authsmtp.com/">AuthSMTP</a>, an email application that will has a much larger success rate for outgoing emails.  The one catch to this is that you pay (a small but significant amount) for each email that is sent out.  </p>
+                           <p><a href="http://socialbrowse.com">Socialbrowse</a> is deployed on <a href="http://aws.amazon.com/ec2/">EC2</a> using the <a href="http://djangoproject.com">Django</a> framework.  Unfortunately, as we learned the hard way, EC2 has some serious issues with both reverseDNS and email blocklists and is a horrible place to send emails from.  For this reason we use <a href="http://www.authsmtp.com/">AuthSMTP</a>, an email application that will has a much larger success rate for outgoing emails.  The one catch to this is that you pay (a small but significant amount) for each email that is sent out.  </p>
 <p>About 5 days into using AuthSMTP our database went down for 2 minutes and I received 4k error messages from Django!  This ate up my monthly AuthSMTP emails instantly and needless to say I was upset :).</p>
 <p>To prevent this from happening again, I configured the error messages to be sent using a different email address.  Error emails always go to my gmail account, which does not block EC2 emails so I don't have to worry about the success rate and there for there is no need to go through AuthSMTP.</p>
 <p>Here's the snippet to change your outgoing error message email address.  </p>
@@ -98,12 +86,12 @@
     EmailMessage(settings.EMAIL_SUBJECT_PREFIX + subject, message,
                  settings.SERVER_EMAIL, [a[1] for a in settings.ADMINS], connection=connection,
                  ).send(fail_silently=fail_silently)
-</code></pre>         </article>
+</code></pre>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -124,10 +112,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

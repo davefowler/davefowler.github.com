@@ -6,17 +6,15 @@
 
   <title>Deploying MoinMoin on Ubuntu using Apache mod_wsgi</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Deploying MoinMoin on Ubuntu using Apache mod_wsgi</h1>
+               <h1>Deploying MoinMoin on Ubuntu using Apache mod_wsgi<small>by dave on 2009-05-21</small></h1>
          </div>
-         <p>I just went through a somewhat lengthy setup process to deploy a moinmoin wiki on Ubuntu.  There's a lot of documentation on it which actually makes it take a bit longer than I'm used to for getting something running on Ubuntu.  I thought I'd share my streamlined notes for this common deployment scenario.</p>
+                           <p>I just went through a somewhat lengthy setup process to deploy a moinmoin wiki on Ubuntu.  There's a lot of documentation on it which actually makes it take a bit longer than I'm used to for getting something running on Ubuntu.  I thought I'd share my streamlined notes for this common deployment scenario.</p>
 <p>The first step is configuration.  Greater detail on all of this can be found <a href="https://help.ubuntu.com/community/HelpOnInstalling/WikiInstanceCreation">here</a>.</p>
 <pre><code>wget http://static.moinmo.in/files/moin-1.8.3.tar.gz
 tar -xzvf moin-1.8.3.tar.gz
@@ -108,48 +96,30 @@ cp/usr/local/share/moin/server/*.cgi $INSTANCE
 <p>Next edit your apache httpd.conf file ( /etc/apache2/httpd.conf ) and add the following to the end.  More help on this step can be found <a href="https://help.ubuntu.com/community/HelpOnInstalling/ApacheWithModWSGI">here</a>.</p>
 <pre><code>LoadModule wsgi_module modules/mod_wsgi.so  # Loads mod_wsgi
 
-
-
-
 &lt;VirtualHost *&gt;
 ServerAdmin &lt;strong&gt;youremail@example.com&lt;/strong&gt;
 
-
-
-
 ServerName &lt;strong&gt;wiki.example.com&lt;/strong&gt;
-
-
-
 
 Alias /moin_static183/ "/usr/local/share/moin/htdocs/"
 #ScriptAlias /developers "&lt;strong&gt;/path/to/wikis/your_wiki_name&lt;/strong&gt;/moin.cgi"
 
-
-
-
 WSGIScriptAlias    / &lt;strong&gt;/path/to/wikis/your_wiki_name&lt;/strong&gt;/moin.wsgi
 WSGIDaemonProcess developerwiki user=www-data group=www-data home=/root process=5 threads=10 maximum-requests=1000 umask=0007
 
-
-
-
 WSGIProcessGroup developerwiki
-
-
-
 
 &lt;/VirtualHost&gt;
 </code></pre>
 <p>And finally you need to add your wiki directory to the python path.</p>
 <pre><code>echo "&lt;strong&gt;/path/to/wikis/your_wiki_name/&lt;/strong&gt;" &gt; /usr/lib/python2.5/site-packages/wikis.pth
 </code></pre>
-<p>Restart Apache and you should be set up.</p>         </article>
+<p>Restart Apache and you should be set up.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -170,10 +140,7 @@ WSGIProcessGroup developerwiki
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

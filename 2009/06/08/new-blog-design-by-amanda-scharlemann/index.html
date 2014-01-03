@@ -6,17 +6,15 @@
 
   <title>New Blog Design By Amanda Scharlemann</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,35 +48,29 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>New Blog Design By Amanda Scharlemann</h1>
+               <h1>New Blog Design By Amanda Scharlemann<small>by dave on 2009-06-08</small></h1>
          </div>
-         <p>A few weeks ago I published a request for a <a href="http://thingsilearned.com/2009/04/12/wanted-generous-blog-designer/">generous designer</a> to create a unique look for this blog.  <a href="http://gustaf.blc.edu/~ascharlemann08/Mandyland/Mandyland.html">Amanda Scharlemann</a> was the first to respond and was a pleasure to work with!</p>
+                    <div class="deprication-note">
+             <b>Depricated:</b>
+             This blog design has since changed and is now my own.
+           </div>
+                           <p>A few weeks ago I published a request for a <a href="http://thingsilearned.com/2009/04/12/wanted-generous-blog-designer/">generous designer</a> to create a unique look for this blog.  <a href="http://gustaf.blc.edu/~ascharlemann08/Mandyland/Mandyland.html">Amanda Scharlemann</a> was the first to respond and was a pleasure to work with!</p>
 <p>Amanda is a design student at Bethany Lutheran College and shows great potential.  She had never worked with customizing Wordpress Templates and the annoying restrictions that come with that, but was eager and quick to learn.  We went through several iterations to narrow down exactly what I was looking for and she spent a lot of time examining the example sites I gave her to get a feel for what I would like.  At each iteration she had significant improvements, helpful advice, and most importantly was open and attentive to feedback.</p>
 <p>I dislike design processes where the designer is stubbornly biased in certain directions and completes 90% of the work before you're allowed to review.  Amanda was not that way at all.  I'm not sure if they teach client-design relationships at Bethany or not, but she was a pleasure to work with.</p>
 <p><a href="http://gustaf.blc.edu/~ascharlemann08/Mandyland/Mandyland.html">Check out her resume</a>.</p>
 <p>The custom design was launched last week, and so far the results have been great.  I've seen a doubling in traffic, and several more comments than usual.  Perhaps  the most impressive statistic so far is that a <a href="http://thingsilearned.com/2009/06/02/tictactoe-in-jquery/#comments">friend I hadn't talked to in a while</a> came across my blog while goggling an issue he was having.  My article apparently helped him and he was excited to notice (thanks to the personalized sidebar) that the blog belonged to me!</p>
 <p>Over time I will probably tweak things here and there as is my nature but I'm over all very pleased with the new look.</p>
-<p>Thanks again Amanda!</p>         </article>
+<p>Thanks again Amanda!</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -99,10 +91,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

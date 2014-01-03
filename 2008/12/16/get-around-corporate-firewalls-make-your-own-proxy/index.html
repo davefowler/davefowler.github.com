@@ -6,17 +6,15 @@
 
   <title>Get Around Corporate Firewalls: Make Your Own Proxy</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Get Around Corporate Firewalls: Make Your Own Proxy</h1>
+               <h1>Get Around Corporate Firewalls: Make Your Own Proxy<small>by dave on 2008-12-16</small></h1>
          </div>
-         <p>I've been doing some research into all kinds of proxies lately.  One of the simple examples I tried out has a great working use case.  It is especially useful if you are in the following situation.</p>
+                           <p>I've been doing some research into all kinds of proxies lately.  One of the simple examples I tried out has a great working use case.  It is especially useful if you are in the following situation.</p>
 <ol>
 <li>Your work blocks/firewalls certain websites and this bugs you.</li>
 <li>You have a server somewhere that you can load code onto.</li>
@@ -75,24 +63,11 @@
 <p>That's everyone right?  I thought so.  You need to set up a twisted proxy on your server.  The benefits of running your own proxy are numerous: If only you are using it, your work will probably never block it, if they do its easy to change your IP, and you'll know that your browsing and login information are safe.  Its also pretty simple to set up; here's how.</p>
 <p><strong>1. Load the Code</strong></p>
 <p>Log into your server and make a file called proxy.py with the following code in it [<a href="http://wiki.python.org/moin/Twisted-Examples">original source</a>]</p>
-<blockquote>
-<p>from twisted.web import proxy, http
-from twisted.internet import reactor
-from twisted.python import log
-import sys
-log.startLogging(sys.stdout)</p>
-</blockquote>
-<p>class ProxyFactory(http.HTTPFactory):
-def <strong>init</strong>(self):
-http.HTTPFactory.<strong>init</strong>(self)
-self.protocol = proxy.Proxy</p>
-<p>reactor.listenTCP(8080, ProxyFactory())
-reactor.run()</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="kn">from</span> <span class="nn">twisted.web</span> <span class="kn">import</span> <span class="n">proxy</span><span class="p">,</span> <span class="n">http</span><br /><a name="line-2"></a><span class="kn">from</span> <span class="nn">twisted.internet</span> <span class="kn">import</span> <span class="n">reactor</span><br /><a name="line-3"></a><span class="kn">from</span> <span class="nn">twisted.python</span> <span class="kn">import</span> <span class="n">log</span><br /><a name="line-4"></a><span class="kn">import</span> <span class="nn">sys</span><br /><a name="line-5"></a><span class="n">log</span><span class="o">.</span><span class="n">startLogging</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span><br /><a name="line-6"></a><br /><a name="line-7"></a><span class="k">class</span> <span class="nc">ProxyFactory</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">HTTPFactory</span><span class="p">):</span><br /><a name="line-8"></a>  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><br /><a name="line-9"></a>    <span class="n">http</span><span class="o">.</span><span class="n">HTTPFactory</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><br /><a name="line-10"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">protocol</span> <span class="o">=</span> <span class="n">proxy</span><span class="o">.</span><span class="n">Proxy</span><br /><a name="line-11"></a><br /><a name="line-12"></a><span class="n">reactor</span><span class="o">.</span><span class="n">listenTCP</span><span class="p">(</span><span class="mi">8080</span><span class="p">,</span> <span class="n">ProxyFactory</span><span class="p">())</span><br /><a name="line-13"></a><span class="n">reactor</span><span class="o">.</span><span class="n">run</span><span class="p">()</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
+
 <p>Don't worry about what all that does.  I'm still working on the details myself.   It is important to know however that '8080' is the port number.  If you would like to use a different port for some reason change the number in the code.  Now you need to get the twisted library and run the script:</p>
-<blockquote>
-<p>sudo easy_install twisted
-python proxy.py &amp;</p>
-</blockquote>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a>sudo easy_install twisted<br /><a name="line-2"></a>python proxy.py &amp;<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
+
 <p>The proxy is now running.  Make sure that script keeps running while testing the following or skip to part 3 where you set this script up to run in the background on load.</p>
 <p><strong>2. Set Your Browser To Use the Proxy</strong></p>
 <p>The next step is to setup your browser to use a proxy for its internet access.  In Firefox goto Preferences-&gt;Advanced-&gt;Network-&gt;Settings.  You should get something that looks similar to this:</p>
@@ -102,19 +77,14 @@ python proxy.py &amp;</p>
 <p>If you use a browser other than Firefox here are external instructions for changing the proxy settings:  <a href="http://support.microsoft.com/kb/135982">Internet Explorer</a>, <a href="http://www.lib.msu.edu/proxy/safari.html">Safari</a>, <a href="http://www.opera.com/support/kb/view/332/">Opera </a></p>
 <p><strong>3. Configure the Proxy To Load on Boot</strong></p>
 <p>As a last step you have to setup your proxy script to load when your computer starts up and to continue running.  I will show you how to do it in ubuntu.  If you're using another OS you'll have to figure it out yourself.  When you do please leave instructions in the comments!</p>
-<blockquote>
-<p>sudo mv proxy.py /usr/local/bin
-echo "python /usr/local/bin/proxy.py" &gt; /etc/init.d/proxy
-chmod +x /etc/init.d/proxy
-update-rc.d proxy defaults
-/etc/init.d/proxy &amp;</p>
-</blockquote>
-<p>That's it! Happy Browsing :)!</p>         </article>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a>sudo mv proxy.py /usr/local/bin<br /><a name="line-2"></a><span class="nb">echo</span> <span class="s2">&quot;python /usr/local/bin/proxy.py&quot;</span> &gt; /etc/init.d/proxy<br /><a name="line-3"></a>chmod +x /etc/init.d/proxy<br /><a name="line-4"></a>update-rc.d proxy defaults<br /><a name="line-5"></a>/etc/init.d/proxy &amp;<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
+
+<p>That's it! Happy Browsing :)!</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -135,10 +105,7 @@ update-rc.d proxy defaults
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

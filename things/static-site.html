@@ -6,17 +6,15 @@
 
   <title>Statically Generated</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Statically Generated</h1>
+               <h1>Statically Generated<small>by dave on 2013-03-29</small></h1>
          </div>
-         <p>I've long wanted to move my blog from wordpress, and have been really into static site generators lately, and after trying several of them out and not having a lot of luck with the wordpress export tools provided by each I finally waited long enough that most of my blog content is so irrelevant that it doesn't matter anyway!</p>
+                           <p>I've long wanted to move my blog from wordpress, and have been really into static site generators lately, and after trying several of them out and not having a lot of luck with the wordpress export tools provided by each I finally waited long enough that most of my blog content is so irrelevant that it doesn't matter anyway!</p>
 <h2>Explain...</h2>
 <p>For those who don't know, a static site generator is a bit of a different type of blogging system that programatically generates a copy of every page that the site will ever need to render ahead of time.  The advantage is spead and some simplicity.</p>
 <p>For example, when visitng a typical blog, such as wordpress, the server must make a few queries to a database to collect the information about the author, blog content, and whatever else is needed in order to return the HTML necessary.  Its bascially rendering the page for every visit to the website.</p>
@@ -76,12 +64,12 @@
 <p>There are a number of static site generators out there.  This <a href="https://news.ycombinator.com/item?id=4857473" title="Popular static site generators.">Hacker News Poll</a> lists many of them and gives you a good indication of how popular they are.  I ended up choosing <a href="https://github.com/hyde/hyde">Hyde</a> as its what I used to create the <a href="http://chartio.com" title="Data Interface">Chartio</a> content pages as it was the most popular python generator last year when I did that work.  It unfortunately has very little documentation, and hasn't been improved in over two years so I have a tough time recomending it to anyone right now.</p>
 <p>Its still really great, and if you want to clone this site and morph it to your own will, you can <a href="https://github.com/davefowler/thingsilearned">get the source</a> any time.  If interested also be sure to take a look at this list of other <a href="https://github.com/hyde/hyde/wiki/Hyde-Powered" title="Sites powered by Hyde">Hyde powered sites</a>.</p>
 <h2>Exporting from Wordpress</h2>
-<p>The most popular Ruby static site generator is called Jekyll, and there's a nice <a href="https://github.com/thomasf/exitwp">python based Wordpress Exporter</a> for it.  I made <a href="https://github.com/davefowler/exitwp">my own fork</a> to port things to the Hyde format, and to maintain the URL structure of my previous posts.  This blog still gets a few hundred hits a day and I didn't feel like starting from scratch.  Unfortunately neither Livefyre or Disqus imported the wordpress.com comments properly and I had to drop all comments completely.</p>         </article>
+<p>The most popular Ruby static site generator is called Jekyll, and there's a nice <a href="https://github.com/thomasf/exitwp">python based Wordpress Exporter</a> for it.  I made <a href="https://github.com/davefowler/exitwp">my own fork</a> to port things to the Hyde format, and to maintain the URL structure of my previous posts.  This blog still gets a few hundred hits a day and I didn't feel like starting from scratch.  Unfortunately neither Livefyre or Disqus imported the wordpress.com comments properly and I had to drop all comments completely.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -102,10 +90,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

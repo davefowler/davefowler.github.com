@@ -6,17 +6,15 @@
 
   <title>Using Arguments in a Shell Script</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Using Arguments in a Shell Script</h1>
+               <h1>Using Arguments in a Shell Script<small>by dave on 2009-05-11</small></h1>
          </div>
-         <p>Within 5 seconds of looking at a shell script I'm usually opening a new file in my text editor to re-write the ugliness into something that makes more visual sense.  To me at least python is highly preferable.</p>
+                           <p>Within 5 seconds of looking at a shell script I'm usually opening a new file in my text editor to re-write the ugliness into something that makes more visual sense.  To me at least python is highly preferable.</p>
 <p>Still I use shell scripts all the time to batch a group of commonly used sequential executions, or to abbreviate a commonly used but lengthy commands.</p>
 <p>Today I looked into going one step further into the complexities of shell scripts, probably my last step for a while, and discovered how to handle arguments.</p>
 <p>The inspiring work case was in using Django manager to run tests for the different apps</p>
@@ -96,12 +84,12 @@ fi
 <p>Note that the above example has a limitation of only dealing with the first argument and seems a bit redundant.  The entire script can indeed be shortened to</p>
 <pre><code>./manage.py test --settings test_settings $@
 </code></pre>
-<p>As $@ represents all arguments after $0.</p>         </article>
+<p>As $@ represents all arguments after $0.</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -122,10 +110,7 @@ fi
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

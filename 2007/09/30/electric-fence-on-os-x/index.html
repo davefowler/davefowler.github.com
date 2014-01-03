@@ -6,17 +6,15 @@
 
   <title>Electric Fence on OS X</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,36 +48,26 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Electric Fence on OS X</h1>
+               <h1>Electric Fence on OS X<small>by dave on 2007-09-30</small></h1>
          </div>
-         <p>I recently suspected the dreaded buffer overrun in a project I'm hacking for work.  These can be a huge pain to find, especially if your code has a considerable amount of mallocs and fails irregularly.  After dismissing the urge to just write it all in python (wasn't practical for the application) I decided to learn a malloc debugging tool.</p>
+                           <p>I recently suspected the dreaded buffer overrun in a project I'm hacking for work.  These can be a huge pain to find, especially if your code has a considerable amount of mallocs and fails irregularly.  After dismissing the urge to just write it all in python (wasn't practical for the application) I decided to learn a malloc debugging tool.</p>
 <p>I was excited to learn that macs come with their own malloc debuger, entitled Malloc Debugger.  How handy!  Through several attempts to use it on my application however I kept getting the same error.</p>
-<p><em>Unable to read malloc information from (null)</em></p>
+<pre><code>Unable to read malloc information from (null)
+</code></pre>
 <p>I'm probably just missing some libraries to include that would have been had I been using Xcode.  Instead I was compiling with g++ -g.</p>
 <p>Anyway, I eventually checked out <a href="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml">Electric Fence</a> (efence) and had decent results.  It didn't compile right away, you have to comment out line 33 of page.c as stated in <a href="http://lists.apple.com/archives/xcode-users/2005/Oct/msg00791.html">this mailing list</a>.</p>
 <p>Copy the compiled library libefence.a to /usr/lib/ and re-compile your application with the flag -lefence.</p>
-<p>Upon execution it will spit out problems you have in your malloc code and die if there was a buffer overrun.  Its a great tool to turn on while you work as you'll be informed of any overwrites as you're developing.  Not after the whole thing is done and quitting at odd times :).</p>
-<p>Dave</p>         </article>
+<p>Upon execution it will spit out problems you have in your malloc code and die if there was a buffer overrun.  Its a great tool to turn on while you work as you'll be informed of any overwrites as you're developing.  Not after the whole thing is done and quitting at odd times :).</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -100,10 +88,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);

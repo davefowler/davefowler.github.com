@@ -6,17 +6,15 @@
 
   <title>Xcode Editor - Kinda Sucks</title>
   <meta name="description" content="">
-  <meta name="author" content="Dave Fowler">
+  <meta name="author" content="dave">
+  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/media/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/pygments/github.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/media/bootstrap/css/bootstrap-responsive.css">
-  <style>
-    .header h3 { color: #ccc; }
-    .hero-unit { background-image:url('/media/images/hero.jpg'); }
-  </style>
+  <link rel="stylesheet" href="/media/css/til.css">
   
     
   </head>
@@ -26,9 +24,9 @@
           <header class="banner clearfix">
           <div class='header'>
                 <div class="row">
-                  <div class="span5">
-                    <h3>ThingsILearned <small>By Dave Fowler</small></h3>                  </div>
-                  <div class="span3">
+                  <div class="span8">
+                    <h3 id="logo"><a href="/">ThingsILearned</a> <small><a href="/about">By Dave Fowler</a></small></h3>                  </div>
+                  <div class="span4 text-right">
                                                             <nav >
     <ul class='breadcrumb'>
                 <li>
@@ -50,24 +48,14 @@
                 </div>
               </div>          </header>
           <section class="content">
-          
-<style>
-.comments {
-    margin-top: 50px;
-}
-#commenthr {
-    margin-top: 50px;
-}
-</style>
-
-<div class="row">
-     <div class="span8">
+          <div class="row">
+     <div class="span10">
          <article class="thing">
           
          <div class='page-header'>
-               <h1>Xcode Editor - Kinda Sucks</h1>
+               <h1>Xcode Editor - Kinda Sucks<small>by dave on 2007-04-26</small></h1>
          </div>
-         <p>Scince my harddrive died a month ago I haven't been able to find the mac version of emacs I installed 2 years ago and loved ever since.  So lately I've been having to use Xcode a lot more.  Sure there are a lot of nice things about it that supposedly make building projects and debugging more simple but I'm not a fan at all of the editor.  First, when I'm just opening files from my finder they all open up new windows.  You have to drag each file individually (not as a group) into an already open window to get them all in the same editor.  Then its difficult to switch back and forth between files.  Until today I had to reach for the mouse and click the next arrow!  What?!  It sounds lame but its really a no brainer that any good code editor should have a quick way to switch back and forth between open files, like Ctrl-x b in emacs.  Anyway, I figured Xcode has to have this feature so I did some googling.  There's very little info on it, I found a clue on <a href="http://inessential.com/?comments=1&amp;postid=3216">this guy's blog.</a></p>
+                           <p>Scince my harddrive died a month ago I haven't been able to find the mac version of emacs I installed 2 years ago and loved ever since.  So lately I've been having to use Xcode a lot more.  Sure there are a lot of nice things about it that supposedly make building projects and debugging more simple but I'm not a fan at all of the editor.  First, when I'm just opening files from my finder they all open up new windows.  You have to drag each file individually (not as a group) into an already open window to get them all in the same editor.  Then its difficult to switch back and forth between files.  Until today I had to reach for the mouse and click the next arrow!  What?!  It sounds lame but its really a no brainer that any good code editor should have a quick way to switch back and forth between open files, like Ctrl-x b in emacs.  Anyway, I figured Xcode has to have this feature so I did some googling.  There's very little info on it, I found a clue on <a href="http://inessential.com/?comments=1&amp;postid=3216">this guy's blog.</a></p>
 <p>Aparently you can use Ctrl-1, and then use the arrows keys to choose which file you want.  That's a pretty crappy shortcut if you ask me.  You need to use both hands and each has to remove itself from the home row.  Luckily a submitter to that blog added</p>
 <blockquote>
 <p>You can now add command keys to any menu item in any application that currently lacks them.</p>
@@ -78,12 +66,12 @@
 <p><a href="http://thingsilearned.files.wordpress.com/2007/04/shortcutadd1.png"><img alt="Adding a Keyboard Shortcut to Xcode" src="http://thingsilearned.files.wordpress.com/2007/04/shortcutadd1.png" /></a></p>
 <p>What?  What's that? I found out <a href="http://docs.info.apple.com/article.html?artnum=152140&amp;coll=cp">here.</a> Apparently you have to use the exact command (including the ... if its there) listed in the file menu of the app you want the shortcut for.  Unfortunately at this point you can't open your app because it has to be closed during the process or the shortcutting won't work.  It'd be nice if they put a nice pull down menu of your options here.  But it isn't there and either is the menu option in Xcode to switch between files.  I tried the command "Go Back" as that's what pops up when I hover my mouse over the button I want to short cut.  I even tried a few cuss words but none of it worked.  Xcode really needs to fix both how files are added to the editor, shortcuts for moving between files, and while they're at it it'd be great to throw in the function hiding options in the gutter that are really handy in visual studio :).</p>
 <p>Like I said I'm somewhat new to Xcode so if anyone knows how to fix any of these problems with some settings, or hacks that I haven't discovered please leave a comment.</p>
-<p>Dave</p>         </article>
+<p>Dave</p>                           </article>
      </div>
 </div>
 <hr id="commenthr">
 <div class="row comments">
-  <div class="span8">
+  <div class="span10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -104,10 +92,7 @@
           </section>
       </div>
       </div> <!--! end of #container -->
-    
-    <script type="text/javascript" src="/media/bootstrap/js/bootstrap.js"></script>
-  
-  <script type="text/javascript">
+          <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2253461-1']);
