@@ -38,7 +38,7 @@
                               <span class="divider">/</span>        </li>        <li>
             <a title="About"
                 class="button white"
-                href="/about">
+                href="/about/">
                 About
             </a>
                                       </li>    </ul>

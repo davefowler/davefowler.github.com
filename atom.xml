@@ -8,17 +8,17 @@
         <link href="/"/>
     
         
-    <updated>2014-01-02T16:13:14Z</updated>
+    <updated>2014-01-06T18:31:23Z</updated>
 
     <id>/atom.xml</id>
 
             <entry>
-            <title type="html">2014 Pedictions for Bsiness Intelligence</title>
+            <title type="html">Buisiness Intelligence Predictions for 2014</title>
             <author><name>dave</name></author>
-            <link href="/things/business-intelligence-2014-predictions"/>
-            <updated>2014-02-01</updated>
-            <published>2014-02-01</published>
-            <id>/things/business-intelligence-2014-predictions</id>
+            <link href="/things/buisiness-intelligence-predictions"/>
+            <updated>2014-01-06</updated>
+            <published>2014-01-06</published>
+            <id>/things/buisiness-intelligence-predictions</id>
             
             <content type="html">
                                       
@@ -504,10 +504,10 @@ hg transplant -b customers 1156 1157 1162
             <updated>2011-01-05</updated>
             <published>2011-01-05</published>
             <id>/2011/01/05/the-pickledobjectfield-for-object-storage-in-django/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="databases"
                         label="Databases" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
             
@@ -540,7 +540,7 @@ hg transplant -b customers 1156 1157 1162
             <updated>2010-12-01</updated>
             <published>2010-12-01</published>
             <id>/2010/12/01/on-productivity-organization-and-tools/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -560,10 +560,10 @@ hg transplant -b customers 1156 1157 1162
             <updated>2010-01-27</updated>
             <published>2010-01-27</published>
             <id>/2010/01/27/dynamically-calling-fancybox-from-javascript/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="javascript"
                         label="Javascript" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="jQuery"
                         label="Jquery" />
             
@@ -583,10 +583,10 @@ hg transplant -b customers 1156 1157 1162
             <updated>2010-01-11</updated>
             <published>2010-01-11</published>
             <id>/2010/01/11/when-can-i-stop-saving-for-retirement/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="finance"
                         label="Finance" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
             
@@ -693,7 +693,7 @@ AGE     STOP AT       START PAYING
             <updated>2010-01-07</updated>
             <published>2010-01-07</published>
             <id>/2010/01/07/github-and-bitbucket/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="revision control"
                         label="Revision Control" />
             
@@ -761,10 +761,10 @@ BitBucket&lt;/p&gt;
             <updated>2009-09-30</updated>
             <published>2009-09-30</published>
             <id>/2009/09/30/initialize-django-tests/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -802,10 +802,10 @@ BitBucket&lt;/p&gt;
             <updated>2009-08-26</updated>
             <published>2009-08-26</published>
             <id>/2009/08/26/forwarding-naked-domains-for-appengine-with-apache/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="Apache"
                         label="Apache" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="appengine"
                         label="Appengine" />
             
@@ -872,10 +872,10 @@ Description&lt;/p&gt;
             <updated>2009-08-10</updated>
             <published>2009-08-10</published>
             <id>/2009/08/10/log-observer-using-pythons-subprocess/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -964,16 +964,16 @@ line is: Program has run for 0 seconds.
             <updated>2009-08-03</updated>
             <published>2009-08-03</published>
             <id>/2009/08/03/starting-out-with-comet-orbited-part-3-e28093-the-client/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="comet"
                         label="Comet" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="javascript"
                         label="Javascript" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="Orbited"
                         label="Orbited" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -1209,13 +1209,13 @@ function my_send() {
             <updated>2009-07-21</updated>
             <published>2009-07-21</published>
             <id>/2009/07/21/appengine-example-quick-thoughts/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="appengine"
                         label="Appengine" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -1354,13 +1354,13 @@ handlers:
             <updated>2009-06-25</updated>
             <published>2009-06-25</published>
             <id>/2009/06/25/starting-out-with-comet-orbited-part-2-installation-and-stomp/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="comet"
                         label="Comet" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="Orbited"
                         label="Orbited" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -1441,10 +1441,10 @@ stomp://:61613
             <updated>2009-06-09</updated>
             <published>2009-06-09</published>
             <id>/2009/06/09/starting-out-with-comet-orbited-part-1/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="comet"
                         label="Comet" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="Orbited"
                         label="Orbited" />
             
@@ -1494,10 +1494,10 @@ stomp://:61613
             <updated>2009-06-08</updated>
             <published>2009-06-08</published>
             <id>/2009/06/08/new-blog-design-by-amanda-scharlemann/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="Design"
                         label="Design" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -1518,13 +1518,13 @@ stomp://:61613
             <updated>2009-06-03</updated>
             <published>2009-06-03</published>
             <id>/2009/06/03/find-rss-feed-links-with-jquery/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="feeds"
                         label="Feeds" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="javascript"
                         label="Javascript" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="jQuery"
                         label="Jquery" />
             
@@ -1546,16 +1546,16 @@ $(&#39;link[type=&#34;application/rss+xml&#34;]&#39;).each(function() { links[li
             <updated>2009-06-03</updated>
             <published>2009-06-03</published>
             <id>/2009/06/03/google-ajax-feed-api-example/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="api"
                         label="Api" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="feeds"
                         label="Feeds" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="javascript"
                         label="Javascript" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="socialbrowse"
                         label="Socialbrowse" />
             
@@ -1616,13 +1616,13 @@ $(&#39;link[type=&#34;application/rss+xml&#34;]&#39;).each(function() { links[li
             <updated>2009-06-02</updated>
             <published>2009-06-02</published>
             <id>/2009/06/02/tictactoe-in-jquery/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="games"
                         label="Games" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="javascript"
                         label="Javascript" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="jQuery"
                         label="Jquery" />
             
@@ -1646,7 +1646,7 @@ $(&#39;link[type=&#34;application/rss+xml&#34;]&#39;).each(function() { links[li
             <updated>2009-05-26</updated>
             <published>2009-05-26</published>
             <id>/2009/05/26/gnu-screen-super-basic-tutorial/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="deployment"
                         label="Deployment" />
             
@@ -1701,13 +1701,13 @@ $(&#39;link[type=&#34;application/rss+xml&#34;]&#39;).each(function() { links[li
             <updated>2009-05-21</updated>
             <published>2009-05-21</published>
             <id>/2009/05/21/deploying-moinmoin-on-ubuntu-using-apache-mod_wsgi/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="deployment"
                         label="Deployment" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="wiki"
                         label="Wiki" />
             
@@ -1781,10 +1781,10 @@ WSGIProcessGroup developerwiki
             <updated>2009-05-11</updated>
             <published>2009-05-11</published>
             <id>/2009/05/11/using-arguments-in-a-shell-script/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -1828,13 +1828,13 @@ fi
             <updated>2009-05-10</updated>
             <published>2009-05-10</published>
             <id>/2009/05/10/drop-database-command-for-django-manager/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="databases"
                         label="Databases" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -1904,10 +1904,10 @@ class Command(NoArgsCommand):
             <updated>2009-05-06</updated>
             <published>2009-05-06</published>
             <id>/2009/05/06/some-notes-and-requests-on-django-signals/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -1954,7 +1954,7 @@ followed_signal.connect(email_follow_notification, async = True)
             <updated>2009-05-03</updated>
             <published>2009-05-03</published>
             <id>/2009/05/03/road-bikes-are-waaaay-better-than-target-bikes/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
             
@@ -1979,16 +1979,16 @@ followed_signal.connect(email_follow_notification, async = True)
             <updated>2009-05-03</updated>
             <published>2009-05-03</published>
             <id>/2009/05/03/simple-mysqldb-example/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="example"
                         label="Example" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="mysqldb"
                         label="Mysqldb" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="sql"
                         label="Sql" />
             
@@ -2044,7 +2044,7 @@ followed_signal.connect(email_follow_notification, async = True)
             <updated>2009-04-13</updated>
             <published>2009-04-13</published>
             <id>/2009/04/13/easy_install-uninstalling/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -2199,13 +2199,13 @@ dave@~$ ssh -i ~/.ec2/id_rsa-your-name-keypair root@xx.xxx.xxx.xxx
             <updated>2009-03-13</updated>
             <published>2009-03-13</published>
             <id>/2009/03/13/adding-custom-commands-to-managepy-and-django-adminpy/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -2331,10 +2331,10 @@ class Command(NoArgsCommand):
             <updated>2009-02-18</updated>
             <published>2009-02-18</published>
             <id>/2009/02/18/traffic-trends-negativity-more-traffic/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="Blogroll"
                         label="Blogroll" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -2381,16 +2381,16 @@ class Command(NoArgsCommand):
             <updated>2009-01-26</updated>
             <published>2009-01-26</published>
             <id>/2009/01/26/satchmo-on-ubuntu/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="satchmo"
                         label="Satchmo" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="slicehost"
                         label="Slicehost" />
             
@@ -2421,7 +2421,7 @@ class Command(NoArgsCommand):
             <updated>2009-01-19</updated>
             <published>2009-01-19</published>
             <id>/2009/01/19/javascript-relative-and-absolute-urls/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="javascript"
                         label="Javascript" />
             
@@ -2463,7 +2463,7 @@ href: http://localhost/relative/link
             <updated>2009-01-17</updated>
             <published>2009-01-17</published>
             <id>/2009/01/17/executed-in-sequence-of-page-load/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="javascript"
                         label="Javascript" />
             
@@ -2499,10 +2499,10 @@ Original
             <updated>2009-01-06</updated>
             <published>2009-01-06</published>
             <id>/2009/01/06/django-email-admins-using-different-outgoing-email-address/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -2580,10 +2580,10 @@ Original
             <updated>2009-01-05</updated>
             <published>2009-01-05</published>
             <id>/2009/01/05/relative-url-parser-snippet/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -2603,10 +2603,10 @@ Original
             <updated>2009-01-05</updated>
             <published>2009-01-05</published>
             <id>/2009/01/05/using-subdomains-in-django/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -2644,10 +2644,10 @@ Original
             <updated>2009-01-02</updated>
             <published>2009-01-02</published>
             <id>/2009/01/02/installing-csstidy-and-scons-on-os-x-or-linux/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -2710,7 +2710,7 @@ sudo cp release/csstidy/csstidy /usr/local/bin/
             <updated>2008-12-31</updated>
             <published>2008-12-31</published>
             <id>/2008/12/31/i-have-a-startup-midwest-vs-bay-area/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
             
@@ -2726,10 +2726,10 @@ sudo cp release/csstidy/csstidy /usr/local/bin/
             <updated>2008-12-28</updated>
             <published>2008-12-28</published>
             <id>/2008/12/28/django-adminpy-startproject-unknown-command/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -2820,7 +2820,7 @@ I just finished reading Viktore E. Frank&#39;s &lt;a href=&#34;http://www.amazon
             <updated>2008-12-16</updated>
             <published>2008-12-16</published>
             <id>/2008/12/16/get-around-corporate-firewalls-make-your-own-proxy/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -2921,13 +2921,13 @@ printf(&#34;FILE1: Error message relating to FILE1\n&#34;);&lt;/p&gt;
             <updated>2007-09-30</updated>
             <published>2007-09-30</published>
             <id>/2007/09/30/electric-fence-on-os-x/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="C"
                         label="C" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="os x"
                         label="Os X" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -2949,16 +2949,16 @@ printf(&#34;FILE1: Error message relating to FILE1\n&#34;);&lt;/p&gt;
             <updated>2007-08-14</updated>
             <published>2007-08-14</published>
             <id>/2007/08/14/zope3plone-to-django/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="plone"
                         label="Plone" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -2988,10 +2988,10 @@ printf(&#34;FILE1: Error message relating to FILE1\n&#34;);&lt;/p&gt;
             <updated>2007-07-26</updated>
             <published>2007-07-26</published>
             <id>/2007/07/26/computers-and-lemonade/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
             
@@ -3075,13 +3075,13 @@ What you get is a sense of security. It&#39;s the exact same feeling some people
             <updated>2007-07-12</updated>
             <published>2007-07-12</published>
             <id>/2007/07/12/an-energy-drink-recipe-green-tea-pepsi/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="drinks"
                         label="Drinks" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="recipe"
                         label="Recipe" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3101,10 +3101,10 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-07-09</updated>
             <published>2007-07-09</published>
             <id>/2007/07/09/the-dangers-of-a-startup/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
             
@@ -3127,13 +3127,13 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-07-06</updated>
             <published>2007-07-06</published>
             <id>/2007/07/06/organized-database-designing/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="databases"
                         label="Databases" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3156,13 +3156,13 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-07-05</updated>
             <published>2007-07-05</published>
             <id>/2007/07/05/plone-sprint-at-google/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="plone"
                         label="Plone" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
             
@@ -3186,7 +3186,7 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-07-01</updated>
             <published>2007-07-01</published>
             <id>/2007/07/01/prevent-devices-from-waking-winxp-out-of-standby-mode/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="windows XP"
                         label="Windows Xp" />
             
@@ -3219,16 +3219,16 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-06-29</updated>
             <published>2007-06-29</published>
             <id>/2007/06/29/thingsilearned-user-case/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="os x"
                         label="Os X" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3246,10 +3246,10 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-06-26</updated>
             <published>2007-06-26</published>
             <id>/2007/06/26/the-facebook-addiction/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
             
@@ -3267,16 +3267,16 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-06-25</updated>
             <published>2007-06-25</published>
             <id>/2007/06/25/jaredhockey-air-hockey-robotic-opponent/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="robotics"
                         label="Robotics" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3291,16 +3291,16 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-06-25</updated>
             <published>2007-06-25</published>
             <id>/projects/air-hockey-robot</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="robotics"
                         label="Robotics" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3324,16 +3324,16 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-06-20</updated>
             <published>2007-06-20</published>
             <id>/2007/06/20/jaredsim-the-adventure/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3359,16 +3359,16 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-06-19</updated>
             <published>2007-06-19</published>
             <id>/2007/06/19/california/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3393,13 +3393,13 @@ Steep your favorite green tea in a quarter cup boiling water for 2 or 3 minutes 
             <updated>2007-06-15</updated>
             <published>2007-06-15</published>
             <id>/2007/06/15/opening-tough-jars-and-bottles-for-tendonitis-sufferers/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="home remedies"
                         label="Home Remedies" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="tendonitis"
                         label="Tendonitis" />
             
@@ -3430,10 +3430,10 @@ Use needle nose pliers to raise the tab and pull it off, as you would normally w
             <updated>2007-06-11</updated>
             <published>2007-06-11</published>
             <id>/2007/06/11/batch-jpg-image-resizer/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3481,16 +3481,16 @@ for infile in glob.glob(&#34;*.jpg&#34;):
             <updated>2007-06-10</updated>
             <published>2007-06-10</published>
             <id>/2007/06/10/40/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="JaredSIM"
                         label="Jaredsim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="photoshop"
                         label="Photoshop" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3512,10 +3512,10 @@ for infile in glob.glob(&#34;*.jpg&#34;):
             <updated>2007-06-10</updated>
             <published>2007-06-10</published>
             <id>/2007/06/10/food-for-thought-thought-about-food/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="art"
                         label="Art" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3535,10 +3535,10 @@ for infile in glob.glob(&#34;*.jpg&#34;):
             <updated>2007-06-10</updated>
             <published>2007-06-10</published>
             <id>/2007/06/10/xml-syntax-on-emacs/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="plone"
                         label="Plone" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3587,10 +3587,10 @@ for infile in glob.glob(&#34;*.jpg&#34;):
             <updated>2007-06-07</updated>
             <published>2007-06-07</published>
             <id>/2007/06/07/os-x-terminal-prompt/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="os x"
                         label="Os X" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3626,10 +3626,10 @@ for infile in glob.glob(&#34;*.jpg&#34;):
             <updated>2007-06-04</updated>
             <published>2007-06-04</published>
             <id>/2007/06/04/blogging/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="plone"
                         label="Plone" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3767,13 +3767,13 @@ Features :&lt;/p&gt;
             <updated>2007-06-02</updated>
             <published>2007-06-02</published>
             <id>/2007/06/02/gsoc-plone-comments/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="plone"
                         label="Plone" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
             
@@ -3791,7 +3791,7 @@ Features :&lt;/p&gt;
             <updated>2007-05-30</updated>
             <published>2007-05-30</published>
             <id>/2007/05/30/200-page-views/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
             
@@ -3811,10 +3811,10 @@ Features :&lt;/p&gt;
             <updated>2007-05-29</updated>
             <published>2007-05-29</published>
             <id>/2007/05/29/cimglib-a-simple-image-class-for-png-files/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="os x"
                         label="Os X" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3870,13 +3870,13 @@ return 0;
             <updated>2007-05-25</updated>
             <published>2007-05-25</published>
             <id>/2007/05/25/day-1-introduction/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
             
@@ -3903,7 +3903,7 @@ return 0;
             <updated>2007-05-24</updated>
             <published>2007-05-24</published>
             <id>/2007/05/24/diversity-differences-this-world-is-full-of-them-sometimes-also-called-savants-there-are-a-few-extraordinary-people-around-us-who-have-amazing-ability-to-remember-things-daniel-is-one-such-e/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3921,7 +3921,7 @@ return 0;
             <updated>2007-05-24</updated>
             <published>2007-05-24</published>
             <id>/2007/05/24/first-grade/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="life"
                         label="Life" />
             
@@ -3941,10 +3941,10 @@ return 0;
             <updated>2007-05-20</updated>
             <published>2007-05-20</published>
             <id>/2007/05/20/starting-toward-probable-failure/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3964,7 +3964,7 @@ return 0;
             <updated>2007-05-15</updated>
             <published>2007-05-15</published>
             <id>/2007/05/15/separating-reflections-from-a-single-image-using-local-features/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -3991,10 +3991,10 @@ $ open sobel.png&lt;/code&gt;&lt;/p&gt;
             <updated>2007-05-07</updated>
             <published>2007-05-07</published>
             <id>/2007/05/07/emacs-for-macs/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="os x"
                         label="Os X" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -4021,10 +4021,10 @@ $ open sobel.png&lt;/code&gt;&lt;/p&gt;
             <updated>2007-05-04</updated>
             <published>2007-05-04</published>
             <id>/2007/05/04/combating-internet-addiction/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="os x"
                         label="Os X" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -4074,7 +4074,7 @@ Win 98/ME   =   C:\WINDOWS&lt;/p&gt;
             <updated>2007-04-26</updated>
             <published>2007-04-26</published>
             <id>/2007/04/26/a-fresh-new-blog/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="startup"
                         label="Startup" />
             
@@ -4091,10 +4091,10 @@ Win 98/ME   =   C:\WINDOWS&lt;/p&gt;
             <updated>2007-04-26</updated>
             <published>2007-04-26</published>
             <id>/2007/04/26/screw-you-a-python-example/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
@@ -4133,10 +4133,10 @@ No, screw you, you  humping crazy fruit.
             <updated>2007-04-26</updated>
             <published>2007-04-26</published>
             <id>/2007/04/26/xcode-shortcuts/</id>
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="os x"
                         label="Os X" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="/blog/tags/"
                         term="thingsilearned"
                         label="Thingsilearned" />
             
