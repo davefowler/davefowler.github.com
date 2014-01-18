@@ -7,7 +7,7 @@
   <title>Relative URL Parser Snippet</title>
   <meta name="description" content="">
   <meta name="author" content="dave">
-  <link href="/about.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
+  <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="ThingsILearned by Dave Fowler" />
 
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -62,25 +62,6 @@
 <p>And here's how you can use it.  Hope it helps, feel free to use.</p>
 <div class="codebox"><figure class="code"><div class="highlight"><pre><a name="line-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&#39;http://example.com/some/base/url?with=get&#39;</span><br /><a name="line-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">URLParser</span><span class="p">(</span> <span class="n">url</span> <span class="p">)</span><br /><a name="line-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">parser</span><span class="o">.</span><span class="n">get_base</span><span class="p">()</span><br /><a name="line-4"></a><span class="s">&#39;http://example.com/some/base/&#39;</span><br /><a name="line-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">parser</span><span class="o">.</span><span class="n">relURL</span><span class="p">(</span> <span class="s">&#39;../relative/path?more=get&#39;</span> <span class="p">)</span><br /><a name="line-6"></a><span class="s">&#39;http://example.com/some/relative/path?more=get&#39;</span><br /><a name="line-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">parser</span><span class="o">.</span><span class="n">relURL</span><span class="p">(</span> <span class="s">&#39;/another/relative/path&#39;</span> <span class="p">)</span><br /><a name="line-8"></a><span class="s">&#39;http://example.com/another/relative/path&#39;</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>                           </article>
      </div>
-</div>
-<hr id="commenthr">
-<div class="row comments">
-  <div class="span10">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'thingsilearned'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
 </div>
 
           </section>
