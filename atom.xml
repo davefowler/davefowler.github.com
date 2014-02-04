@@ -8,12 +8,12 @@
         <link href="/"/>
     
         
-    <updated>2014-02-04T13:02:16Z</updated>
+    <updated>2014-02-04T13:24:12Z</updated>
 
     <id>/atom.xml</id>
 
             <entry>
-            <title type="html">A Logo Page</title>
+            <title type="html">A Logo Page for Chartio</title>
             <author><name>dave</name></author>
             <link href="/things/chartio-logo"/>
             <updated>2014-02-04</updated>
@@ -21,22 +21,35 @@
             <id>/things/chartio-logo</id>
             
             <content type="html">
-                             &lt;p&gt;Charito has a relatively new logo, and isn&#39;t the most obvious to find.  Frequently we&#39;ll be listed somewhere with an old logo, and I have a hard time blaming anyone for assuming that its our current one.&lt;/p&gt;
+                             &lt;p&gt;Chartio has a relatively new logo, and isn&#39;t the most obvious to find.  Frequently we&#39;ll be listed at an event or web site with an old logo, and I have a hard time blaming anyone for the oversight.&lt;/p&gt;
 &lt;p&gt;Last night I thought it would be interesting to make an entire page of the Chartio website dedicated to the &lt;a href=&#34;http://chartio.com/logo/&#34; title=&#34;Chartio Logo Download Page&#34;&gt;Chartio Logo&lt;/a&gt;.  I included the logo in many different formats, shapes, and color schemes for easy download and distribution.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://chartio.com/logo/&#34; title=&#34;Chartio Logo Download Page&#34;&gt;&lt;img alt=&#34;Official Chartio Logo&#34; src=&#34;http://chartio.com/logo/logo.png&#34; title=&#34;Chartio Logo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Besides a logo we also have an icon.  The icon and logo are never used together.  The icon is simply used in instances where the image would be too small for the Chartio text to be displayed well.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://chartio.com/logo/icon.svg&#34; title=&#34;Chartio Icon&#34;&gt;&lt;img alt=&#34;Chartio Icon&#34; src=&#34;http://chartio.com/logo/icon.svg&#34; title=&#34;Chartio Icon&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The page ended up looking something like this:&lt;/p&gt;
+&lt;p&gt;It is rendered in SVG so is easily scalable to any size without increasing the size of the image.  Everything on the dashboards in Chartio are rendered in SVG so we thought it&#39;d be cool to make our &lt;a href=&#34;http://chartio.com/logo/icon.svg&#34; title=&#34;Chartio Icon&#34;&gt;icon&lt;/a&gt; that way as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://chartio.com/logo/icon.svg&#34;&gt;&lt;img src=&#34;http://chartio.com/logo/icon.svg&#34; title=&#34;Chartio Icon&#34; width=200&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The page ended up looking pretty cool:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://chartio.com/logo/&#34; title=&#34;Chartio Logo Download Page&#34;&gt;&lt;img alt=&#34;Logo Page Screenshot&#34; src=&#34;/media/images/logosite.png&#34; title=&#34;Chartio Logo Page Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;         
             </content>
         </entry>
             <entry>
-            <title type="html">Buisiness Intelligence Predictions for 2014</title>
+            <title type="html">Bullet Graphs for Chartio</title>
             <author><name>dave</name></author>
-            <link href="/things/buisiness-intelligence-predictions"/>
-            <updated>2014-01-06</updated>
-            <published>2014-01-06</published>
-            <id>/things/buisiness-intelligence-predictions</id>
+            <link href="/things/bullet-graphs"/>
+            <updated>2014-01-08</updated>
+            <published>2014-01-08</published>
+            <id>/things/bullet-graphs</id>
+            
+            <content type="html">
+                                      
+            </content>
+        </entry>
+            <entry>
+            <title type="html">Business Intelligence Predictions</title>
+            <author><name>dave</name></author>
+            <link href="/things/business-intelligence-predictions"/>
+            <updated>2014-01-02</updated>
+            <published>2014-01-02</published>
+            <id>/things/business-intelligence-predictions</id>
             
             <content type="html">
                                       
@@ -436,6 +449,18 @@ hg transplant -b customers 1156 1157 1162
 &lt;p&gt;Its still really great, and if you want to clone this site and morph it to your own will, you can &lt;a href=&#34;https://github.com/davefowler/thingsilearned&#34;&gt;get the source&lt;/a&gt; any time.  If interested also be sure to take a look at this list of other &lt;a href=&#34;https://github.com/hyde/hyde/wiki/Hyde-Powered&#34; title=&#34;Sites powered by Hyde&#34;&gt;Hyde powered sites&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Exporting from Wordpress&lt;/h2&gt;
 &lt;p&gt;The most popular Ruby static site generator is called Jekyll, and there&#39;s a nice &lt;a href=&#34;https://github.com/thomasf/exitwp&#34;&gt;python based Wordpress Exporter&lt;/a&gt; for it.  I made &lt;a href=&#34;https://github.com/davefowler/exitwp&#34;&gt;my own fork&lt;/a&gt; to port things to the Hyde format, and to maintain the URL structure of my previous posts.  This blog still gets a few hundred hits a day and I didn&#39;t feel like starting from scratch.  Unfortunately neither Livefyre or Disqus imported the wordpress.com comments properly and I had to drop all comments completely.&lt;/p&gt;         
+            </content>
+        </entry>
+            <entry>
+            <title type="html">Blending, Formulas, Services and Funding</title>
+            <author><name>dave</name></author>
+            <link href="/things/blending-formulas"/>
+            <updated>2013-01-22</updated>
+            <published>2013-01-22</published>
+            <id>/things/blending-formulas</id>
+            
+            <content type="html">
+                                      
             </content>
         </entry>
             <entry>

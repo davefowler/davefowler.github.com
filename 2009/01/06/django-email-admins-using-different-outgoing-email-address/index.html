@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/media/css/til.css">
   
-  <script type="text/javascript" src="//use.typekit.net/clg8egr.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/muz3bnc.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     
