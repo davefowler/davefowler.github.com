@@ -8,10 +8,28 @@
         <link href="/"/>
     
         
-    <updated>2014-01-27T19:57:44Z</updated>
+    <updated>2014-02-04T13:02:16Z</updated>
 
     <id>/atom.xml</id>
 
+            <entry>
+            <title type="html">A Logo Page</title>
+            <author><name>dave</name></author>
+            <link href="/things/chartio-logo"/>
+            <updated>2014-02-04</updated>
+            <published>2014-02-04</published>
+            <id>/things/chartio-logo</id>
+            
+            <content type="html">
+                             &lt;p&gt;Charito has a relatively new logo, and isn&#39;t the most obvious to find.  Frequently we&#39;ll be listed somewhere with an old logo, and I have a hard time blaming anyone for assuming that its our current one.&lt;/p&gt;
+&lt;p&gt;Last night I thought it would be interesting to make an entire page of the Chartio website dedicated to the &lt;a href=&#34;http://chartio.com/logo/&#34; title=&#34;Chartio Logo Download Page&#34;&gt;Chartio Logo&lt;/a&gt;.  I included the logo in many different formats, shapes, and color schemes for easy download and distribution.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://chartio.com/logo/&#34; title=&#34;Chartio Logo Download Page&#34;&gt;&lt;img alt=&#34;Official Chartio Logo&#34; src=&#34;http://chartio.com/logo/logo.png&#34; title=&#34;Chartio Logo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Besides a logo we also have an icon.  The icon and logo are never used together.  The icon is simply used in instances where the image would be too small for the Chartio text to be displayed well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://chartio.com/logo/icon.svg&#34; title=&#34;Chartio Icon&#34;&gt;&lt;img alt=&#34;Chartio Icon&#34; src=&#34;http://chartio.com/logo/icon.svg&#34; title=&#34;Chartio Icon&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The page ended up looking something like this:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://chartio.com/logo/&#34; title=&#34;Chartio Logo Download Page&#34;&gt;&lt;img alt=&#34;Logo Page Screenshot&#34; src=&#34;/media/images/logosite.png&#34; title=&#34;Chartio Logo Page Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;         
+            </content>
+        </entry>
             <entry>
             <title type="html">Buisiness Intelligence Predictions for 2014</title>
             <author><name>dave</name></author>
