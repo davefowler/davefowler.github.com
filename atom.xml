@@ -8,7 +8,7 @@
         <link href="/"/>
     
         
-    <updated>2014-02-04T13:24:12Z</updated>
+    <updated>2014-02-10T15:55:17Z</updated>
 
     <id>/atom.xml</id>
 
@@ -32,7 +32,7 @@
             </content>
         </entry>
             <entry>
-            <title type="html">Bullet Graphs for Chartio</title>
+            <title type="html">Graph it with a Bullet</title>
             <author><name>dave</name></author>
             <link href="/things/bullet-graphs"/>
             <updated>2014-01-08</updated>
