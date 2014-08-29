@@ -8,10 +8,70 @@
         <link href="/"/>
     
         
-    <updated>2014-02-10T15:55:17Z</updated>
+    <updated>2014-08-29T15:58:38Z</updated>
 
     <id>/atom.xml</id>
 
+            <entry>
+            <title type="html">Introducing the Data Pipeline</title>
+            <author><name>dave</name></author>
+            <link href="/things/data-pipeline"/>
+            <updated>2014-08-19</updated>
+            <published>2014-08-19</published>
+            <id>/things/data-pipeline</id>
+            
+            <content type="html">
+                                      
+            </content>
+        </entry>
+            <entry>
+            <title type="html">Meet Your Personal Chartio Teammate</title>
+            <author><name>dave</name></author>
+            <link href="/things/chartio-teammate"/>
+            <updated>2014-06-12</updated>
+            <published>2014-06-12</published>
+            <id>/things/chartio-teammate</id>
+            
+            <content type="html">
+                                      
+            </content>
+        </entry>
+            <entry>
+            <title type="html">Dashboard and Data Source Level Access Controls</title>
+            <author><name>dave</name></author>
+            <link href="/things/permission-controls"/>
+            <updated>2014-05-20</updated>
+            <published>2014-05-20</published>
+            <id>/things/permission-controls</id>
+            
+            <content type="html">
+                                      
+            </content>
+        </entry>
+            <entry>
+            <title type="html">Blending, Formulas, Services and Funding</title>
+            <author><name>dave</name></author>
+            <link href="/things/blending"/>
+            <updated>2014-04-03</updated>
+            <published>2014-04-03</published>
+            <id>/things/blending</id>
+            
+            <content type="html">
+                                      
+            </content>
+        </entry>
+            <entry>
+            <title type="html">An Interview with Scott Murray, Code Artist</title>
+            <author><name>dave</name></author>
+            <link href="/things/scott-murray"/>
+            <updated>2014-04-03</updated>
+            <published>2014-04-03</published>
+            <id>/things/scott-murray</id>
+            
+            <content type="html">
+                                      
+            </content>
+        </entry>
             <entry>
             <title type="html">A Logo Page for Chartio</title>
             <author><name>dave</name></author>
