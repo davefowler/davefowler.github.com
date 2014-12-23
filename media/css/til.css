@@ -1,15 +1,8 @@
 body {
   font-size: 20px;
-<<<<<<< HEAD
   line-height: 2em;
   font-family: "open sans", helvetica, times, Georgia,Cambria,"Times New Roman",Times,serif;
   color: #333;
-=======
-  line-height: 1.5em;
-  font-family: "nimbus-sans",sans-serif;
-  /* font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif; */
-  /* font-family: Georgia,Cambria,"Times New Roman",Times,serif; */
->>>>>>> a15ee6e969a5053e5d2a31bce99449b99676e173
 }
 
 .comments {
@@ -58,10 +51,7 @@ blockquote {
   height: 300px;
   color: #fff;
   border-radius: 2px;
-<<<<<<< HEAD
   font-family: futura;
-=======
->>>>>>> a15ee6e969a5053e5d2a31bce99449b99676e173
   background: none;
 }
 
@@ -173,8 +163,4 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-=======
-
->>>>>>> a15ee6e969a5053e5d2a31bce99449b99676e173
 }
