@@ -1,7 +1,8 @@
 body {
   font-size: 20px;
-  line-height: 1.6em;
-  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  line-height: 2em;
+  font-family: "open sans", helvetica, times, Georgia,Cambria,"Times New Roman",Times,serif;
+  color: #333;
 }
 
 .comments {
@@ -9,6 +10,11 @@ body {
 }
 #commenthr {
     margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: futura, helvetica;
+
 }
 
 h1 {
@@ -42,11 +48,11 @@ blockquote {
 .header h3 { color: inherit; }
 
 .hero-unit {
-  background-image:url('/media/images/hero.png');
-  background-size: 100%;
   height: 300px;
   color: #fff;
   border-radius: 2px;
+  font-family: futura;
+  background: none;
 }
 
 .hero-unit a {
@@ -57,17 +63,26 @@ blockquote {
   background-color: inherit;
 }
 
+.breadcrumb>li {
+  text-shadow: none;
+}
+
 .header {
   margin-top: 20px;
 }
 
 #section-titles {
   margin-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 #sections h4 {
   padding-top: 40px;
+}
+
+li small {
+  font-size: 11px;
+  color: #aaa;
 }
 
 pre {
@@ -98,7 +113,7 @@ ul li.external {
 }
 
 li {
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 .key {
@@ -127,7 +142,6 @@ li {
 
 .thing .hero-unit {
   height: 100px;
-  background-position: center;
 }
 
 .code {
@@ -143,4 +157,10 @@ li {
 
 .content {
   margin-bottom: 200px;
+}
+
+.container-fluid {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
