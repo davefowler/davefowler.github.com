@@ -8,10 +8,27 @@
         <link href="/"/>
     
         
-    <updated>2014-12-15T12:15:19Z</updated>
+    <updated>2015-01-19T19:03:16Z</updated>
 
     <id>/atom.xml</id>
 
+            <entry>
+            <title type="html">Random Distributions in Python</title>
+            <author><name>dave</name></author>
+            <link href="/things/random-distributions-python"/>
+            <updated>2015-01-19</updated>
+            <published>2015-01-19</published>
+            <id>/things/random-distributions-python</id>
+            
+            <content type="html">
+                             &lt;p&gt;I&#39;ve been working on a few more fake datasets to demo Chartio with.  I&#39;ve built an easy enough framework to create models simulating a company and generate many months of fake data for it.  Chartio has a way, however, of really showing the fake parts of any datasets.  I quickly realized that I couldn&#39;t simply generate random variables, but I also had to keep in mind the behavior (distribution) of those values.&lt;/p&gt;
+&lt;p&gt;Python&#39;s &lt;a href=&#34;https://docs.python.org/2/library/random.html&#34; title=&#34;Python Random Library&#34;&gt;random library&lt;/a&gt; has several distribution methods built in. I used iPython notebook to plot out what they all looked like and thought I&#39;d share the knowledge here.&lt;/p&gt;
+&lt;p&gt;For more information on the details of each distribution function checkout the &lt;a href=&#34;https://docs.python.org/2/library/random.html&#34; title=&#34;Python Random Library&#34;&gt;random lib documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe
+        style=&#34;border: 0px; width: 100%; height: 4000px;&#34;
+        src=&#34;/media/files/randomnotebook.html&#34;&gt;&lt;/iframe&gt;         
+            </content>
+        </entry>
             <entry>
             <title type="html">Introducing the Data Pipeline</title>
             <author><name>dave</name></author>
@@ -4163,7 +4180,7 @@ Win 98/ME   =   C:\WINDOWS&lt;/p&gt;
             
             <content type="html">
                              &lt;p&gt;&lt;img src=&#34;/media/images/profile.jpg&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;m an entrepreneur currently serving as the Founder and CEO of &lt;a href=&#34;http://chartio.com&#34;&gt;Chartio&lt;/a&gt; where I&#39;m focused on bringing data visualization to a whole new group of people at an ease and price point that have never before been possible.  We&#39;re collecting data about everything around us and its time that people were able to harness that better.&lt;/p&gt;
+&lt;p&gt;I am an entrepreneur currently serving as the Founder and CEO of &lt;a href=&#34;http://chartio.com&#34;&gt;Chartio&lt;/a&gt; where I&#39;m focused on bringing data visualization to a whole new group of people at an ease and price point that have never before been possible.  We&#39;re collecting data about everything around us and its time that people were able to harness that better.&lt;/p&gt;
 &lt;p&gt;I&#39;ve founded 2 other companies, am an Alumni of the University of Minnesota, Gustavus Adolphus and Y Combinator.  After college, and before the startups I worked at IBM on the XBox360 processor where I lead 10 patents pending.&lt;/p&gt;
 &lt;p&gt;I was listed in &lt;a href=&#34;http://www.forbes.com/pictures/lmf45kde/dave-fowler-founder-and-president-chart-io-28/&#34; title=&#34;Dave Fowler - Forbes 30 under 30 2011&#34;&gt;Forbes&#39; 30 under 30 in Technology for 2011&lt;/a&gt; and &lt;a href=&#34;http://www.forbes.com/pictures/lmf45fdij/dave-fowler/&#34; title=&#34;Dave Fowler - Forbes 30 under 30 2012&#34;&gt;2012&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can read more about me on my Chartio bio&lt;/p&gt;
