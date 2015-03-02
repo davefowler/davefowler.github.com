@@ -8,10 +8,26 @@
         <link href="/"/>
     
         
-    <updated>2015-01-19T19:03:16Z</updated>
+    <updated>2015-03-02T00:39:39Z</updated>
 
     <id>/atom.xml</id>
 
+            <entry>
+            <title type="html">Movieless March</title>
+            <author><name>dave</name></author>
+            <link href="/things/moviemarch"/>
+            <updated>2015-03-01</updated>
+            <published>2015-03-01</published>
+            <id>/things/moviemarch</id>
+            
+            <content type="html">
+                             &lt;p&gt;I&#39;ve long disliked television, but still have a tough time of not spending a few hours a day watching a movie or show.  It tends to be something I do when I&#39;m too tired to think or do anything else, when I should probably just go to bed.&lt;/p&gt;
+&lt;p&gt;To kick the habbit I&#39;ve decided to have a &lt;em&gt;Movieless March&lt;/em&gt;, where I watch no movies or TV shows of any kind for at least 31 days.  With the spare time I started a book I&#39;ve been meaning to get to and came accross this fantastic excerpt which happens to be titled &lt;a href=&#34;http://en.wikipedia.org/wiki/The_Moviegoer&#34;&gt;&#34;The Moviegoer&#34;&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# The Moviegoer
+By Walker Percy
+&lt;/code&gt;&lt;/pre&gt;         
+            </content>
+        </entry>
             <entry>
             <title type="html">Random Distributions in Python</title>
             <author><name>dave</name></author>
@@ -671,6 +687,18 @@ hg transplant -b customers 1156 1157 1162
 &lt;p&gt;There are a thousand different TODO apps on the web and for download.  Each one will tell you that their tool is the best to keep organized and productive.  There are even more authors and bloggers.&lt;/p&gt;
 &lt;p&gt;In the end nothing has worked near as well for me as a blank notebook and a pen.  Sometimes a planner helps when my days are more about scheduled meetings and less about development time, but planners are just paper with a different set of lines.&lt;/p&gt;
 &lt;p&gt;So I guess the thing that I learned hear is that keeping organized and on top of things is a constant struggle and there&#39;s no perfect fix for it.  Its just the nature of the game, and if you accept that it takes time and some effort then the whole process becomes a lot less frustrating and a lot less time is wasted trying out so many different tools.&lt;/p&gt;         
+            </content>
+        </entry>
+            <entry>
+            <title type="html">Chartio</title>
+            <author><name>dave</name></author>
+            <link href="/projects/chartio"/>
+            <updated>2010-06-22</updated>
+            <published>2010-06-22</published>
+            <id>/projects/chartio</id>
+            
+            <content type="html">
+                                      
             </content>
         </entry>
             <entry>
